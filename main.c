@@ -117,7 +117,7 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
   return;
       
     }
-/*
+
        //Timer1 interrupt
     if(T1IF){
         T1IF = 0; //clear interrupt flag
@@ -131,14 +131,15 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
 
         TMR1H = motor2_1Array[motor2];
         TMR1L = motor2_2Array[motor2];
-      
+     
        
     }
  
 PORTC = posArray2[counter2] | posArray3[counter3];
-*/
 
 
+  GIE = 1 ;//Global interrupt enable in ISR
+  return;
    
       
 
@@ -171,7 +172,7 @@ int main(void){
       TMR1ON = 1;
       TMR1H = 0x00;
       TMR1H = 0x00;
-      //TMR1IE = 1;
+      TMR1IE = 1;
       //Timer1 clock=Fosc/4, prescaler = 1/1;
 
       //UART 9600 8 bit asenkron konfig
@@ -240,8 +241,8 @@ int main(void){
         motor1 = tmp1;
        
        
-           /*
-      tmp2 =  motor2_data;
+           
+      tmp2 =  uart_data[13];
      
       if(tmp2 >=60){
             tmp2 = tmp2 - 15;
@@ -252,7 +253,7 @@ int main(void){
              
         tmp2 = tmp2 - 45;
         motor2 =  tmp2;
-        */
+      
         
     }
 }

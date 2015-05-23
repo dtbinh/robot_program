@@ -1785,7 +1785,30 @@ return;
 
 }
 
-# 148
+
+if(T1IF){
+T1IF = 0;
+
+counter2 += direction2;
+
+if(counter2 == 8)
+counter2 = 0;
+else if(counter2 < 0)
+counter2 = 8;
+
+TMR1H = motor2_1Array[motor2];
+TMR1L = motor2_2Array[motor2];
+
+
+}
+
+PORTC = posArray2[counter2] | posArray3[counter3];
+
+
+GIE = 1 ;
+return;
+
+# 149
 }
 
 int main(void){
@@ -1812,8 +1835,9 @@ TMR1CS = 0;
 TMR1ON = 1;
 TMR1H = 0x00;
 TMR1H = 0x00;
+TMR1IE = 1;
 
-# 180
+# 181
 BRG16 = 0;
 BRGH = 0;
 SPBRGH = 0;
@@ -1824,7 +1848,7 @@ SPEN = 1;
 RCIE = 1;
 CREN = 1;
 
-# 208
+# 209
 TRISA = 0x00;
 TRISB = 0b00100000;
 TRISC = 0x00;
@@ -1859,7 +1883,21 @@ incremental1 = 0;
 
 motor1 = tmp1;
 
-# 257
+
+
+tmp2 = uart_data[13];
+
+if(tmp2 >=60){
+tmp2 = tmp2 - 15;
+direction2 = -1;
+}
+else
+direction2 = 1;
+
+tmp2 = tmp2 - 45;
+motor2 = tmp2;
+
+
 }
 }
 
