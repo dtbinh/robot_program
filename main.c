@@ -39,7 +39,7 @@ int loop3 = 0;
 
 char counter_uart = 0;
 //char uart_data[15] = {0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B};
-//char uart_data[15] = {0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D};
+char uart_data[15] = {0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D};
 char motor1_data = 0x2D;
 char motor2_data = 0x2D;
 char motor3_data = 0x2D;
@@ -70,9 +70,14 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
                  GIE = 1;
                  return;
             }
-            
+
+                uart_data[counter_uart] = tmp_data;
+                counter_uart += 1;
+                if(counter_uart == 15){
+                    counter_uart = 0;
+                }
               //if(motor1_data != tmp_data)
-                 motor1_data = tmp_data;
+                 //motor1_data = tmp_data;
                  //motor2_data = tmp_data;
                  //motor3_data = tmp_data;
               tmp_data = 0;
@@ -218,10 +223,9 @@ int main(void){
 
     while(1){
 
-//PORTA = posArray1[counter1];
-        // PORTA = uart_data[5];
-        tmp1 =  motor1_data;
-       //tmp1 =  60;
+
+        tmp1 =  uart_data[14];
+      
    
         if(tmp1 >=60){
             tmp1 = tmp1 - 15;
@@ -239,7 +243,7 @@ int main(void){
             incremental1 = 0;
 
         motor1 = tmp1;
-        //motor1 = 5;
+       
        
            /*
       tmp2 =  motor2_data;

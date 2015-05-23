@@ -1706,7 +1706,7 @@ int loop3 = 0;
 
 char counter_uart = 0;
 
-
+char uart_data[15] = {0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D};
 char motor1_data = 0x2D;
 char motor2_data = 0x2D;
 char motor3_data = 0x2D;
@@ -1738,8 +1738,13 @@ GIE = 1;
 return;
 }
 
+uart_data[counter_uart] = tmp_data;
+counter_uart += 1;
+if(counter_uart == 15){
+counter_uart = 0;
+}
 
-motor1_data = tmp_data;
+
 
 
 tmp_data = 0;
@@ -1785,7 +1790,7 @@ return;
 
 }
 
-# 148
+# 153
 }
 
 int main(void){
@@ -1813,7 +1818,7 @@ TMR1ON = 1;
 TMR1H = 0x00;
 TMR1H = 0x00;
 
-# 180
+# 185
 BRG16 = 0;
 BRGH = 0;
 SPBRGH = 0;
@@ -1824,7 +1829,7 @@ SPEN = 1;
 RCIE = 1;
 CREN = 1;
 
-# 208
+# 213
 TRISA = 0x00;
 TRISB = 0b00100000;
 TRISC = 0x00;
@@ -1839,8 +1844,7 @@ GIE = 1;
 while(1){
 
 
-
-tmp1 = motor1_data;
+tmp1 = uart_data[14];
 
 
 if(tmp1 >=60){
@@ -1860,7 +1864,7 @@ incremental1 = 0;
 
 motor1 = tmp1;
 
-# 258
+# 262
 }
 }
 
