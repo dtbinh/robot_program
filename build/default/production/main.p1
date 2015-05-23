@@ -1533,24 +1533,24 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _uart_data `uc ~T0 @X0 -> 15 `i e ]
 [i _uart_data
 :U ..
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
--> -> 45 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
+-> -> 75 `i `uc
 ..
 ]
-[; ;main.c: 42: char uart_data[15] = {0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D};
+[; ;main.c: 42: char uart_data[15] = {0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B};
 "45
 [v _init_received `uc ~T0 @X0 1 e ]
 [i _init_received
@@ -1777,9 +1777,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 132 ]
 [; ;main.c: 132: }
-[; ;main.c: 134: PORTC = posArray2[counter2] | posArray3[counter3];
+[; ;main.c: 134: PORTC = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
 "134
-[e = _PORTC -> | -> *U + &U _posArray2 * -> -> _counter2 `ui `ux -> -> # *U &U _posArray2 `ui `ux `i -> *U + &U _posArray3 * -> -> _counter3 `ui `ux -> -> # *U &U _posArray3 `ui `ux `i `uc ]
+[e = _PORTC -> | & -> *U + &U _posArray2 * -> -> _counter2 `ui `ux -> -> # *U &U _posArray2 `ui `ux `i -> _motor2run `i & -> *U + &U _posArray3 * -> -> _counter3 `ui `ux -> -> # *U &U _posArray3 `ui `ux `i -> _motor3run `i `uc ]
 [; ;main.c: 137: GIE = 1 ;
 "137
 [e = _GIE -> -> 1 `i `b ]
@@ -1972,41 +1972,55 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 246: tmp2 = uart_data[13];
 "246
 [e = _tmp2 *U + &U _uart_data * -> -> -> 13 `i `ui `ux -> -> # *U &U _uart_data `ui `ux ]
-[; ;main.c: 247: if(tmp2 >=60){
+[; ;main.c: 247: if(tmp2 == 75)
 "247
-[e $ ! >= -> _tmp2 `i -> 60 `i 148  ]
-{
-[; ;main.c: 248: tmp2 = tmp2 - 15;
+[e $ ! == -> _tmp2 `i -> 75 `i 148  ]
+[; ;main.c: 248: motor2run = 0x00;
 "248
-[e = _tmp2 -> - -> _tmp2 `i -> 15 `i `uc ]
-[; ;main.c: 249: direction2 = -1;
-"249
-[e = _direction2 -U -> 1 `i ]
-"250
-}
-[; ;main.c: 250: }
+[e = _motor2run -> -> 0 `i `uc ]
 [e $U 149  ]
-"251
+"249
 [e :U 148 ]
-[; ;main.c: 251: else
-[; ;main.c: 252: direction2 = 1;
-"252
-[e = _direction2 -> 1 `i ]
+[; ;main.c: 249: else
+[; ;main.c: 250: motor2run = 0xFF;
+"250
+[e = _motor2run -> -> 255 `i `uc ]
 [e :U 149 ]
-[; ;main.c: 254: tmp2 = tmp2 - 45;
+[; ;main.c: 252: if(tmp2 >=60){
+"252
+[e $ ! >= -> _tmp2 `i -> 60 `i 150  ]
+{
+[; ;main.c: 253: tmp2 = tmp2 - 15;
+"253
+[e = _tmp2 -> - -> _tmp2 `i -> 15 `i `uc ]
+[; ;main.c: 254: direction2 = -1;
 "254
-[e = _tmp2 -> - -> _tmp2 `i -> 45 `i `uc ]
-[; ;main.c: 255: motor2 = tmp2;
+[e = _direction2 -U -> 1 `i ]
 "255
+}
+[; ;main.c: 255: }
+[e $U 151  ]
+"256
+[e :U 150 ]
+[; ;main.c: 256: else
+[; ;main.c: 257: direction2 = 1;
+"257
+[e = _direction2 -> 1 `i ]
+[e :U 151 ]
+[; ;main.c: 259: tmp2 = tmp2 - 45;
+"259
+[e = _tmp2 -> - -> _tmp2 `i -> 45 `i `uc ]
+[; ;main.c: 260: motor2 = tmp2;
+"260
 [e = _motor2 _tmp2 ]
-"258
+"263
 }
 [e :U 137 ]
 "213
 [e $U 138  ]
 [e :U 139 ]
-[; ;main.c: 258: }
-[; ;main.c: 259: }
-"259
+[; ;main.c: 263: }
+[; ;main.c: 264: }
+"264
 [e :UE 136 ]
 }

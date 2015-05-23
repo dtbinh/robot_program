@@ -39,7 +39,7 @@ int loop3 = 0;
 
 char counter_uart = 0;
 
-char uart_data[15] = {0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D};
+char uart_data[15] = {0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B};
 
 
 char init_received = 0;
@@ -131,7 +131,7 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
        
     }
  
-PORTC = posArray2[counter2] | posArray3[counter3];
+PORTC = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
 
 
   GIE = 1 ;//Global interrupt enable in ISR
@@ -244,6 +244,11 @@ int main(void){
        
            
       tmp2 =  uart_data[13];
+        if(tmp2 == 75)
+      motor2run = 0x00;
+  else
+      motor2run = 0xFF;
+
       if(tmp2 >=60){
             tmp2 = tmp2 - 15;
             direction2 = -1;

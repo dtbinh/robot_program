@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
   -h+dist/default/production\robot_program.production.sym \
   --cmf=dist/default/production\robot_program.production.cmf -z -Q16F687 \
-  -oC:\Users\Kadir\AppData\Local\Temp\s328.6 \
+  -oC:\Users\Kadir\AppData\Local\Temp\s7a8.6 \
   -Mdist/default/production/robot_program.production.map -E1 -ver=XC8 \
   -ASTACK=048h-06fh -pstack=STACK -ACONST=00h-0FFhx8 -ACODE=00h-07FFh \
   -ASTRCODE=00h-07FFh -AENTRY=00h-0FFhx8 -ASTRING=00h-0FFhx8 \
@@ -16,7 +16,7 @@ Linker command line:
   -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Kadir\AppData\Local\Temp\s328.obj \
+  -DENTRY=2 -k C:\Users\Kadir\AppData\Local\Temp\s7a8.obj \
   dist/default/production\robot_program.production.obj 
 
 Object code version is 3.11
@@ -26,24 +26,24 @@ Machine type is 16F687
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Kadir\AppData\Local\Temp\s328.obj
+C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
                 end_init                             10       10        1        8       0
                 reset_vec                             0        0        1        0       0
                 config                             2007     2007        1     400E       0
 dist/default/production\robot_program.production.obj
                 cinit                                11       11       29        8       0
                 intentry                              4        4        C        8       0
-                text1                                3A       3A       9C        8       0
-                maintext                             D6       D6       9B        8       0
+                text1                                DF       DF       9E        8       0
+                maintext                             3A       3A       A5        8       0
                 cstackBANK0                          47       47        1       20       1
                 cstackCOMMON                         76       76        6       70       1
-                clrtext                             1CB      1CB        8      378       0
+                clrtext                             1D7      1D7        8      390       0
                 dataBANK0                            38       38        F       20       1
                 bssBANK0                             20       20       18       20       1
                 bssCOMMON                            70       70        6       70       1
                 nvCOMMON                             7C       7C        1       70       1
-                strings                             171      171       4B      2E2       0
-                idataBANK0                          1BC      1BC        F      378       0
+                strings                             17D      17D       4B      2FA       0
+                idataBANK0                          1C8      1C8        F      390       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -55,17 +55,17 @@ TOTAL           Name                               Link     Load   Length     Sp
                 cinit                                11       11       29         0
                 intentry                              4        4        C         0
                 reset_vec                             0        0        1         0
-                text1                                3A       3A       9C         0
-                maintext                             D6       D6       9B         0
-                clrtext                             1CB      1CB        8         0
-                idataBANK0                          1BC      1BC        F         0
+                text1                                DF       DF       9E         0
+                maintext                             3A       3A       A5         0
+                clrtext                             1D7      1D7        8         0
+                idataBANK0                          1C8      1C8        F         0
 
         CLASS   STRCODE        
 
         CLASS   ENTRY          
 
         CLASS   STRING         
-                strings                             171      171       4B         0
+                strings                             17D      17D       4B         0
 
         CLASS   COMMON         
                 cstackCOMMON                         76       76        6         1
@@ -108,11 +108,11 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000001  000001         0       0  CODE        2
-                intentry                       000004  00016D  000171         8       0  CODE        2
+                intentry                       000004  000179  00017D         8       0  CODE        2
                 bssBANK0                       000020  000028  000048        20       1  BANK0       1
                 bssCOMMON                      000070  00000D  00007D        70       1  COMMON      1
-                strings                        000171  00004B  0001BC       2E2       0  STRING      2
-                idataBANK0                     0001BC  000017  0001D3       378       0  CODE        2
+                strings                        00017D  00004B  0001C8       2FA       0  STRING      2
+                idataBANK0                     0001C8  000017  0001DF       390       0  CODE        2
                 config                         002007  000001  002008      400E       0  CONFIG      2
 
 
@@ -122,13 +122,13 @@ UNUSED ADDRESS RANGES
         BANK0            0048-006F             28           1
         BANK1            00A0-00BF             20           1
         CODE             0001-0003              3           2
-                         01D3-07FF            62D
+                         01DF-07FF            621
         COMMON           007D-007D              1           1
         CONST            0001-0003              3           2
-                         01D3-07FF            100
+                         01DF-07FF            100
         EEDATA           2100-21FF            100           2
         ENTRY            0001-0003              3           2
-                         01D3-07FF            100
+                         01DF-07FF            100
         IDLOC            2000-2003              4           2
         RAM              0048-006F             28           1
                          00A0-00BF             20
@@ -138,9 +138,9 @@ UNUSED ADDRESS RANGES
         SFR3             0180-01EF             70           1
         STACK            0048-006F             28           1
         STRCODE          0001-0003              3           2
-                         01D3-07FF            62D
+                         01DF-07FF            621
         STRING           0001-0003              3           2
-                         01D3-07FF            100
+                         01DF-07FF            100
 
                                   Symbol Table
 
@@ -274,31 +274,31 @@ ___int_sp                  stack        0000
 ___latbits                 (abs)        0000
 ___sp                      stack        0000
 __end_of__initialization   cinit        0038
-__end_of__stringtab        strings      0177
-__end_of_global_interrupt  text1        00D6
-__end_of_main              maintext     0171
-__end_of_motor1Array       strings      0186
-__end_of_motor2_1Array     strings      0195
-__end_of_motor2_2Array     strings      01A4
-__end_of_posArray1         strings      01AC
-__end_of_posArray2         strings      01B4
-__end_of_posArray3         strings      01BC
+__end_of__stringtab        strings      0183
+__end_of_global_interrupt  text1        017D
+__end_of_main              maintext     00DF
+__end_of_motor1Array       strings      0192
+__end_of_motor2_1Array     strings      01A1
+__end_of_motor2_2Array     strings      01B0
+__end_of_posArray1         strings      01B8
+__end_of_posArray2         strings      01C0
+__end_of_posArray3         strings      01C8
 __initialization           cinit        0011
 __pbssBANK0                bssBANK0     0020
 __pbssCOMMON               bssCOMMON    0070
 __pcstackBANK0             cstackBANK0  0047
 __pcstackCOMMON            cstackCOMMON 0076
 __pdataBANK0               dataBANK0    0038
-__pidataBANK0              idataBANK0   01BC
+__pidataBANK0              idataBANK0   01C8
 __pintentry                intentry     0004
-__pmaintext                maintext     00D6
+__pmaintext                maintext     003A
 __pnvCOMMON                nvCOMMON     007C
-__pstrings                 strings      0171
-__ptext1                   text1        003A
+__pstrings                 strings      017D
+__ptext1                   text1        00DF
 __size_of_global_interrupt (abs)        0000
 __size_of_main             (abs)        0000
-__stringbase               strings      0176
-__stringtab                strings      0171
+__stringbase               strings      0182
+__stringtab                strings      017D
 _counter1                  bssBANK0     0020
 _counter2                  bssBANK0     0022
 _counter3                  bssBANK0     0024
@@ -306,25 +306,25 @@ _counter_uart              bssCOMMON    0070
 _direction1                bssBANK0     0026
 _direction2                bssBANK0     0028
 _direction3                bssBANK0     002A
-_global_interrupt          text1        003A
+_global_interrupt          text1        00DF
 _incremental1              bssBANK0     0030
 _incremental3              bssBANK0     0031
 _init_received             bssBANK0     0032
 _loop1                     bssBANK0     002C
 _loop3                     bssBANK0     002E
-_main                      maintext     00D6
+_main                      maintext     003A
 _motor1                    bssCOMMON    0071
-_motor1Array               strings      0177
+_motor1Array               strings      0183
 _motor1run                 bssCOMMON    0072
 _motor2                    bssCOMMON    0073
-_motor2_1Array             strings      0186
-_motor2_2Array             strings      0195
+_motor2_1Array             strings      0192
+_motor2_2Array             strings      01A1
 _motor2run                 bssBANK0     0033
 _motor3                    bssBANK0     0034
 _motor3run                 bssBANK0     0035
-_posArray1                 strings      01A4
-_posArray2                 strings      01AC
-_posArray3                 strings      01B4
+_posArray1                 strings      01B0
+_posArray2                 strings      01B8
+_posArray3                 strings      01C0
 _tmp1                      nvCOMMON     007C
 _tmp2                      bssCOMMON    0074
 _tmp3                      bssBANK0     0036
@@ -332,7 +332,7 @@ _tmp_data                  bssCOMMON    0075
 _tmp_data2                 bssBANK0     0037
 _uart_data                 dataBANK0    0038
 btemp                      (abs)        007E
-clear_ram0                 clrtext      01CB
+clear_ram0                 clrtext      01D7
 end_of_initialization      cinit        0038
 interrupt_function         intentry     0004
 intlevel0                  functab      0000
@@ -433,20 +433,20 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 shared
-		__stringtab    		STRING         	0171	0000	6
-		_motor1Array   		STRING         	0177	0000	15
-		_motor2_1Array 		STRING         	0186	0000	15
-		_motor2_2Array 		STRING         	0195	0000	15
+		__stringtab    		STRING         	017D	0000	6
+		_motor1Array   		STRING         	0183	0000	15
+		_motor2_1Array 		STRING         	0192	0000	15
+		_motor2_2Array 		STRING         	01A1	0000	15
 		__initializatio		CODE           	0011	0000	39
-		_posArray1     		STRING         	01A4	0000	8
-		_posArray2     		STRING         	01AC	0000	8
-		_posArray3     		STRING         	01B4	0000	8
+		_posArray1     		STRING         	01B0	0000	8
+		_posArray2     		STRING         	01B8	0000	8
+		_posArray3     		STRING         	01C0	0000	8
 
 shared estimated size: 114
 
 main.c
-		_global_interru		CODE           	003A	0000	156
-		_main          		CODE           	00D6	0000	155
+		_global_interru		CODE           	00DF	0000	158
+		_main          		CODE           	003A	0000	165
 
-main.c estimated size: 311
+main.c estimated size: 323
 
