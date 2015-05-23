@@ -1,0 +1,278 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F687 ]
+[d frameptr 6 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"56 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
+[v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
+"152
+[v _main main `(i  1 e 2 0 ]
+"53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f687.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"158
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"475
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+[s S31 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1GE 1 0 :1:6 
+`uc 1 T1GINV 1 0 :1:7 
+]
+"502
+[s S39 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[u S43 . 1 `S31 1 . 1 0 `S39 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES43  1 e 1 @16 ]
+"693
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"799
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"868
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"917
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"955
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1144
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"1208
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @144 ]
+"2002
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2063
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
+"2227
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2233
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"2559
+[v _ANSEL ANSEL `VEuc  1 e 1 @286 ]
+"2620
+[v _ANSELH ANSELH `VEuc  1 e 1 @287 ]
+"2657
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+"2694
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"2827
+[v _BRG16 BRG16 `VEb  1 e 0 @1243 ]
+"2845
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2893
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"2907
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2923
+[v _FERR FERR `VEb  1 e 0 @194 ]
+"2925
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3011
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"3019
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"3075
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
+"3077
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"3079
+[v _RD RD `VEb  1 e 0 @3168 ]
+"3107
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"3133
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"3137
+[v _T0IE T0IE `VEb  1 e 0 @93 ]
+"3139
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+"3155
+[v _T1OSCEN T1OSCEN `VEb  1 e 0 @131 ]
+"3157
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"3159
+[v _TMR1GE TMR1GE `VEb  1 e 0 @134 ]
+"3165
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"3281
+[v _WR WR `VEb  1 e 0 @3169 ]
+"3283
+[v _WREN WREN `VEb  1 e 0 @3170 ]
+"4 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
+[v _posArray1 posArray1 `DCC[8]uc  1 e 8 0 ]
+"5
+[v _posArray2 posArray2 `DCC[8]uc  1 e 8 0 ]
+"6
+[v _posArray3 posArray3 `DCC[8]uc  1 e 8 0 ]
+"8
+[v _motor1Array motor1Array `DCC[15]uc  1 e 15 0 ]
+"11
+[v _motor2_1Array motor2_1Array `DCC[15]uc  1 e 15 0 ]
+"12
+[v _motor2_2Array motor2_2Array `DCC[15]uc  1 e 15 0 ]
+"16
+[v _counter1 counter1 `i  1 e 2 0 ]
+"17
+[v _counter2 counter2 `i  1 e 2 0 ]
+"18
+[v _counter3 counter3 `i  1 e 2 0 ]
+"20
+[v _motor1 motor1 `uc  1 e 1 0 ]
+"21
+[v _motor2 motor2 `uc  1 e 1 0 ]
+"22
+[v _motor3 motor3 `uc  1 e 1 0 ]
+"23
+[v _tmp1 tmp1 `uc  1 e 1 0 ]
+"24
+[v _tmp2 tmp2 `uc  1 e 1 0 ]
+"25
+[v _tmp3 tmp3 `uc  1 e 1 0 ]
+"27
+[v _motor1stop motor1stop `uc  1 e 1 0 ]
+"28
+[v _motor2stop motor2stop `uc  1 e 1 0 ]
+"29
+[v _motor3stop motor3stop `uc  1 e 1 0 ]
+"31
+[v _incremental1 incremental1 `uc  1 e 1 0 ]
+"32
+[v _incremental3 incremental3 `uc  1 e 1 0 ]
+"33
+[v _direction1 direction1 `i  1 e 2 0 ]
+"34
+[v _direction2 direction2 `i  1 e 2 0 ]
+"35
+[v _direction3 direction3 `i  1 e 2 0 ]
+"36
+[v _loop1 loop1 `i  1 e 2 0 ]
+"37
+[v _loop3 loop3 `i  1 e 2 0 ]
+"40
+[v _counter_uart counter_uart `uc  1 e 1 0 ]
+"43
+[v _motor1_data motor1_data `uc  1 e 1 0 ]
+"44
+[v _motor2_data motor2_data `uc  1 e 1 0 ]
+"45
+[v _motor3_data motor3_data `uc  1 e 1 0 ]
+"46
+[v _motor_data motor_data `[3]uc  1 e 3 0 ]
+"51
+[v _init_received init_received `uc  1 e 1 0 ]
+"53
+[v _tmp_data tmp_data `uc  1 e 1 0 ]
+"54
+[v _tmp_data2 tmp_data2 `uc  1 e 1 0 ]
+"152
+[v _main main `(i  1 e 2 0 ]
+{
+"261
+} 0
+"56
+[v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
+{
+"150
+} 0

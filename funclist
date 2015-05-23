@@ -1,0 +1,11 @@
+_global_interrupt: CODE, 238 0 63
+__stringtab: STRING, 163 0 6
+_main: CODE, 46 0 117
+_motor1Array: STRING, 169 0 15
+_motor2_1Array: STRING, 184 0 15
+_motor2_2Array: STRING, 199 0 15
+__initialization: CODE, 17 0 27
+_posArray1: STRING, 214 0 8
+_posArray2: STRING, 222 0 8
+_posArray3: STRING, 230 0 8
+Total: 282
