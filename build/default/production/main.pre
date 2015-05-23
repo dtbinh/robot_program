@@ -1738,7 +1738,7 @@ GIE = 1;
 return;
 }
 
-if(motor1_data != tmp_data)
+
 motor1_data = tmp_data;
 
 
@@ -1760,16 +1760,28 @@ return;
 if(T0IF){
 T0IF = 0;
 
-# 106
+
+if(loop1 == 2){
+loop1 = 1;
+TMR0 = 0;
+}
+else if(loop1 == 1){
+loop1 = 0;
+TMR0 = 0;
+}
+else{
 TMR0 = motor1Array[motor1];
 
+loop1 = incremental1;
+counter1 += direction1;
 
-
-counter1 += 1;
 if(counter1 == 8)
 counter1 = 0;
+else if(counter1 < 0)
+counter1 = 8;
+PORTA = posArray1[counter1];
 
-# 118
+}
 GIE = 1 ;
 return;
 

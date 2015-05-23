@@ -13,6 +13,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _T0IF `Vb ~T0 @X0 0 e@90 ]
 "53
 [v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+"158
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
 [p mainexit ]
 "1144
 [v _OSCCON `Vuc ~T0 @X0 0 e@143 ]
@@ -69,8 +71,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ANSEL `Vuc ~T0 @X0 0 e@286 ]
 "2620
 [v _ANSELH `Vuc ~T0 @X0 0 e@287 ]
-"158
-[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
 "3019
 [v _PEIE `Vb ~T0 @X0 0 e@94 ]
 [; ;math.h: 3: extern double fabs(double);
@@ -1603,20 +1603,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 121 ]
 [; ;main.c: 72: }
-[; ;main.c: 74: if(motor1_data != tmp_data)
-"74
-[e $ ! != -> _motor1_data `i -> _tmp_data `i 122  ]
 [; ;main.c: 75: motor1_data = tmp_data;
 "75
 [e = _motor1_data _tmp_data ]
-[e :U 122 ]
 [; ;main.c: 78: tmp_data = 0;
 "78
 [e = _tmp_data -> -> 0 `i `uc ]
 "81
 }
 [; ;main.c: 81: }
-[e $U 123  ]
+[e $U 122  ]
 "82
 [e :U 120 ]
 [; ;main.c: 82: else{
@@ -1629,7 +1625,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _counter_uart -> -> 0 `i `uc ]
 "86
 }
-[e :U 123 ]
+[e :U 122 ]
 [; ;main.c: 86: }
 [; ;main.c: 87: GIE = 1;
 "87
@@ -1643,24 +1639,77 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 90: }
 [; ;main.c: 93: if(T0IF){
 "93
-[e $ ! _T0IF 124  ]
+[e $ ! _T0IF 123  ]
 {
 [; ;main.c: 94: T0IF = 0;
 "94
 [e = _T0IF -> -> 0 `i `b ]
+[; ;main.c: 97: if(loop1 == 2){
+"97
+[e $ ! == _loop1 -> 2 `i 124  ]
+{
+[; ;main.c: 98: loop1 = 1;
+"98
+[e = _loop1 -> 1 `i ]
+[; ;main.c: 99: TMR0 = 0;
+"99
+[e = _TMR0 -> -> 0 `i `uc ]
+"100
+}
+[; ;main.c: 100: }
+[e $U 125  ]
+"101
+[e :U 124 ]
+[; ;main.c: 101: else if(loop1 == 1){
+[e $ ! == _loop1 -> 1 `i 126  ]
+{
+[; ;main.c: 102: loop1 = 0;
+"102
+[e = _loop1 -> 0 `i ]
+[; ;main.c: 103: TMR0 = 0;
+"103
+[e = _TMR0 -> -> 0 `i `uc ]
+"104
+}
+[; ;main.c: 104: }
+[e $U 127  ]
+"105
+[e :U 126 ]
+[; ;main.c: 105: else{
+{
 [; ;main.c: 106: TMR0 = motor1Array[motor1];
 "106
 [e = _TMR0 *U + &U _motor1Array * -> _motor1 `ux -> -> # *U &U _motor1Array `ui `ux ]
-[; ;main.c: 110: counter1 += 1;
-"110
-[e =+ _counter1 -> 1 `i ]
+[; ;main.c: 108: loop1 = incremental1;
+"108
+[e = _loop1 -> _incremental1 `i ]
+[; ;main.c: 109: counter1 += direction1;
+"109
+[e =+ _counter1 _direction1 ]
 [; ;main.c: 111: if(counter1 == 8)
 "111
-[e $ ! == _counter1 -> 8 `i 125  ]
+[e $ ! == _counter1 -> 8 `i 128  ]
 [; ;main.c: 112: counter1 = 0;
 "112
 [e = _counter1 -> 0 `i ]
+[e $U 129  ]
+"113
+[e :U 128 ]
+[; ;main.c: 113: else if(counter1 < 0)
+[e $ ! < _counter1 -> 0 `i 130  ]
+[; ;main.c: 114: counter1 = 8;
+"114
+[e = _counter1 -> 8 `i ]
+[e :U 130 ]
+"115
+[e :U 129 ]
+[; ;main.c: 115: PORTA = posArray1[counter1];
+[e = _PORTA *U + &U _posArray1 * -> -> _counter1 `ui `ux -> -> # *U &U _posArray1 `ui `ux ]
+"117
+}
+[e :U 127 ]
 [e :U 125 ]
+[; ;main.c: 117: }
 [; ;main.c: 118: GIE = 1 ;
 "118
 [e = _GIE -> -> 1 `i `b ]
@@ -1669,7 +1718,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $UE 118  ]
 "121
 }
-[e :U 124 ]
+[e :U 123 ]
 [; ;main.c: 121: }
 [; ;main.c: 150: }
 "150
@@ -1776,7 +1825,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _GIE -> -> 1 `i `b ]
 [; ;main.c: 221: while(1){
 "221
-[e :U 128 ]
+[e :U 133 ]
 {
 [; ;main.c: 223: PORTA = posArray1[counter1];
 "223
@@ -1786,7 +1835,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _tmp1 _motor1_data ]
 [; ;main.c: 228: if(tmp1 >=60){
 "228
-[e $ ! >= -> _tmp1 `i -> 60 `i 130  ]
+[e $ ! >= -> _tmp1 `i -> 60 `i 135  ]
 {
 [; ;main.c: 229: tmp1 = tmp1 - 15;
 "229
@@ -1797,51 +1846,51 @@ Version 3.2 HI-TECH Software Intermediate Code
 "231
 }
 [; ;main.c: 231: }
-[e $U 131  ]
+[e $U 136  ]
 "232
-[e :U 130 ]
+[e :U 135 ]
 [; ;main.c: 232: else
 [; ;main.c: 233: direction1 = 1;
 "233
 [e = _direction1 -> 1 `i ]
-[e :U 131 ]
+[e :U 136 ]
 [; ;main.c: 235: tmp1 = tmp1 - 45;
 "235
 [e = _tmp1 -> - -> _tmp1 `i -> 45 `i `uc ]
 [; ;main.c: 236: if(tmp1 == 0)
 "236
-[e $ ! == -> _tmp1 `i -> 0 `i 132  ]
+[e $ ! == -> _tmp1 `i -> 0 `i 137  ]
 [; ;main.c: 237: incremental1 = 2;
 "237
 [e = _incremental1 -> -> 2 `i `uc ]
-[e $U 133  ]
+[e $U 138  ]
 "238
-[e :U 132 ]
+[e :U 137 ]
 [; ;main.c: 238: else if(tmp1 == 1)
-[e $ ! == -> _tmp1 `i -> 1 `i 134  ]
+[e $ ! == -> _tmp1 `i -> 1 `i 139  ]
 [; ;main.c: 239: incremental1 = 1;
 "239
 [e = _incremental1 -> -> 1 `i `uc ]
-[e $U 135  ]
+[e $U 140  ]
 "240
-[e :U 134 ]
+[e :U 139 ]
 [; ;main.c: 240: else
 [; ;main.c: 241: incremental1 = 0;
 "241
 [e = _incremental1 -> -> 0 `i `uc ]
-[e :U 135 ]
-[e :U 133 ]
+[e :U 140 ]
+[e :U 138 ]
 [; ;main.c: 243: motor1 = tmp1;
 "243
 [e = _motor1 _tmp1 ]
 "260
 }
-[e :U 127 ]
+[e :U 132 ]
 "221
-[e $U 128  ]
-[e :U 129 ]
+[e $U 133  ]
+[e :U 134 ]
 [; ;main.c: 260: }
 [; ;main.c: 261: }
 "261
-[e :UE 126 ]
+[e :UE 131 ]
 }

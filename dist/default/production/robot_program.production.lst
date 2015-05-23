@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.33 build 59893 
-                                                                                               Sat May 23 23:01:13 2015
+                                                                                               Sat May 23 23:16:24 2015
 
 Microchip Technology Omniscient Code Generator (Lite mode) build 59893
      1                           	processor	16F687
@@ -86,131 +86,131 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
     80  019E                     	;# 
     81                           
     82                           	psect	idataCOMMON
-    83  013D                     __pidataCOMMON:	
+    83  015F                     __pidataCOMMON:	
     84                           
     85                           ;initializer for _motor1_data
-    86  013D  342D               	retlw	45
+    86  015F  342D               	retlw	45
     87                           
     88                           	psect	idataBANK0
-    89  012D                     __pidataBANK0:	
+    89  014F                     __pidataBANK0:	
     90                           
     91                           ;initializer for _motor_data
-    92  012D  342D               	retlw	45
-    93  012E  342D               	retlw	45
-    94  012F  342D               	retlw	45
+    92  014F  342D               	retlw	45
+    93  0150  342D               	retlw	45
+    94  0151  342D               	retlw	45
     95                           
     96                           ;initializer for _motor1stop
-    97  0130  3401               	retlw	1
+    97  0152  3401               	retlw	1
     98                           
     99                           ;initializer for _motor2_data
-   100  0131  342D               	retlw	45
+   100  0153  342D               	retlw	45
    101                           
    102                           ;initializer for _motor2stop
-   103  0132  3401               	retlw	1
+   103  0154  3401               	retlw	1
    104                           
    105                           ;initializer for _motor3_data
-   106  0133  342D               	retlw	45
+   106  0155  342D               	retlw	45
    107                           
    108                           ;initializer for _motor3stop
-   109  0134  3401               	retlw	1
+   109  0156  3401               	retlw	1
    110                           
    111                           	psect	strings
-   112  00A3                     __pstrings:	
-   113  00A3                     stringtab:	
-   114  00A3                     __stringtab:	
-   115  00A3                     stringcode:	
+   112  0104                     __pstrings:	
+   113  0104                     stringtab:	
+   114  0104                     __stringtab:	
+   115  0104                     stringcode:	
    116                           ;	String table - string pointers are 1 byte each
    117                           
-   118  00A3                     stringdir:	
-   119  00A3  3000               	movlw	high stringdir
-   120  00A4  008A               	movwf	10
-   121  00A5  0804               	movf	4,w
-   122  00A6  0A84               	incf	4,f
-   123  00A7  0782               	addwf	2,f
-   124  00A8                     __stringbase:	
-   125  00A8  3400               	retlw	0
-   126  00A9                     __end_of__stringtab:	
-   127  00A9                     _motor1Array:	
-   128  00A9  340F               	retlw	15
-   129  00AA  3487               	retlw	135
-   130  00AB  3405               	retlw	5
-   131  00AC  3443               	retlw	67
-   132  00AD  3469               	retlw	105
-   133  00AE  3482               	retlw	130
-   134  00AF  3494               	retlw	148
-   135  00B0  34A1               	retlw	161
-   136  00B1  34AC               	retlw	172
-   137  00B2  34B4               	retlw	180
-   138  00B3  34BB               	retlw	187
-   139  00B4  34C0               	retlw	192
-   140  00B5  34C5               	retlw	197
-   141  00B6  34C9               	retlw	201
-   142  00B7  34CD               	retlw	205
-   143  00B8                     __end_of_motor1Array:	
-   144  00B8                     _motor2_1Array:	
-   145  00B8  34A2               	retlw	162
-   146  00B9  34D1               	retlw	209
-   147  00BA  34E0               	retlw	224
-   148  00BB  34E8               	retlw	232
-   149  00BC  34ED               	retlw	237
-   150  00BD  34F0               	retlw	240
-   151  00BE  34F2               	retlw	242
-   152  00BF  34F4               	retlw	244
-   153  00C0  34F5               	retlw	245
-   154  00C1  34F6               	retlw	246
-   155  00C2  34F7               	retlw	247
-   156  00C3  34F8               	retlw	248
-   157  00C4  34F8               	retlw	248
-   158  00C5  34F9               	retlw	249
-   159  00C6  34F9               	retlw	249
-   160  00C7                     __end_of_motor2_1Array:	
-   161  00C7                     _motor2_2Array:	
-   162  00C7  343F               	retlw	63
-   163  00C8  341F               	retlw	31
-   164  00C9  34BF               	retlw	191
-   165  00CA  348F               	retlw	143
-   166  00CB  343F               	retlw	63
-   167  00CC  345F               	retlw	95
-   168  00CD  349A               	retlw	154
-   169  00CE  3447               	retlw	71
-   170  00CF  3494               	retlw	148
-   171  00D0  349F               	retlw	159
-   172  00D1  3479               	retlw	121
-   173  00D2  342F               	retlw	47
-   174  00D3  34C9               	retlw	201
-   175  00D4  344D               	retlw	77
-   176  00D5  34BF               	retlw	191
-   177  00D6                     __end_of_motor2_2Array:	
-   178  00D6                     _posArray1:	
-   179  00D6  3411               	retlw	17
-   180  00D7  3401               	retlw	1
-   181  00D8  3403               	retlw	3
-   182  00D9  3402               	retlw	2
-   183  00DA  3406               	retlw	6
-   184  00DB  3404               	retlw	4
-   185  00DC  3414               	retlw	20
-   186  00DD  3410               	retlw	16
-   187  00DE                     __end_of_posArray1:	
-   188  00DE                     _posArray2:	
-   189  00DE  3409               	retlw	9
-   190  00DF  3401               	retlw	1
-   191  00E0  3403               	retlw	3
-   192  00E1  3402               	retlw	2
-   193  00E2  3406               	retlw	6
-   194  00E3  3404               	retlw	4
-   195  00E4  340C               	retlw	12
-   196  00E5  3408               	retlw	8
-   197  00E6                     __end_of_posArray2:	
-   198  00E6                     _posArray3:	
-   199  00E6  3490               	retlw	144
-   200  00E7  3410               	retlw	16
-   201  00E8  3430               	retlw	48
-   202  00E9  3420               	retlw	32
-   203  00EA  3460               	retlw	96
-   204  00EB  3440               	retlw	64
-   205  00EC  34C0               	retlw	192
-   206  00ED  3480               	retlw	128
-   207  00EE                     __end_of_posArray3:	
+   118  0104                     stringdir:	
+   119  0104  3001               	movlw	high stringdir
+   120  0105  008A               	movwf	10
+   121  0106  0804               	movf	4,w
+   122  0107  0A84               	incf	4,f
+   123  0108  0782               	addwf	2,f
+   124  0109                     __stringbase:	
+   125  0109  3400               	retlw	0
+   126  010A                     __end_of__stringtab:	
+   127  010A                     _motor1Array:	
+   128  010A  340F               	retlw	15
+   129  010B  3487               	retlw	135
+   130  010C  3405               	retlw	5
+   131  010D  3443               	retlw	67
+   132  010E  3469               	retlw	105
+   133  010F  3482               	retlw	130
+   134  0110  3494               	retlw	148
+   135  0111  34A1               	retlw	161
+   136  0112  34AC               	retlw	172
+   137  0113  34B4               	retlw	180
+   138  0114  34BB               	retlw	187
+   139  0115  34C0               	retlw	192
+   140  0116  34C5               	retlw	197
+   141  0117  34C9               	retlw	201
+   142  0118  34CD               	retlw	205
+   143  0119                     __end_of_motor1Array:	
+   144  0119                     _motor2_1Array:	
+   145  0119  34A2               	retlw	162
+   146  011A  34D1               	retlw	209
+   147  011B  34E0               	retlw	224
+   148  011C  34E8               	retlw	232
+   149  011D  34ED               	retlw	237
+   150  011E  34F0               	retlw	240
+   151  011F  34F2               	retlw	242
+   152  0120  34F4               	retlw	244
+   153  0121  34F5               	retlw	245
+   154  0122  34F6               	retlw	246
+   155  0123  34F7               	retlw	247
+   156  0124  34F8               	retlw	248
+   157  0125  34F8               	retlw	248
+   158  0126  34F9               	retlw	249
+   159  0127  34F9               	retlw	249
+   160  0128                     __end_of_motor2_1Array:	
+   161  0128                     _motor2_2Array:	
+   162  0128  343F               	retlw	63
+   163  0129  341F               	retlw	31
+   164  012A  34BF               	retlw	191
+   165  012B  348F               	retlw	143
+   166  012C  343F               	retlw	63
+   167  012D  345F               	retlw	95
+   168  012E  349A               	retlw	154
+   169  012F  3447               	retlw	71
+   170  0130  3494               	retlw	148
+   171  0131  349F               	retlw	159
+   172  0132  3479               	retlw	121
+   173  0133  342F               	retlw	47
+   174  0134  34C9               	retlw	201
+   175  0135  344D               	retlw	77
+   176  0136  34BF               	retlw	191
+   177  0137                     __end_of_motor2_2Array:	
+   178  0137                     _posArray1:	
+   179  0137  3411               	retlw	17
+   180  0138  3401               	retlw	1
+   181  0139  3403               	retlw	3
+   182  013A  3402               	retlw	2
+   183  013B  3406               	retlw	6
+   184  013C  3404               	retlw	4
+   185  013D  3414               	retlw	20
+   186  013E  3410               	retlw	16
+   187  013F                     __end_of_posArray1:	
+   188  013F                     _posArray2:	
+   189  013F  3409               	retlw	9
+   190  0140  3401               	retlw	1
+   191  0141  3403               	retlw	3
+   192  0142  3402               	retlw	2
+   193  0143  3406               	retlw	6
+   194  0144  3404               	retlw	4
+   195  0145  340C               	retlw	12
+   196  0146  3408               	retlw	8
+   197  0147                     __end_of_posArray2:	
+   198  0147                     _posArray3:	
+   199  0147  3490               	retlw	144
+   200  0148  3410               	retlw	16
+   201  0149  3430               	retlw	48
+   202  014A  3420               	retlw	32
+   203  014B  3460               	retlw	96
+   204  014C  3440               	retlw	64
+   205  014D  34C0               	retlw	192
+   206  014E  3480               	retlw	128
+   207  014F                     __end_of_posArray3:	
    208                           
    209                           	psect	nvCOMMON
    210  007B                     __pnvCOMMON:	
@@ -256,38 +256,38 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    250  0011                     __initialization:	
    251                           
    252                           ; Clear objects allocated to COMMON
-   253  0011  3070               	movlw	low __pbssCOMMON
+   253  0011  3076               	movlw	low __pbssCOMMON
    254  0012  0084               	movwf	4
-   255  0013  3076               	movlw	low (__pbssCOMMON+6)
-   256  0014  2135               	fcall	clear_ram0
+   255  0013  307B               	movlw	low (__pbssCOMMON+5)
+   256  0014  2157               	fcall	clear_ram0
    257                           
    258                           ; Clear objects allocated to BANK0
    259  0015  1383               	bcf	3,7	;select IRP bank0
    260  0016  3020               	movlw	low __pbssBANK0
    261  0017  0084               	movwf	4
-   262  0018  3035               	movlw	low (__pbssBANK0+21)
-   263  0019  2135               	fcall	clear_ram0
+   262  0018  3036               	movlw	low (__pbssBANK0+22)
+   263  0019  2157               	fcall	clear_ram0
    264                           
    265                           ; Initialize objects allocated to BANK0
-   266  001A  212D               	fcall	__pidataBANK0	;fetch initializer
-   267  001B  00B5               	movwf	__pdataBANK0& (0+127)
-   268  001C  212E               	fcall	__pidataBANK0+1	;fetch initializer
-   269  001D  00B6               	movwf	(__pdataBANK0+1)& (0+127)
-   270  001E  212F               	fcall	__pidataBANK0+2	;fetch initializer
-   271  001F  00B7               	movwf	(__pdataBANK0+2)& (0+127)
-   272  0020  2130               	fcall	__pidataBANK0+3	;fetch initializer
-   273  0021  00B8               	movwf	(__pdataBANK0+3)& (0+127)
-   274  0022  2131               	fcall	__pidataBANK0+4	;fetch initializer
-   275  0023  00B9               	movwf	(__pdataBANK0+4)& (0+127)
-   276  0024  2132               	fcall	__pidataBANK0+5	;fetch initializer
-   277  0025  00BA               	movwf	(__pdataBANK0+5)& (0+127)
-   278  0026  2133               	fcall	__pidataBANK0+6	;fetch initializer
-   279  0027  00BB               	movwf	(__pdataBANK0+6)& (0+127)
-   280  0028  2134               	fcall	__pidataBANK0+7	;fetch initializer
-   281  0029  00BC               	movwf	(__pdataBANK0+7)& (0+127)
+   266  001A  214F               	fcall	__pidataBANK0	;fetch initializer
+   267  001B  00B6               	movwf	__pdataBANK0& (0+127)
+   268  001C  2150               	fcall	__pidataBANK0+1	;fetch initializer
+   269  001D  00B7               	movwf	(__pdataBANK0+1)& (0+127)
+   270  001E  2151               	fcall	__pidataBANK0+2	;fetch initializer
+   271  001F  00B8               	movwf	(__pdataBANK0+2)& (0+127)
+   272  0020  2152               	fcall	__pidataBANK0+3	;fetch initializer
+   273  0021  00B9               	movwf	(__pdataBANK0+3)& (0+127)
+   274  0022  2153               	fcall	__pidataBANK0+4	;fetch initializer
+   275  0023  00BA               	movwf	(__pdataBANK0+4)& (0+127)
+   276  0024  2154               	fcall	__pidataBANK0+5	;fetch initializer
+   277  0025  00BB               	movwf	(__pdataBANK0+5)& (0+127)
+   278  0026  2155               	fcall	__pidataBANK0+6	;fetch initializer
+   279  0027  00BC               	movwf	(__pdataBANK0+6)& (0+127)
+   280  0028  2156               	fcall	__pidataBANK0+7	;fetch initializer
+   281  0029  00BD               	movwf	(__pdataBANK0+7)& (0+127)
    282                           
    283                           ; Initialize objects allocated to COMMON
-   284  002A  213D               	fcall	__pidataCOMMON	;fetch initializer
+   284  002A  215F               	fcall	__pidataCOMMON	;fetch initializer
    285  002B  00FC               	movwf	__pdataCOMMON& (0+127)
    286  002C                     end_of_initialization:	
    287                           ;End of C runtime variable initialization code
@@ -297,103 +297,103 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    291  002D  282E               	ljmp	_main	;jump to C main() function
    292                           
    293                           	psect	bssCOMMON
-   294  0070                     __pbssCOMMON:	
-   295  0070                     _motor1:	
-   296  0070                     	ds	1
-   297  0071                     _motor2:	
-   298  0071                     	ds	1
-   299  0072                     _motor3:	
-   300  0072                     	ds	1
-   301  0073                     _tmp2:	
-   302  0073                     	ds	1
-   303  0074                     _tmp3:	
-   304  0074                     	ds	1
-   305  0075                     _tmp_data:	
-   306  0075                     	ds	1
-   307                           
-   308                           	psect	dataCOMMON
-   309  007C                     __pdataCOMMON:	
-   310  007C                     _motor1_data:	
-   311  007C                     	ds	1
-   312                           
-   313                           	psect	bssBANK0
-   314  0020                     __pbssBANK0:	
-   315  0020                     _counter1:	
-   316  0020                     	ds	2
-   317  0022                     _counter2:	
-   318  0022                     	ds	2
-   319  0024                     _counter3:	
-   320  0024                     	ds	2
-   321  0026                     _direction1:	
-   322  0026                     	ds	2
-   323  0028                     _direction2:	
-   324  0028                     	ds	2
-   325  002A                     _direction3:	
-   326  002A                     	ds	2
-   327  002C                     _loop1:	
-   328  002C                     	ds	2
-   329  002E                     _loop3:	
-   330  002E                     	ds	2
-   331  0030                     _counter_uart:	
-   332  0030                     	ds	1
-   333  0031                     _incremental1:	
-   334  0031                     	ds	1
-   335  0032                     _incremental3:	
-   336  0032                     	ds	1
-   337  0033                     _init_received:	
-   338  0033                     	ds	1
-   339  0034                     _tmp_data2:	
-   340  0034                     	ds	1
+   294  0076                     __pbssCOMMON:	
+   295  0076                     _counter1:	
+   296  0076                     	ds	2
+   297  0078                     _incremental1:	
+   298  0078                     	ds	1
+   299  0079                     _motor1:	
+   300  0079                     	ds	1
+   301  007A                     _tmp_data:	
+   302  007A                     	ds	1
+   303                           
+   304                           	psect	dataCOMMON
+   305  007C                     __pdataCOMMON:	
+   306  007C                     _motor1_data:	
+   307  007C                     	ds	1
+   308                           
+   309                           	psect	bssBANK0
+   310  0020                     __pbssBANK0:	
+   311  0020                     _counter2:	
+   312  0020                     	ds	2
+   313  0022                     _counter3:	
+   314  0022                     	ds	2
+   315  0024                     _direction1:	
+   316  0024                     	ds	2
+   317  0026                     _direction2:	
+   318  0026                     	ds	2
+   319  0028                     _direction3:	
+   320  0028                     	ds	2
+   321  002A                     _loop1:	
+   322  002A                     	ds	2
+   323  002C                     _loop3:	
+   324  002C                     	ds	2
+   325  002E                     _counter_uart:	
+   326  002E                     	ds	1
+   327  002F                     _incremental3:	
+   328  002F                     	ds	1
+   329  0030                     _init_received:	
+   330  0030                     	ds	1
+   331  0031                     _motor2:	
+   332  0031                     	ds	1
+   333  0032                     _motor3:	
+   334  0032                     	ds	1
+   335  0033                     _tmp2:	
+   336  0033                     	ds	1
+   337  0034                     _tmp3:	
+   338  0034                     	ds	1
+   339  0035                     _tmp_data2:	
+   340  0035                     	ds	1
    341                           
    342                           	psect	dataBANK0
-   343  0035                     __pdataBANK0:	
-   344  0035                     _motor_data:	
-   345  0035                     	ds	3
-   346  0038                     _motor1stop:	
-   347  0038                     	ds	1
-   348  0039                     _motor2_data:	
-   349  0039                     	ds	1
-   350  003A                     _motor2stop:	
-   351  003A                     	ds	1
-   352  003B                     _motor3_data:	
-   353  003B                     	ds	1
-   354  003C                     _motor3stop:	
-   355  003C                     	ds	1
+   343  0036                     __pdataBANK0:	
+   344  0036                     _motor_data:	
+   345  0036                     	ds	3
+   346  0039                     _motor1stop:	
+   347  0039                     	ds	1
+   348  003A                     _motor2_data:	
+   349  003A                     	ds	1
+   350  003B                     _motor2stop:	
+   351  003B                     	ds	1
+   352  003C                     _motor3_data:	
+   353  003C                     	ds	1
+   354  003D                     _motor3stop:	
+   355  003D                     	ds	1
    356                           
    357                           	psect	clrtext
-   358  0135                     clear_ram0:	
+   358  0157                     clear_ram0:	
    359                           ;	Called with FSR containing the base address, and
    360                           ;	W with the last address+1
    361                           
-   362  0135  0064               	clrwdt	;clear the watchdog before getting into this loop
-   363  0136                     clrloop0:	
-   364  0136  0180               	clrf	0	;clear RAM location pointed to by FSR
-   365  0137  0A84               	incf	4,f	;increment pointer
-   366  0138  0604               	xorwf	4,w	;XOR with final address
-   367  0139  1903               	btfsc	3,2	;have we reached the end yet?
-   368  013A  3400               	retlw	0	;all done for this memory range, return
-   369  013B  0604               	xorwf	4,w	;XOR again to restore value
-   370  013C  2936               	goto	clrloop0	;do the next byte
+   362  0157  0064               	clrwdt	;clear the watchdog before getting into this loop
+   363  0158                     clrloop0:	
+   364  0158  0180               	clrf	0	;clear RAM location pointed to by FSR
+   365  0159  0A84               	incf	4,f	;increment pointer
+   366  015A  0604               	xorwf	4,w	;XOR with final address
+   367  015B  1903               	btfsc	3,2	;have we reached the end yet?
+   368  015C  3400               	retlw	0	;all done for this memory range, return
+   369  015D  0604               	xorwf	4,w	;XOR again to restore value
+   370  015E  2958               	goto	clrloop0	;do the next byte
    371                           
    372                           	psect	cstackCOMMON
-   373  0076                     __pcstackCOMMON:	
-   374  0076                     ?_global_interrupt:	
-   375  0076                     ??_global_interrupt:	
+   373  0070                     __pcstackCOMMON:	
+   374  0070                     ?_global_interrupt:	
+   375  0070                     ??_global_interrupt:	
    376                           ; 0 bytes @ 0x0
    377                           
-   378  0076                     ?_main:	
+   378  0070                     ?_main:	
    379                           ; 0 bytes @ 0x0
    380                           
    381                           
    382                           ; 2 bytes @ 0x0
-   383  0076                     	ds	5
+   383  0070                     	ds	6
    384                           
    385                           	psect	cstackBANK0
-   386  003D                     __pcstackBANK0:	
-   387  003D                     ??_main:	
+   386  003E                     __pcstackBANK0:	
+   387  003E                     ??_main:	
    388                           
    389                           ; 0 bytes @ 0x0
-   390  003D                     	ds	1
+   390  003E                     	ds	1
    391                           
    392                           	psect	maintext
    393  002E                     __pmaintext:	
@@ -408,7 +408,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    402 ;; Auto vars:     Size  Location     Type
    403 ;;		None
    404 ;; Return value:  Size  Location     Type
-   405 ;;                  2  142[COMMON] int 
+   405 ;;                  2  147[COMMON] int 
    406 ;; Registers used:
    407 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath
    408 ;; Tracked objects:
@@ -446,8 +446,8 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    440  0031  3071               	movlw	113
    441  0032  1283               	bcf	3,5	;RP0=0, select bank0
    442  0033  1303               	bcf	3,6	;RP1=0, select bank0
-   443  0034  00BD               	movwf	??_main
-   444  0035  083D               	movf	??_main,w
+   443  0034  00BE               	movwf	??_main
+   444  0035  083E               	movf	??_main,w
    445  0036  1683               	bsf	3,5	;RP0=1, select bank1
    446  0037  1303               	bcf	3,6	;RP1=0, select bank1
    447  0038  048F               	iorwf	15,f	;volatile
@@ -459,8 +459,8 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    453  003A  30D0               	movlw	208
    454  003B  1283               	bcf	3,5	;RP0=0, select bank0
    455  003C  1303               	bcf	3,6	;RP1=0, select bank0
-   456  003D  00BD               	movwf	??_main
-   457  003E  083D               	movf	??_main,w
+   456  003D  00BE               	movwf	??_main
+   457  003E  083E               	movf	??_main,w
    458  003F  1683               	bsf	3,5	;RP0=1, select bank1
    459  0040  1303               	bcf	3,6	;RP1=0, select bank1
    460  0041  0581               	andwf	1,f	;volatile
@@ -563,100 +563,100 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    557                           
    558                           ;main.c: 219: GIE = 1;
    559  006E  178B               	bsf	11,7	;volatile
-   560  006F                     l921:	
+   560  006F                     l954:	
    561                           ;main.c: 221: while(1){
    562                           
    563                           
    564                           ;main.c: 223: PORTA = posArray1[counter1];
-   565  006F  0820               	movf	_counter1,w
+   565  006F  0876               	movf	_counter1,w
    566  0070  3E2E               	addlw	low (_posArray1-__stringbase)
    567  0071  0084               	movwf	4
-   568  0072  20A3               	fcall	stringdir
+   568  0072  2104               	fcall	stringdir
    569  0073  0085               	movwf	5	;volatile
    570                           
    571                           ;main.c: 225: tmp1 = motor1_data;
    572  0074  087C               	movf	_motor1_data,w
-   573  0075  00BD               	movwf	??_main
-   574  0076  083D               	movf	??_main,w
+   573  0075  00BE               	movwf	??_main
+   574  0076  083E               	movf	??_main,w
    575  0077  00FB               	movwf	_tmp1
    576                           
    577                           ;main.c: 228: if(tmp1 >=60){
    578  0078  303C               	movlw	60
    579  0079  027B               	subwf	_tmp1,w
    580  007A  1C03               	skipc
-   581  007B  2885               	goto	l931
+   581  007B  2885               	goto	l964
    582                           
    583                           ;main.c: 229: tmp1 = tmp1 - 15;
    584  007C  087B               	movf	_tmp1,w
    585  007D  3EF1               	addlw	241
-   586  007E  00BD               	movwf	??_main
-   587  007F  083D               	movf	??_main,w
+   586  007E  00BE               	movwf	??_main
+   587  007F  083E               	movf	??_main,w
    588  0080  00FB               	movwf	_tmp1
    589                           
    590                           ;main.c: 230: direction1 = -1;
    591  0081  30FF               	movlw	255
-   592  0082  00A6               	movwf	_direction1
+   592  0082  00A4               	movwf	_direction1
    593  0083  30FF               	movlw	255
    594  0084  2888               	goto	L1
-   595  0085                     l931:	
+   595  0085                     l964:	
    596                           ;main.c: 231: }
    597                           
    598                           
    599                           ;main.c: 232: else
    600                           ;main.c: 233: direction1 = 1;
    601  0085  3001               	movlw	1
-   602  0086  00A6               	movwf	_direction1
+   602  0086  00A4               	movwf	_direction1
    603  0087  3000               	movlw	0
    604  0088                     L1:	
-   605  0088  00A7               	movwf	_direction1+1
+   605  0088  00A5               	movwf	_direction1+1
    606                           
    607                           ;main.c: 235: tmp1 = tmp1 - 45;
    608  0089  087B               	movf	_tmp1,w
    609  008A  3ED3               	addlw	211
-   610  008B  00BD               	movwf	??_main
-   611  008C  083D               	movf	??_main,w
+   610  008B  00BE               	movwf	??_main
+   611  008C  083E               	movf	??_main,w
    612  008D  00FB               	movwf	_tmp1
    613                           
    614                           ;main.c: 236: if(tmp1 == 0)
    615  008E  08FB               	movf	_tmp1,f
    616  008F  1D03               	skipz
-   617  0090  2896               	goto	l937
+   617  0090  2896               	goto	l970
    618                           
    619                           ;main.c: 237: incremental1 = 2;
    620  0091  3002               	movlw	2
-   621  0092  00BD               	movwf	??_main
-   622  0093  083D               	movf	??_main,w
-   623  0094  00B1               	movwf	_incremental1
-   624  0095  289E               	goto	l943
-   625  0096                     l937:	
+   621  0092  00BE               	movwf	??_main
+   622  0093  083E               	movf	??_main,w
+   623  0094  00F8               	movwf	_incremental1
+   624  0095  289E               	goto	l976
+   625  0096                     l970:	
    626                           
    627                           ;main.c: 238: else if(tmp1 == 1)
    628  0096  087B               	movf	_tmp1,w
    629  0097  3A01               	xorlw	1
    630  0098  1D03               	skipz
-   631  0099  289D               	goto	l941
+   631  0099  289D               	goto	l974
    632                           
    633                           ;main.c: 239: incremental1 = 1;
-   634  009A  01B1               	clrf	_incremental1
-   635  009B  0AB1               	incf	_incremental1,f
-   636  009C  289E               	goto	l943
-   637  009D                     l941:	
+   634  009A  01F8               	clrf	_incremental1
+   635  009B  0AF8               	incf	_incremental1,f
+   636  009C  289E               	goto	l976
+   637  009D                     l974:	
    638                           
    639                           ;main.c: 240: else
    640                           ;main.c: 241: incremental1 = 0;
-   641  009D  01B1               	clrf	_incremental1
-   642  009E                     l943:	
+   641  009D  01F8               	clrf	_incremental1
+   642  009E                     l976:	
    643                           
    644                           ;main.c: 243: motor1 = tmp1;
    645  009E  087B               	movf	_tmp1,w
-   646  009F  00BD               	movwf	??_main
-   647  00A0  083D               	movf	??_main,w
-   648  00A1  00F0               	movwf	_motor1
-   649  00A2  286F               	goto	l921
+   646  009F  00BE               	movwf	??_main
+   647  00A0  083E               	movf	??_main,w
+   648  00A1  00F9               	movwf	_motor1
+   649  00A2  286F               	goto	l954
    650  00A3                     __end_of_main:	
    651                           
    652                           	psect	text1
-   653  00EE                     __ptext1:	
+   653  00A3                     __ptext1:	
    654 ;; *************** function _global_interrupt *****************
    655 ;; Defined at:
    656 ;;		line 56 in file "main.c"
@@ -675,9 +675,9 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    669 ;; Data sizes:     COMMON   BANK0   BANK1
    670 ;;      Params:         0       0       0
    671 ;;      Locals:         0       0       0
-   672 ;;      Temps:          5       0       0
-   673 ;;      Totals:         5       0       0
-   674 ;;Total ram usage:        5 bytes
+   672 ;;      Temps:          6       0       0
+   673 ;;      Totals:         6       0       0
+   674 ;;Total ram usage:        6 bytes
    675 ;; Hardware stack levels used:    2
    676 ;; This function calls:
    677 ;;		Nothing
@@ -688,169 +688,231 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    682                           
    683                           
    684                           ;psect for function _global_interrupt
-   685  00EE                     _global_interrupt:	
+   685  00A3                     _global_interrupt:	
    686                           
    687                           ;main.c: 58: GIE = 0 ;
-   688  00EE  138B               	bcf	11,7	;volatile
+   688  00A3  138B               	bcf	11,7	;volatile
    689                           
    690                           ;main.c: 61: if(RCIF){
-   691  00EF  1E8C               	btfss	12,5	;volatile
-   692  00F0  290C               	goto	i1l133
+   691  00A4  1E8C               	btfss	12,5	;volatile
+   692  00A5  28BD               	goto	i1l133
    693                           
    694                           ;main.c: 64: if(FERR == 0 && OERR == 0){
-   695  00F1  1D18               	btfss	24,2	;volatile
-   696  00F2  1898               	btfsc	24,1	;volatile
-   697  00F3  2906               	goto	i1l755
+   695  00A6  1D18               	btfss	24,2	;volatile
+   696  00A7  1898               	btfsc	24,1	;volatile
+   697  00A8  28B7               	goto	i1l772
    698                           
    699                           ;main.c: 65: tmp_data = RCREG;
-   700  00F4  081A               	movf	26,w	;volatile
-   701  00F5  00F6               	movwf	??_global_interrupt
-   702  00F6  0876               	movf	??_global_interrupt,w
-   703  00F7  00F5               	movwf	_tmp_data
+   700  00A9  081A               	movf	26,w	;volatile
+   701  00AA  00F0               	movwf	??_global_interrupt
+   702  00AB  0870               	movf	??_global_interrupt,w
+   703  00AC  00FA               	movwf	_tmp_data
    704                           
    705                           ;main.c: 68: if(tmp_data == 0x55){
-   706  00F8  0875               	movf	_tmp_data,w
-   707  00F9  3A55               	xorlw	85
-   708  00FA  1903               	btfsc	3,2
-   709  00FB  290A               	goto	L2
+   706  00AD  087A               	movf	_tmp_data,w
+   707  00AE  3A55               	xorlw	85
+   708  00AF  1903               	btfsc	3,2
+   709  00B0  28BB               	goto	L3
    710                           
    711                           ;main.c: 72: }
-   712                           ;main.c: 74: if(motor1_data != tmp_data)
+   712                           ;main.c: 75: motor1_data = tmp_data;
    713                           
    714                           ;main.c: 71: return;
    715                           
    716                           ;main.c: 70: GIE = 1;
    717                           
    718                           ;main.c: 69: counter_uart = 0;
-   719  00FC  087C               	movf	_motor1_data,w
-   720  00FD  0675               	xorwf	_tmp_data,w
-   721  00FE  1903               	skipnz
-   722  00FF  2904               	goto	i1l753
+   719  00B1  087A               	movf	_tmp_data,w
+   720  00B2  00F0               	movwf	??_global_interrupt
+   721  00B3  0870               	movf	??_global_interrupt,w
+   722  00B4  00FC               	movwf	_motor1_data
    723                           
-   724                           ;main.c: 75: motor1_data = tmp_data;
-   725  0100  0875               	movf	_tmp_data,w
-   726  0101  00F6               	movwf	??_global_interrupt
-   727  0102  0876               	movf	??_global_interrupt,w
-   728  0103  00FC               	movwf	_motor1_data
-   729  0104                     i1l753:	
+   724                           ;main.c: 78: tmp_data = 0;
+   725  00B5  01FA               	clrf	_tmp_data
+   726                           
+   727                           ;main.c: 81: }
+   728  00B6  28F8               	goto	i1l806
+   729  00B7                     i1l772:	
    730                           
-   731                           ;main.c: 78: tmp_data = 0;
-   732  0104  01F5               	clrf	_tmp_data
-   733                           
-   734                           ;main.c: 81: }
-   735  0105  2921               	goto	i1l773
-   736  0106                     i1l755:	
-   737                           
-   738                           ;main.c: 82: else{
-   739                           ;main.c: 84: tmp_data = RCREG;
-   740  0106  081A               	movf	26,w	;volatile
-   741  0107  00F6               	movwf	??_global_interrupt
-   742  0108  0876               	movf	??_global_interrupt,w
-   743  0109  00F5               	movwf	_tmp_data
-   744  010A                     L2:	
-   745                           
-   746                           ;main.c: 85: counter_uart = 0;
-   747  010A  01B0               	clrf	_counter_uart
-   748  010B  2921               	goto	i1l773
-   749  010C                     i1l133:	
-   750                           ;main.c: 88: return;
-   751                           
-   752                           ;main.c: 86: }
-   753                           ;main.c: 87: GIE = 1;
-   754                           
-   755                           
-   756                           ;main.c: 90: }
-   757                           ;main.c: 93: if(T0IF){
-   758  010C  1D0B               	btfss	11,2	;volatile
-   759  010D  2922               	goto	i1l136
-   760                           
-   761                           ;main.c: 94: T0IF = 0;
-   762  010E  110B               	bcf	11,2	;volatile
+   731                           ;main.c: 82: else{
+   732                           ;main.c: 84: tmp_data = RCREG;
+   733  00B7  081A               	movf	26,w	;volatile
+   734  00B8  00F0               	movwf	??_global_interrupt
+   735  00B9  0870               	movf	??_global_interrupt,w
+   736  00BA  00FA               	movwf	_tmp_data
+   737  00BB                     L3:	
+   738                           
+   739                           ;main.c: 85: counter_uart = 0;
+   740  00BB  01AE               	clrf	_counter_uart
+   741  00BC  28F8               	goto	i1l806
+   742  00BD                     i1l133:	
+   743                           ;main.c: 88: return;
+   744                           
+   745                           ;main.c: 86: }
+   746                           ;main.c: 87: GIE = 1;
+   747                           
+   748                           
+   749                           ;main.c: 90: }
+   750                           ;main.c: 93: if(T0IF){
+   751  00BD  1D0B               	btfss	11,2	;volatile
+   752  00BE  28F9               	goto	i1l136
+   753                           
+   754                           ;main.c: 94: T0IF = 0;
+   755  00BF  110B               	bcf	11,2	;volatile
+   756                           
+   757                           ;main.c: 97: if(loop1 == 2){
+   758  00C0  3002               	movlw	2
+   759  00C1  062A               	xorwf	_loop1,w
+   760  00C2  042B               	iorwf	_loop1+1,w
+   761  00C3  1D03               	skipz
+   762  00C4  28CA               	goto	i1l788
    763                           
-   764                           ;main.c: 106: TMR0 = motor1Array[motor1];
-   765  010F  0870               	movf	_motor1,w
-   766  0110  3E01               	addlw	low (_motor1Array-__stringbase)
-   767  0111  0084               	movwf	4
-   768  0112  20A3               	fcall	stringdir
-   769  0113  0081               	movwf	1	;volatile
-   770                           
-   771                           ;main.c: 110: counter1 += 1;
-   772  0114  3001               	movlw	1
-   773  0115  07A0               	addwf	_counter1,f
-   774  0116  1803               	skipnc
-   775  0117  0AA1               	incf	_counter1+1,f
-   776  0118  3000               	movlw	0
-   777  0119  07A1               	addwf	_counter1+1,f
-   778                           
-   779                           ;main.c: 111: if(counter1 == 8)
-   780  011A  3008               	movlw	8
-   781  011B  0620               	xorwf	_counter1,w
-   782  011C  0421               	iorwf	_counter1+1,w
-   783  011D  1D03               	skipz
-   784  011E  2921               	goto	i1l773
-   785                           
-   786                           ;main.c: 112: counter1 = 0;
-   787  011F  01A0               	clrf	_counter1
-   788  0120  01A1               	clrf	_counter1+1
-   789  0121                     i1l773:	
+   764                           ;main.c: 98: loop1 = 1;
+   765  00C5  3001               	movlw	1
+   766  00C6  00AA               	movwf	_loop1
+   767  00C7  3000               	movlw	0
+   768  00C8  00AB               	movwf	_loop1+1
+   769  00C9  28D1               	goto	L2
+   770  00CA                     i1l788:	
+   771                           ;main.c: 100: }
+   772                           
+   773                           ;main.c: 99: TMR0 = 0;
+   774                           
+   775                           
+   776                           ;main.c: 101: else if(loop1 == 1){
+   777  00CA  3001               	movlw	1
+   778  00CB  062A               	xorwf	_loop1,w
+   779  00CC  042B               	iorwf	_loop1+1,w
+   780  00CD  1D03               	skipz
+   781  00CE  28D3               	goto	i1l792
+   782                           
+   783                           ;main.c: 102: loop1 = 0;
+   784  00CF  01AA               	clrf	_loop1
+   785  00D0  01AB               	clrf	_loop1+1
+   786  00D1                     L2:	
+   787                           
+   788                           ;main.c: 103: TMR0 = 0;
+   789  00D1  0181               	clrf	1	;volatile
    790                           
-   791                           ;main.c: 118: GIE = 1 ;
-   792  0121  178B               	bsf	11,7	;volatile
-   793  0122                     i1l136:	
-   794                           ;main.c: 119: return;
-   795                           
-   796  0122  087A               	movf	??_global_interrupt+4,w
-   797  0123  00FF               	movwf	127
-   798  0124  0879               	movf	??_global_interrupt+3,w
-   799  0125  008A               	movwf	10
-   800  0126  0878               	movf	??_global_interrupt+2,w
-   801  0127  0084               	movwf	4
-   802  0128  0E77               	swapf	(??_global_interrupt+1)^(0+-128),w
-   803  0129  0083               	movwf	3
-   804  012A  0EFE               	swapf	126,f
-   805  012B  0E7E               	swapf	126,w
-   806  012C  0009               	retfie
-   807  012D                     __end_of_global_interrupt:	
-   808  007E                     btemp	set	126	;btemp
-   809  007E                     wtemp	set	126
-   810  007E                     wtemp0	set	126
-   811  0080                     wtemp1	set	128
-   812  0082                     wtemp2	set	130
-   813  0084                     wtemp3	set	132
-   814  0086                     wtemp4	set	134
-   815  0088                     wtemp5	set	136
-   816  007F                     wtemp6	set	127
-   817  007E                     ttemp	set	126
-   818  007E                     ttemp0	set	126
-   819  0081                     ttemp1	set	129
-   820  0084                     ttemp2	set	132
-   821  0087                     ttemp3	set	135
-   822  007F                     ttemp4	set	127
-   823  007E                     ltemp	set	126
-   824  007E                     ltemp0	set	126
-   825  0082                     ltemp1	set	130
-   826  0086                     ltemp2	set	134
-   827  0080                     ltemp3	set	128
-   828                           
-   829                           	psect	intentry
-   830  0004                     __pintentry:	
-   831                           ;incstack = 0
-   832                           ; Regs used in _global_interrupt: [wreg-fsr0h+status,2+status,0+pclath]
-   833                           
-   834  0004                     interrupt_function:	
-   835  007E                     saved_w	set	btemp
-   836  0004  00FE               	movwf	btemp
-   837  0005  0E03               	swapf	3,w
-   838  0006  00F7               	movwf	??_global_interrupt+1
-   839  0007  0804               	movf	4,w
-   840  0008  00F8               	movwf	??_global_interrupt+2
-   841  0009  080A               	movf	10,w
-   842  000A  00F9               	movwf	??_global_interrupt+3
-   843  000B  1283               	bcf	3,5	;RP0=0, select bank0
-   844  000C  1303               	bcf	3,6	;RP1=0, select bank0
-   845  000D  087F               	movf	btemp+1,w
-   846  000E  00FA               	movwf	??_global_interrupt+4
-   847  000F  28EE               	ljmp	_global_interrupt
+   791                           ;main.c: 104: }
+   792  00D2  28F8               	goto	i1l806
+   793  00D3                     i1l792:	
+   794                           
+   795                           ;main.c: 105: else{
+   796                           ;main.c: 106: TMR0 = motor1Array[motor1];
+   797  00D3  0879               	movf	_motor1,w
+   798  00D4  3E01               	addlw	low (_motor1Array-__stringbase)
+   799  00D5  0084               	movwf	4
+   800  00D6  2104               	fcall	stringdir
+   801  00D7  0081               	movwf	1	;volatile
+   802                           
+   803                           ;main.c: 108: loop1 = incremental1;
+   804  00D8  0878               	movf	_incremental1,w
+   805  00D9  00F0               	movwf	??_global_interrupt
+   806  00DA  01F1               	clrf	??_global_interrupt+1
+   807  00DB  0870               	movf	??_global_interrupt,w
+   808  00DC  00AA               	movwf	_loop1
+   809  00DD  0871               	movf	??_global_interrupt+1,w
+   810  00DE  00AB               	movwf	_loop1+1
+   811                           
+   812                           ;main.c: 109: counter1 += direction1;
+   813  00DF  0824               	movf	_direction1,w
+   814  00E0  07F6               	addwf	_counter1,f
+   815  00E1  1803               	skipnc
+   816  00E2  0AF7               	incf	_counter1+1,f
+   817  00E3  0825               	movf	_direction1+1,w
+   818  00E4  07F7               	addwf	_counter1+1,f
+   819                           
+   820                           ;main.c: 111: if(counter1 == 8)
+   821  00E5  3008               	movlw	8
+   822  00E6  0676               	xorwf	_counter1,w
+   823  00E7  0477               	iorwf	_counter1+1,w
+   824  00E8  1D03               	skipz
+   825  00E9  28ED               	goto	i1l143
+   826                           
+   827                           ;main.c: 112: counter1 = 0;
+   828  00EA  01F6               	clrf	_counter1
+   829  00EB  01F7               	clrf	_counter1+1
+   830  00EC  28F3               	goto	i1l804
+   831  00ED                     i1l143:	
+   832                           
+   833                           ;main.c: 113: else if(counter1 < 0)
+   834  00ED  1FF7               	btfss	_counter1+1,7
+   835  00EE  28F3               	goto	i1l804
+   836                           
+   837                           ;main.c: 114: counter1 = 8;
+   838  00EF  3008               	movlw	8
+   839  00F0  00F6               	movwf	_counter1
+   840  00F1  3000               	movlw	0
+   841  00F2  00F7               	movwf	_counter1+1
+   842  00F3                     i1l804:	
+   843                           
+   844                           ;main.c: 115: PORTA = posArray1[counter1];
+   845  00F3  0876               	movf	_counter1,w
+   846  00F4  3E2E               	addlw	low (_posArray1-__stringbase)
+   847  00F5  0084               	movwf	4
+   848  00F6  2104               	fcall	stringdir
+   849  00F7  0085               	movwf	5	;volatile
+   850  00F8                     i1l806:	
+   851                           
+   852                           ;main.c: 117: }
+   853                           ;main.c: 118: GIE = 1 ;
+   854  00F8  178B               	bsf	11,7	;volatile
+   855  00F9                     i1l136:	
+   856                           ;main.c: 119: return;
+   857                           
+   858  00F9  0875               	movf	??_global_interrupt+5,w
+   859  00FA  00FF               	movwf	127
+   860  00FB  0874               	movf	??_global_interrupt+4,w
+   861  00FC  008A               	movwf	10
+   862  00FD  0873               	movf	??_global_interrupt+3,w
+   863  00FE  0084               	movwf	4
+   864  00FF  0E72               	swapf	(??_global_interrupt+2)^(0+-128),w
+   865  0100  0083               	movwf	3
+   866  0101  0EFE               	swapf	126,f
+   867  0102  0E7E               	swapf	126,w
+   868  0103  0009               	retfie
+   869  0104                     __end_of_global_interrupt:	
+   870  007E                     btemp	set	126	;btemp
+   871  007E                     wtemp	set	126
+   872  007E                     wtemp0	set	126
+   873  0080                     wtemp1	set	128
+   874  0082                     wtemp2	set	130
+   875  0084                     wtemp3	set	132
+   876  0086                     wtemp4	set	134
+   877  0088                     wtemp5	set	136
+   878  007F                     wtemp6	set	127
+   879  007E                     ttemp	set	126
+   880  007E                     ttemp0	set	126
+   881  0081                     ttemp1	set	129
+   882  0084                     ttemp2	set	132
+   883  0087                     ttemp3	set	135
+   884  007F                     ttemp4	set	127
+   885  007E                     ltemp	set	126
+   886  007E                     ltemp0	set	126
+   887  0082                     ltemp1	set	130
+   888  0086                     ltemp2	set	134
+   889  0080                     ltemp3	set	128
+   890                           
+   891                           	psect	intentry
+   892  0004                     __pintentry:	
+   893                           ;incstack = 0
+   894                           ; Regs used in _global_interrupt: [wreg-fsr0h+status,2+status,0+pclath]
+   895                           
+   896  0004                     interrupt_function:	
+   897  007E                     saved_w	set	btemp
+   898  0004  00FE               	movwf	btemp
+   899  0005  0E03               	swapf	3,w
+   900  0006  00F2               	movwf	??_global_interrupt+2
+   901  0007  0804               	movf	4,w
+   902  0008  00F3               	movwf	??_global_interrupt+3
+   903  0009  080A               	movf	10,w
+   904  000A  00F4               	movwf	??_global_interrupt+4
+   905  000B  1283               	bcf	3,5	;RP0=0, select bank0
+   906  000C  1303               	bcf	3,6	;RP1=0, select bank0
+   907  000D  087F               	movf	btemp+1,w
+   908  000E  00F5               	movwf	??_global_interrupt+5
+   909  000F  28A3               	ljmp	_global_interrupt
 
 
 Data Sizes:
@@ -863,8 +925,8 @@ Data Sizes:
 
 Auto Spaces:
     Space          Size  Autos    Used
-    COMMON           14      5      13
-    BANK0            80      1      30
+    COMMON           14      6      13
+    BANK0            80      1      31
     BANK1            32      0       0
 
 Pointer List with Targets:
@@ -907,8 +969,8 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
  ---------------------------------------------------------------------------------
- (2) _global_interrupt                                     5     5      0       0
-                                              0 COMMON     5     5      0
+ (2) _global_interrupt                                     6     6      0       0
+                                              0 COMMON     6     6      0
  ---------------------------------------------------------------------------------
  Estimated maximum stack depth 2
  ---------------------------------------------------------------------------------
@@ -929,72 +991,73 @@ BANK1               20      0       0       6        0.0%
 BITBANK1            20      0       0       5        0.0%
 SFR1                 0      0       0       2        0.0%
 BITSFR1              0      0       0       2        0.0%
-BANK0               50      1      1E       4       37.5%
+BANK0               50      1      1F       4       38.8%
 BITBANK0            50      0       0       3        0.0%
 SFR0                 0      0       0       1        0.0%
 BITSFR0              0      0       0       1        0.0%
-COMMON               E      5       D       1       92.9%
+COMMON               E      6       D       1       92.9%
 BITCOMMON            E      0       0       0        0.0%
 CODE                 0      0       0       0        0.0%
-DATA                 0      0      2B       8        0.0%
-ABS                  0      0      2B       7        0.0%
+DATA                 0      0      2C       8        0.0%
+ABS                  0      0      2C       7        0.0%
 NULL                 0      0       0       0        0.0%
 STACK                0      0       0       2        0.0%
 EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.33 build 59893 
-Symbol Table                                                                                   Sat May 23 23:01:13 2015
+Symbol Table                                                                                   Sat May 23 23:16:24 2015
 
                         pc 0002                __CFG_CP$OFF 0000                         fsr 0004  
-                      l921 006F                        l931 0085                        l941 009D  
-                      l943 009E                        l937 0096                        _GIE 005F  
+                      l970 0096                        l954 006F                        l964 0085  
+                      l974 009D                        l976 009E                        _GIE 005F  
              __CFG_CPD$OFF 0000                        fsr0 0004                        indf 0000  
              __CFG_IESO$ON 0000                       _BRGH 04C2                       _T0IE 005D  
                      _T0IF 005A                       _CREN 00C4                       _FERR 00C2  
                      _PEIE 005E                       _RCIE 0465                       _RCIF 0065  
                      _OERR 00C1                       _TMR0 0001                       _SPEN 00C7  
                      _SYNC 04C4              __CFG_FCMEN$ON 0000                       _main 002E  
-                     _tmp1 007B                       _tmp2 0073                       _tmp3 0074  
+                     _tmp1 007B                       _tmp2 0033                       _tmp3 0034  
                      btemp 007E              __CFG_BOREN$ON 0000                       ltemp 007E  
                      start 0010                       ttemp 007E                       wtemp 007E  
-                    ?_main 0076                      _BRG16 04DB              __CFG_WDTE$OFF 0000  
-                    _ANSEL 011E                      i1l133 010C                      i1l136 0122  
-                    i1l753 0104                      i1l755 0106                      i1l773 0121  
+                    ?_main 0070                      _BRG16 04DB              __CFG_WDTE$OFF 0000  
+                    _ANSEL 011E                      i1l133 00BD                      i1l143 00ED  
+                    i1l136 00F9                      i1l804 00F3                      i1l806 00F8  
+                    i1l772 00B7                      i1l792 00D3                      i1l788 00CA  
                     _RCREG 001A                      _TMR1H 000F                      _SPBRG 0099  
                     _PORTA 0005                      _TRISA 0085                      _TRISB 0086  
-                    _TRISC 0087              __CFG_PWRTE$ON 0000                      _loop1 002C  
-                    _loop3 002E                      pclath 000A                      ltemp0 007E  
+                    _TRISC 0087              __CFG_PWRTE$ON 0000                      _loop1 002A  
+                    _loop3 002C                      pclath 000A                      ltemp0 007E  
                     ltemp1 0082                      ltemp2 0086                      ltemp3 0080  
                     ttemp0 007E                      ttemp1 0081                      ttemp2 0084  
                     ttemp3 0087                      ttemp4 007F                      status 0003  
                     wtemp0 007E                      wtemp1 0080                      wtemp2 0082  
                     wtemp3 0084                      wtemp4 0086                      wtemp5 0088  
                     wtemp6 007F             __CFG_MCLRE$OFF 0000            __initialization 0011  
-             __end_of_main 00A3                     ??_main 003D                     _ANSELH 011F  
+             __end_of_main 00A3                     ??_main 003E                     _ANSELH 011F  
                    _OSCCON 008F                     _TMR1GE 0086                     _TMR1CS 0081  
-                   _SPBRGH 009A                     _TMR1ON 0080      __end_of_motor2_1Array 00C7  
-    __end_of_motor2_2Array 00D6                     _motor1 0070                     _motor2 0071  
-                   _motor3 0072               __pdataCOMMON 007C                     saved_w 007E  
-  __end_of__initialization 002C  __size_of_global_interrupt 003F             __pcstackCOMMON 0076  
-             __pidataBANK0 012D                 __pbssBANK0 0020              _init_received 0033  
+                   _SPBRGH 009A                     _TMR1ON 0080      __end_of_motor2_1Array 0128  
+    __end_of_motor2_2Array 0137                     _motor1 0079                     _motor2 0031  
+                   _motor3 0032               __pdataCOMMON 007C                     saved_w 007E  
+  __end_of__initialization 002C  __size_of_global_interrupt 0061             __pcstackCOMMON 0070  
+             __pidataBANK0 014F                 __pbssBANK0 0020              _init_received 0030  
                __pnvCOMMON 007B                 __pmaintext 002E                 __pintentry 0004  
-               _direction1 0026                 _direction2 0028                    _T1OSCEN 0083  
-               _direction3 002A                    _OSCTUNE 0090                 __stringtab 00A3  
-                  __ptext1 00EE                  _T1CONbits 0010                    clrloop0 0136  
-     end_of_initialization 002C          __end_of_posArray1 00DE          __end_of_posArray2 00E6  
-        __end_of_posArray3 00EE           _global_interrupt 00EE                 _motor1stop 0038  
-               _motor2stop 003A                 _motor3stop 003C                 _motor_data 0035  
-            __pidataCOMMON 013D        start_initialization 0011               _counter_uart 0030  
-             _incremental1 0031               _incremental3 0032                __pdataBANK0 0035  
-              __pbssCOMMON 0070                  ___latbits 0000              __pcstackBANK0 003D  
-            _motor2_1Array 00B8              _motor2_2Array 00C7                  __pstrings 00A3  
- __end_of_global_interrupt 012D          interrupt_function 0004                  clear_ram0 0135  
-                _posArray1 00D6                  _posArray2 00DE                  _posArray3 00E6  
-                _tmp_data2 0034                __stringbase 00A8        __end_of_motor1Array 00B8  
-       __end_of__stringtab 00A9                   _counter1 0020                   _counter2 0022  
-                 _counter3 0024              __size_of_main 0075                   _tmp_data 0075  
-                 intlevel1 0000                _motor1Array 00A9                _motor1_data 007C  
-              _motor2_data 0039                _motor3_data 003B                  stringcode 00A3  
-               _OPTION_REG 0081                   stringdir 00A3          ?_global_interrupt 0076  
-                 stringtab 00A3         ??_global_interrupt 0076          __CFG_FOSC$INTRCIO 0000  
+               _direction1 0024                 _direction2 0026                    _T1OSCEN 0083  
+               _direction3 0028                    _OSCTUNE 0090                 __stringtab 0104  
+                  __ptext1 00A3                  _T1CONbits 0010                    clrloop0 0158  
+     end_of_initialization 002C          __end_of_posArray1 013F          __end_of_posArray2 0147  
+        __end_of_posArray3 014F           _global_interrupt 00A3                 _motor1stop 0039  
+               _motor2stop 003B                 _motor3stop 003D                 _motor_data 0036  
+            __pidataCOMMON 015F        start_initialization 0011               _counter_uart 002E  
+             _incremental1 0078               _incremental3 002F                __pdataBANK0 0036  
+              __pbssCOMMON 0076                  ___latbits 0000              __pcstackBANK0 003E  
+            _motor2_1Array 0119              _motor2_2Array 0128                  __pstrings 0104  
+ __end_of_global_interrupt 0104          interrupt_function 0004                  clear_ram0 0157  
+                _posArray1 0137                  _posArray2 013F                  _posArray3 0147  
+                _tmp_data2 0035                __stringbase 0109        __end_of_motor1Array 0119  
+       __end_of__stringtab 010A                   _counter1 0076                   _counter2 0020  
+                 _counter3 0022              __size_of_main 0075                   _tmp_data 007A  
+                 intlevel1 0000                _motor1Array 010A                _motor1_data 007C  
+              _motor2_data 003A                _motor3_data 003C                  stringcode 0104  
+               _OPTION_REG 0081                   stringdir 0104          ?_global_interrupt 0070  
+                 stringtab 0104         ??_global_interrupt 0070          __CFG_FOSC$INTRCIO 0000  

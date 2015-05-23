@@ -71,7 +71,7 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
                  return;
             }
             
-              if(motor1_data != tmp_data)
+              //if(motor1_data != tmp_data)
                  motor1_data = tmp_data;
                  //motor2_data = tmp_data;
                  //motor3_data = tmp_data;
@@ -94,27 +94,27 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
         T0IF = 0; //clear interrupt flag
  
 
-//        if(loop1 == 2){
-//            loop1 = 1;
-//            TMR0 = 0;
-//         }
-//        else if(loop1 == 1){
-//            loop1 = 0;
-//            TMR0 = 0;
-//        }
-//        else{
+        if(loop1 == 2){
+            loop1 = 1;
+            TMR0 = 0;
+         }
+        else if(loop1 == 1){
+            loop1 = 0;
+            TMR0 = 0;
+        }
+        else{
             TMR0 = motor1Array[motor1];
         //TMR0 = 161;
-//            loop1 = incremental1;
-            //counter1 += direction1;
-            counter1 += 1;
+            loop1 = incremental1;
+            counter1 += direction1;
+            //counter1 += 1;
               if(counter1 == 8)
             counter1 = 0;
-          //else if(counter1 < 0)
-          //  counter1 = 8;
-           //PORTA = posArray1[counter1];
+          else if(counter1 < 0)
+            counter1 = 8;
+           PORTA = posArray1[counter1];
                
- //        }
+         }
         GIE = 1 ;//Global interrupt enable in ISR
   return;
       
