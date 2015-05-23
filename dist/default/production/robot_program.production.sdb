@@ -103,14 +103,16 @@
 [v ___fltoee __fltoee `(d  1 e 3 0 ]
 "49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"56 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
+"50 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
-"151
+"147
 [v _main main `(i  1 e 2 0 ]
 "53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f687.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "158
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"207
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
 "245
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
 "469
@@ -239,11 +241,11 @@
 "25
 [v _tmp3 tmp3 `uc  1 e 1 0 ]
 "27
-[v _motor1stop motor1stop `uc  1 e 1 0 ]
+[v _motor1run motor1run `uc  1 e 1 0 ]
 "28
-[v _motor2stop motor2stop `uc  1 e 1 0 ]
+[v _motor2run motor2run `uc  1 e 1 0 ]
 "29
-[v _motor3stop motor3stop `uc  1 e 1 0 ]
+[v _motor3run motor3run `uc  1 e 1 0 ]
 "31
 [v _incremental1 incremental1 `uc  1 e 1 0 ]
 "32
@@ -262,27 +264,19 @@
 [v _counter_uart counter_uart `uc  1 e 1 0 ]
 "42
 [v _uart_data uart_data `[15]uc  1 e 15 0 ]
-"43
-[v _motor1_data motor1_data `uc  1 e 1 0 ]
-"44
-[v _motor2_data motor2_data `uc  1 e 1 0 ]
 "45
-[v _motor3_data motor3_data `uc  1 e 1 0 ]
-"46
-[v _motor_data motor_data `[3]uc  1 e 3 0 ]
-"51
 [v _init_received init_received `uc  1 e 1 0 ]
-"53
+"47
 [v _tmp_data tmp_data `uc  1 e 1 0 ]
-"54
+"48
 [v _tmp_data2 tmp_data2 `uc  1 e 1 0 ]
-"151
+"147
 [v _main main `(i  1 e 2 0 ]
 {
 "259
 } 0
-"56
+"50
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
 {
-"149
+"145
 } 0

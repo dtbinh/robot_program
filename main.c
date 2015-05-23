@@ -24,9 +24,9 @@ char tmp1   = 0;
 char tmp2   = 0;
 char tmp3   = 0;
 
-char motor1stop = 1;
-char motor2stop = 1;
-char motor3stop = 1;
+char motor1run = 0;
+char motor2run = 0;
+char motor3run = 0;
 
 char incremental1 = 0;
 char incremental3 = 0;
@@ -38,15 +38,9 @@ int loop3 = 0;
 
 
 char counter_uart = 0;
-//char uart_data[15] = {0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B};
+
 char uart_data[15] = {0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D};
-char motor1_data = 0x2D;
-char motor2_data = 0x2D;
-char motor3_data = 0x2D;
-char motor_data[3] = {0x2D,0x2D,0x2D};
 
-
-//char uart_data[3] = {0x2D,0x2D,0x2D};
 
 char init_received = 0;
 
@@ -110,7 +104,9 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
             counter1 = 0;
           else if(counter1 < 0)
             counter1 = 8;
-           PORTA = posArray1[counter1];
+            
+           PORTA = posArray1[counter1] & motor1run;
+       
                
          }
         GIE = 1 ;//Global interrupt enable in ISR
@@ -176,23 +172,18 @@ int main(void){
       //Timer1 clock=Fosc/4, prescaler = 1/1;
 
       //UART 9600 8 bit asenkron konfig
-     
-     
       BRG16 = 0;
       BRGH = 0;
       SPBRGH = 0;
       SPBRG = 0x0C; //9600
-     
-       SYNC = 0;
-       SPEN = 1;
-    RCIE = 1;
+      SYNC = 0;
+      SPEN = 1;
+      RCIE = 1;
       CREN = 1;
-      
-              //UART 9600 8 bit asenkron konfig
+      //UART 9600 8 bit asenkron konfig
        
       
-      
-   
+    
       //Timer2 clock=Fosc/4, prescaler = 1/16 , postscaler = 1/16;
      // T2CONbits.T2CKPS0= 1;
       //T2CONbits.T2CKPS1= 1;
@@ -214,6 +205,8 @@ int main(void){
       //PORTA y? konfigure edelim
 
       PORTA = 0x00;
+      PORTB = 0x00;
+      PORTC = 0x00;
       PEIE = 1;
       GIE  = 1;
 
@@ -221,8 +214,12 @@ int main(void){
 
 
         tmp1 =  uart_data[14];
-      
-   
+
+  if(tmp1 == 75)
+      motor1run = 0x00;
+  else
+      motor1run = 0xFF;
+
         if(tmp1 >=60){
             tmp1 = tmp1 - 15;
             direction1 = -1;
@@ -230,6 +227,9 @@ int main(void){
         else
             direction1 = 1;
 
+      
+
+        
         tmp1 = tmp1 - 45;
         if(tmp1 == 0)
             incremental1 = 2;
@@ -238,19 +238,19 @@ int main(void){
         else
             incremental1 = 0;
 
+
         motor1 = tmp1;
        
        
            
       tmp2 =  uart_data[13];
-     
       if(tmp2 >=60){
             tmp2 = tmp2 - 15;
             direction2 = -1;
         }
-        else
+       else
          direction2 = 1;
-             
+       
         tmp2 = tmp2 - 45;
         motor2 =  tmp2;
       
