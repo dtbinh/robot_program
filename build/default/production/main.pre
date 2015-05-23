@@ -1723,14 +1723,13 @@ char tmp_data2 = 0;
 void interrupt global_interrupt(){
 
 GIE = 0 ;
-
+CREN = 1;
 
 if(RCIF){
 
 
 if(FERR == 0 && OERR == 0){
 tmp_data = RCREG;
-
 
 if(tmp_data == 0x55){
 counter_uart = 0;
@@ -1746,13 +1745,9 @@ counter_uart = 0;
 
 
 
-
-tmp_data = 0;
-
-
 }
 else{
-
+CREN = 0;
 tmp_data = RCREG;
 counter_uart = 0;
 }
@@ -1790,7 +1785,7 @@ return;
 
 }
 
-# 153
+# 148
 }
 
 int main(void){
@@ -1818,7 +1813,7 @@ TMR1ON = 1;
 TMR1H = 0x00;
 TMR1H = 0x00;
 
-# 185
+# 180
 BRG16 = 0;
 BRGH = 0;
 SPBRGH = 0;
@@ -1829,7 +1824,7 @@ SPEN = 1;
 RCIE = 1;
 CREN = 1;
 
-# 213
+# 208
 TRISA = 0x00;
 TRISB = 0b00100000;
 TRISC = 0x00;
@@ -1864,7 +1859,7 @@ incremental1 = 0;
 
 motor1 = tmp1;
 
-# 262
+# 257
 }
 }
 

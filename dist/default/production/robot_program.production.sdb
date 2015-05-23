@@ -105,7 +105,7 @@
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
 "56 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
-"155
+"150
 [v _main main `(i  1 e 2 0 ]
 "53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f687.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
@@ -113,7 +113,7 @@
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
 "475
 [v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
-[s S32 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S33 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 TMR1CS 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
@@ -122,12 +122,12 @@
 `uc 1 T1GINV 1 0 :1:7 
 ]
 "502
-[s S40 . 1 `uc 1 . 1 0 :4:0 
+[s S41 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
-[u S44 . 1 `S32 1 . 1 0 `S40 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES44  1 e 1 @16 ]
+[u S45 . 1 `S33 1 . 1 0 `S41 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES45  1 e 1 @16 ]
 "693
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
 "799
@@ -268,13 +268,13 @@
 [v _tmp_data tmp_data `uc  1 e 1 0 ]
 "54
 [v _tmp_data2 tmp_data2 `uc  1 e 1 0 ]
-"155
+"150
 [v _main main `(i  1 e 2 0 ]
 {
-"263
+"258
 } 0
 "56
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
 {
-"153
+"148
 } 0

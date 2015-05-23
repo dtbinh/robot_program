@@ -11,25 +11,25 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+$C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 end_init CODE 0 10 10 1 2
 reset_vec CODE 0 0 0 1 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production\robot_program.production.obj
 cinit CODE 0 11 11 14 2
 intentry CODE 0 4 4 C 2
-text1 CODE 0 95 95 6D 2
+text1 CODE 0 95 95 6E 2
 maintext CODE 0 25 25 70 2
 cstackBANK0 BANK0 1 4D 4D 1 1
 cstackCOMMON COMMON 1 76 76 6 1
-inittext CODE 0 165 165 F 2
-clrtext CODE 0 174 174 8 2
+inittext CODE 0 166 166 F 2
+clrtext CODE 0 175 175 8 2
 dataBANK0 BANK0 1 20 20 18 1
 bssBANK0 BANK0 1 38 38 15 1
 bssCOMMON COMMON 1 70 70 6 1
 nvCOMMON COMMON 1 7C 7C 1 1
-strings STRING 0 102 102 4B 2
-idataBANK0 CODE 0 14D 14D 18 2
+strings STRING 0 103 103 4B 2
+idataBANK0 CODE 0 14E 14E 18 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -39,13 +39,13 @@ idataBANK0 CODE 0 14D 14D 18 2
 BANK0 004E-006F 1
 BANK1 00A0-00BF 1
 CODE 0001-0003 2
-CODE 017C-07FF 2
+CODE 017D-07FF 2
 COMMON 007D-007D 1
 CONST 0001-0003 2
-CONST 017C-07FF 2
+CONST 017D-07FF 2
 EEDATA 2100-21FF 2
 ENTRY 0001-0003 2
-ENTRY 017C-07FF 2
+ENTRY 017D-07FF 2
 IDLOC 2000-2003 2
 RAM 004E-006F 1
 RAM 00A0-00BF 1
@@ -55,9 +55,9 @@ SFR2 0100-016F 1
 SFR3 0180-01EF 1
 STACK 004E-006F 1
 STRCODE 0001-0003 2
-STRCODE 017C-07FF 2
+STRCODE 017D-07FF 2
 STRING 0001-0003 2
-STRING 017C-07FF 2
+STRING 017D-07FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -73,135 +73,136 @@ STRING 017C-07FF 2
 %LINETAB
 $dist/default/production\robot_program.production.obj
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":56 4 intentry CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":476 11 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":479 11 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":612 11 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":613 12 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":614 13 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":615 14 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":618 15 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":619 16 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":620 17 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":621 18 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":622 19 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":654 1A cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":655 1B cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":656 1C cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":657 1D cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":658 1E cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":659 1F cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":660 20 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":661 21 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":662 22 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":668 23 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":669 23 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":670 24 cinit CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":155 25 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":157 25 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":158 28 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":159 30 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":163 31 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":164 39 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":165 3A maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":166 3D maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":171 3E maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":172 3F maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":173 40 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":174 41 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":175 42 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":176 43 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":177 44 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":178 45 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":185 46 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":186 49 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":187 4A maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":188 4B maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":190 4D maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":191 4E maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":192 51 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":193 54 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":213 57 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":214 5A maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":215 5C maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":216 5D maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":217 60 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":220 61 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":221 64 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":222 65 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":227 66 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":230 6A maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":231 6E maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":232 73 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":235 77 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":237 7B maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":238 80 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":239 83 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":240 88 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":241 8C maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":243 8F maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":245 90 maintext CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":224 94 maintext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":476 11 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":479 11 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":612 11 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":613 12 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":614 13 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":615 14 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":618 15 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":619 16 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":620 17 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":621 18 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":622 19 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":654 1A cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":655 1B cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":656 1C cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":657 1D cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":658 1E cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":659 1F cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":660 20 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":661 21 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":662 22 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":668 23 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":669 23 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":670 24 cinit CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":150 25 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":152 25 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":153 28 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":154 30 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":158 31 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":159 39 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":160 3A maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":161 3D maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":166 3E maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":167 3F maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":168 40 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":169 41 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":170 42 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":171 43 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":172 44 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":173 45 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":180 46 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":181 49 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":182 4A maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":183 4B maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":185 4D maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":186 4E maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":187 51 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":188 54 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":208 57 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":209 5A maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":210 5C maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":211 5D maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":212 60 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":215 61 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":216 64 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":217 65 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":222 66 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":225 6A maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":226 6E maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":227 73 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":230 77 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":232 7B maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":233 80 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":234 83 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":235 88 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":236 8C maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":238 8F maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":240 90 maintext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":219 94 maintext CODE
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":56 95 text1 CODE
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":58 95 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":61 96 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":64 98 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":65 9B text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":68 9F text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":74 A3 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":75 AB text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":76 AF text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":77 B2 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":83 B3 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":86 B4 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":89 B5 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":90 B9 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":92 BA text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":95 BB text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":98 BB text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":99 BD text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":102 BE text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":103 C3 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":106 C8 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":107 CD text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":108 CF text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":109 D0 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":111 D1 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":112 D6 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":113 DD text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":114 E3 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":115 E8 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":116 EB text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":117 ED text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":118 F1 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":121 F6 text1 CODE
-"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":153 F7 text1 CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":628 165 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":629 165 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":630 166 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":631 167 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":632 168 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":639 169 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":640 169 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":641 16A inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":642 16B inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":643 16C inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":644 16D inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":645 16E inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":646 16F inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":647 170 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":648 171 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":649 172 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":650 173 inittext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":599 174 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":600 174 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":601 175 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":602 175 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":603 176 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":604 177 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":605 178 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":606 179 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":607 17A clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7co.":608 17B clrtext CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":59 96 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":61 97 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":64 99 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":65 9C text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":67 A0 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":73 A4 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":74 AC text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":75 B0 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":76 B4 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":82 B5 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":83 B5 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":84 B6 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":85 BA text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":87 BB text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":90 BC text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":93 BC text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":94 BE text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":97 BF text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":98 C4 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":101 C9 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":102 CE text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":103 D0 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":104 D1 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":106 D2 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":107 D7 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":108 DE text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":109 E4 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":110 E9 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":111 EC text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":112 EE text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":113 F2 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":116 F7 text1 CODE
+"C:\Users\Kadir\Documents\GitHub\robot_program\main.c":148 F8 text1 CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":628 166 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":629 166 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":630 167 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":631 168 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":632 169 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":639 16A inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":640 16A inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":641 16B inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":642 16C inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":643 16D inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":644 16E inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":645 16F inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":646 170 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":647 171 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":648 172 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":649 173 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":650 174 inittext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":599 175 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":600 175 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":601 176 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":602 176 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":603 177 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":604 178 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":605 179 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":606 17A clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":607 17B clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s4oo.":608 17C clrtext CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -240,12 +241,12 @@ _tmp3 4B 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 _FERR C2 0 ABS 0 - dist/default/production\robot_program.production.obj
 _OERR C1 0 ABS 0 - dist/default/production\robot_program.production.obj
 _main 4A 0 CODE 0 maintext dist/default/production\robot_program.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+___sp 0 0 STACK 2 stack C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 btemp 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
 ttemp 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
-start 20 0 CODE 0 init C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+start 20 0 CODE 0 init C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 _BRG16 4DB 0 ABS 0 - dist/default/production\robot_program.production.obj
 _TMR1H F 0 ABS 0 - dist/default/production\robot_program.production.obj
 _RCREG 1A 0 ABS 0 - dist/default/production\robot_program.production.obj
@@ -254,7 +255,7 @@ _TRISB 86 0 ABS 0 - dist/default/production\robot_program.production.obj
 _tmp_data 75 0 COMMON 1 bssCOMMON dist/default/production\robot_program.production.obj
 _TRISC 87 0 ABS 0 - dist/default/production\robot_program.production.obj
 _PORTA 5 0 ABS 0 - dist/default/production\robot_program.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 _SPBRG 99 0 ABS 0 - dist/default/production\robot_program.production.obj
 _ANSEL 11E 0 ABS 0 - dist/default/production\robot_program.production.obj
 ltemp0 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
@@ -278,8 +279,8 @@ wtemp6 7F 0 ABS 0 - dist/default/production\robot_program.production.obj
 interrupt_function 8 0 CODE 0 intentry dist/default/production\robot_program.production.obj
 __Hconfig 4010 0 CONFIG 0 config -
 __Lconfig 400E 0 CONFIG 0 config -
-__end_of_global_interrupt 204 0 CODE 0 text1 dist/default/production\robot_program.production.obj
-__end_of__stringtab 210 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__end_of_global_interrupt 206 0 CODE 0 text1 dist/default/production\robot_program.production.obj
+__end_of__stringtab 212 0 STRING 0 strings dist/default/production\robot_program.production.obj
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __Hfunctab 0 0 CODE 0 functab -
@@ -290,7 +291,7 @@ __Lcommon 0 0 ABS 0 common -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 _TMR1GE 86 0 ABS 0 - dist/default/production\robot_program.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 _SPBRGH 9A 0 ABS 0 - dist/default/production\robot_program.production.obj
 _ANSELH 11F 0 ABS 0 - dist/default/production\robot_program.production.obj
 _uart_data 20 0 BANK0 1 dataBANK0 dist/default/production\robot_program.production.obj
@@ -310,14 +311,14 @@ __Lsfr3 0 0 ABS 0 sfr3 -
 _motor1 74 0 COMMON 1 bssCOMMON dist/default/production\robot_program.production.obj
 _motor2 48 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 _motor3 49 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
-init_fetch0 2CA 0 CODE 0 inittext dist/default/production\robot_program.production.obj
+init_fetch0 2CC 0 CODE 0 inittext dist/default/production\robot_program.production.obj
 __Hcode 0 0 ABS 0 code -
 __Lcode 0 0 ABS 0 code -
-stackhi 0 0 ABS 0 - C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+stackhi 0 0 ABS 0 - C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __pcstackBANK0 4D 0 BANK0 1 cstackBANK0 dist/default/production\robot_program.production.obj
-stacklo 0 0 ABS 0 - C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+stacklo 0 0 ABS 0 - C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 saved_w 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
 __Hinit 20 0 CODE 0 init -
 __Linit 20 0 CODE 0 init -
@@ -330,15 +331,15 @@ __pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\robot_program.produc
 end_of_initialization 46 0 CODE 0 cinit dist/default/production\robot_program.production.obj
 _counter_uart 72 0 COMMON 1 bssCOMMON dist/default/production\robot_program.production.obj
 _incremental1 73 0 COMMON 1 bssCOMMON dist/default/production\robot_program.production.obj
-__stringtab 204 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__stringtab 206 0 STRING 0 strings dist/default/production\robot_program.production.obj
 __HnvCOMMON 0 0 ABS 0 nvCOMMON -
 __LnvCOMMON 0 0 ABS 0 nvCOMMON -
 __pnvCOMMON 7C 0 COMMON 1 nvCOMMON dist/default/production\robot_program.production.obj
 _T1CONbits 10 0 ABS 0 - dist/default/production\robot_program.production.obj
 __Hstrings 0 0 ABS 0 strings -
 __Lstrings 0 0 ABS 0 strings -
-__end_of_motor1Array 22E 0 STRING 0 strings dist/default/production\robot_program.production.obj
-__pstrings 204 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__end_of_motor1Array 230 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__pstrings 206 0 STRING 0 strings dist/default/production\robot_program.production.obj
 _init_received 47 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 _T1OSCEN 83 0 ABS 0 - dist/default/production\robot_program.production.obj
 _OSCTUNE 90 0 ABS 0 - dist/default/production\robot_program.production.obj
@@ -360,11 +361,11 @@ __ptext1 12A 0 CODE 0 text1 dist/default/production\robot_program.production.obj
 _direction3 40 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 __Hclrtext 0 0 ABS 0 clrtext -
 __Lclrtext 0 0 ABS 0 clrtext -
-__end_of_motor2_1Array 24C 0 STRING 0 strings dist/default/production\robot_program.production.obj
-__end_of_motor2_2Array 26A 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__end_of_motor2_1Array 24E 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__end_of_motor2_2Array 26C 0 STRING 0 strings dist/default/production\robot_program.production.obj
 __end_of__initialization 46 0 CODE 0 cinit dist/default/production\robot_program.production.obj
 _incremental3 46 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
-_motor1Array 210 0 STRING 0 strings dist/default/production\robot_program.production.obj
+_motor1Array 212 0 STRING 0 strings dist/default/production\robot_program.production.obj
 __size_of_global_interrupt 0 0 ABS 0 - dist/default/production\robot_program.production.obj
 __Hidloc 0 0 IDLOC 0 idloc -
 __Lidloc 0 0 IDLOC 0 idloc -
@@ -385,41 +386,41 @@ __size_of_main 0 0 ABS 0 - dist/default/production\robot_program.production.obj
 __HidataBANK0 0 0 ABS 0 idataBANK0 -
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\robot_program.production.obj
-__pidataBANK0 29A 0 CODE 0 idataBANK0 dist/default/production\robot_program.production.obj
+__pidataBANK0 29C 0 CODE 0 idataBANK0 dist/default/production\robot_program.production.obj
 _tmp_data2 4C 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
-clear_ram0 2E8 0 CODE 0 clrtext dist/default/production\robot_program.production.obj
+clear_ram0 2EA 0 CODE 0 clrtext dist/default/production\robot_program.production.obj
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __pbssBANK0 38 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 _motor1_data 32 0 BANK0 1 dataBANK0 dist/default/production\robot_program.production.obj
 _motor2_data 34 0 BANK0 1 dataBANK0 dist/default/production\robot_program.production.obj
 _motor3_data 36 0 BANK0 1 dataBANK0 dist/default/production\robot_program.production.obj
-_posArray1 26A 0 STRING 0 strings dist/default/production\robot_program.production.obj
-_posArray2 27A 0 STRING 0 strings dist/default/production\robot_program.production.obj
+_posArray1 26C 0 STRING 0 strings dist/default/production\robot_program.production.obj
+_posArray2 27C 0 STRING 0 strings dist/default/production\robot_program.production.obj
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 __pbssCOMMON 70 0 COMMON 1 bssCOMMON dist/default/production\robot_program.production.obj
-_posArray3 28A 0 STRING 0 strings dist/default/production\robot_program.production.obj
+_posArray3 28C 0 STRING 0 strings dist/default/production\robot_program.production.obj
 _motor1stop 33 0 BANK0 1 dataBANK0 dist/default/production\robot_program.production.obj
 _motor2stop 35 0 BANK0 1 dataBANK0 dist/default/production\robot_program.production.obj
-__end_of_posArray1 27A 0 STRING 0 strings dist/default/production\robot_program.production.obj
-__end_of_posArray2 28A 0 STRING 0 strings dist/default/production\robot_program.production.obj
-__end_of_posArray3 29A 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__end_of_posArray1 27C 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__end_of_posArray2 28C 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__end_of_posArray3 29C 0 STRING 0 strings dist/default/production\robot_program.production.obj
 _motor3stop 37 0 BANK0 1 dataBANK0 dist/default/production\robot_program.production.obj
 __Hend_init 22 0 CODE 0 end_init -
 __Lend_init 20 0 CODE 0 end_init -
 __Hreset_vec 2 0 CODE 0 reset_vec -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-init_ram0 2D2 0 CODE 0 inittext dist/default/production\robot_program.production.obj
+init_ram0 2D4 0 CODE 0 inittext dist/default/production\robot_program.production.obj
 _global_interrupt 12A 0 CODE 0 text1 dist/default/production\robot_program.production.obj
-intlevel0 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\robot_program.production.obj
-intlevel1 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7co.obj
-intlevel2 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7co.obj
-intlevel3 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7co.obj
-intlevel4 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 _counter1 70 0 COMMON 1 bssCOMMON dist/default/production\robot_program.production.obj
-intlevel5 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7co.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s4oo.obj
 _counter2 38 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 _counter3 3A 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
@@ -432,10 +433,10 @@ __Lmaintext 0 0 ABS 0 maintext -
 __pmaintext 4A 0 CODE 0 maintext dist/default/production\robot_program.production.obj
 __Hinittext 0 0 ABS 0 inittext -
 __Linittext 0 0 ABS 0 inittext -
-_motor2_1Array 22E 0 STRING 0 strings dist/default/production\robot_program.production.obj
-_motor2_2Array 24C 0 STRING 0 strings dist/default/production\robot_program.production.obj
+_motor2_1Array 230 0 STRING 0 strings dist/default/production\robot_program.production.obj
+_motor2_2Array 24E 0 STRING 0 strings dist/default/production\robot_program.production.obj
 __initialization 22 0 CODE 0 cinit dist/default/production\robot_program.production.obj
-__stringbase 20E 0 STRING 0 strings dist/default/production\robot_program.production.obj
+__stringbase 210 0 STRING 0 strings dist/default/production\robot_program.production.obj
 __CFG_FOSC$INTRCIO 0 0 ABS 0 - dist/default/production\robot_program.production.obj
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\robot_program.production.obj
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\robot_program.production.obj
@@ -465,9 +466,9 @@ __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\robot_program.production.obj
 # All other numeric quantities are in decimal.
 %SEGMENTS
 reset_vec 0 0 0 1 2
-intentry 0 4 8 FE 2
+intentry 0 4 8 FF 2
 config 0 2007 400E 1 2
 bssCOMMON 1 70 70 D 1
 dataBANK0 1 20 20 2E 1
-strings 0 102 204 4B 2
-idataBANK0 0 14D 29A 2F 2
+strings 0 103 206 4B 2
+idataBANK0 0 14E 29C 2F 2

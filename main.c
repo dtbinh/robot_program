@@ -56,7 +56,7 @@ char tmp_data2 = 0;
 void interrupt global_interrupt(){          //single interrupt vector to handle all of ISR's
 
     GIE = 0 ;//Global interrupt disable in ISR
-    //CREN = 1; // seri port kapand?ysa acal?m
+    CREN = 1; // seri port kapand?ysa acal?m
 
     if(RCIF){
         
@@ -64,7 +64,6 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
         if(FERR == 0 && OERR == 0){
             tmp_data = RCREG;
             
-            //tmp_data2 = RCREG;
             if(tmp_data == 0x55){
                 counter_uart = 0;
                  GIE = 1;
@@ -76,16 +75,12 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
                 if(counter_uart == 15){
                     counter_uart = 0;
                 }
-              //if(motor1_data != tmp_data)
-                 //motor1_data = tmp_data;
-                 //motor2_data = tmp_data;
-                 //motor3_data = tmp_data;
-              tmp_data = 0;
+      
        
         
         }
         else{
-            // CREN = 0;
+             CREN = 0;
             tmp_data = RCREG;  // bos okuma yapal?m
              counter_uart = 0;
         }

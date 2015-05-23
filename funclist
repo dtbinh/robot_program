@@ -1,11 +1,11 @@
-_global_interrupt: CODE, 149 0 109
-__stringtab: STRING, 258 0 6
+_global_interrupt: CODE, 149 0 110
+__stringtab: STRING, 259 0 6
 _main: CODE, 37 0 112
-_motor1Array: STRING, 264 0 15
-_motor2_1Array: STRING, 279 0 15
-_motor2_2Array: STRING, 294 0 15
+_motor1Array: STRING, 265 0 15
+_motor2_1Array: STRING, 280 0 15
+_motor2_2Array: STRING, 295 0 15
 __initialization: CODE, 17 0 18
-_posArray1: STRING, 309 0 8
-_posArray2: STRING, 317 0 8
-_posArray3: STRING, 325 0 8
-Total: 314
+_posArray1: STRING, 310 0 8
+_posArray2: STRING, 318 0 8
+_posArray3: STRING, 326 0 8
+Total: 315
