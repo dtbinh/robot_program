@@ -1680,217 +1680,214 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 106: TMR0 = motor1Array[motor1];
 "106
 [e = _TMR0 *U + &U _motor1Array * -> _motor1 `ux -> -> # *U &U _motor1Array `ui `ux ]
-[; ;main.c: 108: loop1 = incremental1;
-"108
+[; ;main.c: 107: loop1 = incremental1;
+"107
 [e = _loop1 -> _incremental1 `i ]
-[; ;main.c: 109: counter1 += direction1;
-"109
+[; ;main.c: 108: counter1 += direction1;
+"108
 [e =+ _counter1 _direction1 ]
-[; ;main.c: 111: if(counter1 == 8)
-"111
+[; ;main.c: 109: if(counter1 == 8)
+"109
 [e $ ! == _counter1 -> 8 `i 128  ]
-[; ;main.c: 112: counter1 = 0;
-"112
+[; ;main.c: 110: counter1 = 0;
+"110
 [e = _counter1 -> 0 `i ]
 [e $U 129  ]
-"113
+"111
 [e :U 128 ]
-[; ;main.c: 113: else if(counter1 < 0)
+[; ;main.c: 111: else if(counter1 < 0)
 [e $ ! < _counter1 -> 0 `i 130  ]
-[; ;main.c: 114: counter1 = 8;
-"114
+[; ;main.c: 112: counter1 = 8;
+"112
 [e = _counter1 -> 8 `i ]
 [e :U 130 ]
-"115
+"113
 [e :U 129 ]
-[; ;main.c: 115: PORTA = posArray1[counter1];
+[; ;main.c: 113: PORTA = posArray1[counter1];
 [e = _PORTA *U + &U _posArray1 * -> -> _counter1 `ui `ux -> -> # *U &U _posArray1 `ui `ux ]
-"117
+"115
 }
 [e :U 127 ]
 [e :U 125 ]
-[; ;main.c: 117: }
-[; ;main.c: 118: GIE = 1 ;
-"118
+[; ;main.c: 115: }
+[; ;main.c: 116: GIE = 1 ;
+"116
 [e = _GIE -> -> 1 `i `b ]
-[; ;main.c: 119: return;
-"119
+[; ;main.c: 117: return;
+"117
 [e $UE 118  ]
-"121
+"119
 }
 [e :U 123 ]
-[; ;main.c: 121: }
-[; ;main.c: 150: }
-"150
+[; ;main.c: 119: }
+[; ;main.c: 148: }
+"148
 [e :UE 118 ]
 }
-"152
+"150
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;main.c: 152: int main(void){
+[; ;main.c: 150: int main(void){
 [e :U _main ]
 [f ]
-[; ;main.c: 154: OSCCON = 0x00;
-"154
+[; ;main.c: 152: OSCCON = 0x00;
+"152
 [e = _OSCCON -> -> 0 `i `uc ]
-[; ;main.c: 155: OSCCON |= 0b01110001;
-"155
+[; ;main.c: 153: OSCCON |= 0b01110001;
+"153
 [e =| _OSCCON -> -> 113 `i `uc ]
-[; ;main.c: 156: OSCTUNE = 0x00;
-"156
+[; ;main.c: 154: OSCTUNE = 0x00;
+"154
 [e = _OSCTUNE -> -> 0 `i `uc ]
-[; ;main.c: 160: OPTION_REG &= 0b11010000;
-"160
+[; ;main.c: 158: OPTION_REG &= 0b11010000;
+"158
 [e =& _OPTION_REG -> -> 208 `i `uc ]
-[; ;main.c: 161: OPTION_REG |= 0b00000100;
-"161
+[; ;main.c: 159: OPTION_REG |= 0b00000100;
+"159
 [e =| _OPTION_REG -> -> 4 `i `uc ]
-[; ;main.c: 162: TMR0 = 0x00;
-"162
+[; ;main.c: 160: TMR0 = 0x00;
+"160
 [e = _TMR0 -> -> 0 `i `uc ]
-[; ;main.c: 163: T0IE = 1;
-"163
+[; ;main.c: 161: T0IE = 1;
+"161
 [e = _T0IE -> -> 1 `i `b ]
-[; ;main.c: 168: TMR1GE = 0;
-"168
+[; ;main.c: 166: TMR1GE = 0;
+"166
 [e = _TMR1GE -> -> 0 `i `b ]
-[; ;main.c: 169: T1CONbits.T1CKPS0 = 0;
-"169
+[; ;main.c: 167: T1CONbits.T1CKPS0 = 0;
+"167
 [e = . . _T1CONbits 1 1 -> -> 0 `i `uc ]
-[; ;main.c: 170: T1CONbits.T1CKPS1 = 0;
-"170
+[; ;main.c: 168: T1CONbits.T1CKPS1 = 0;
+"168
 [e = . . _T1CONbits 1 2 -> -> 0 `i `uc ]
-[; ;main.c: 171: T1OSCEN = 0;
-"171
+[; ;main.c: 169: T1OSCEN = 0;
+"169
 [e = _T1OSCEN -> -> 0 `i `b ]
-[; ;main.c: 172: TMR1CS = 0;
-"172
+[; ;main.c: 170: TMR1CS = 0;
+"170
 [e = _TMR1CS -> -> 0 `i `b ]
-[; ;main.c: 173: TMR1ON = 1;
-"173
+[; ;main.c: 171: TMR1ON = 1;
+"171
 [e = _TMR1ON -> -> 1 `i `b ]
-[; ;main.c: 174: TMR1H = 0x00;
-"174
+[; ;main.c: 172: TMR1H = 0x00;
+"172
 [e = _TMR1H -> -> 0 `i `uc ]
-[; ;main.c: 175: TMR1H = 0x00;
-"175
+[; ;main.c: 173: TMR1H = 0x00;
+"173
 [e = _TMR1H -> -> 0 `i `uc ]
-[; ;main.c: 182: BRG16 = 0;
-"182
+[; ;main.c: 180: BRG16 = 0;
+"180
 [e = _BRG16 -> -> 0 `i `b ]
-[; ;main.c: 183: BRGH = 0;
-"183
+[; ;main.c: 181: BRGH = 0;
+"181
 [e = _BRGH -> -> 0 `i `b ]
-[; ;main.c: 184: SPBRGH = 0;
-"184
+[; ;main.c: 182: SPBRGH = 0;
+"182
 [e = _SPBRGH -> -> 0 `i `uc ]
-[; ;main.c: 185: SPBRG = 0x0C;
-"185
+[; ;main.c: 183: SPBRG = 0x0C;
+"183
 [e = _SPBRG -> -> 12 `i `uc ]
-[; ;main.c: 187: SYNC = 0;
-"187
+[; ;main.c: 185: SYNC = 0;
+"185
 [e = _SYNC -> -> 0 `i `b ]
-[; ;main.c: 188: SPEN = 1;
-"188
+[; ;main.c: 186: SPEN = 1;
+"186
 [e = _SPEN -> -> 1 `i `b ]
-[; ;main.c: 189: RCIE = 1;
-"189
+[; ;main.c: 187: RCIE = 1;
+"187
 [e = _RCIE -> -> 1 `i `b ]
-[; ;main.c: 190: CREN = 1;
-"190
+[; ;main.c: 188: CREN = 1;
+"188
 [e = _CREN -> -> 1 `i `b ]
-[; ;main.c: 210: TRISA = 0x00;
-"210
+[; ;main.c: 208: TRISA = 0x00;
+"208
 [e = _TRISA -> -> 0 `i `uc ]
-[; ;main.c: 211: TRISB = 0b00100000;
-"211
+[; ;main.c: 209: TRISB = 0b00100000;
+"209
 [e = _TRISB -> -> 32 `i `uc ]
-[; ;main.c: 212: TRISC = 0x00;
-"212
+[; ;main.c: 210: TRISC = 0x00;
+"210
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;main.c: 213: ANSEL = 0x00;
-"213
+[; ;main.c: 211: ANSEL = 0x00;
+"211
 [e = _ANSEL -> -> 0 `i `uc ]
-[; ;main.c: 214: ANSELH = 0x00;
-"214
+[; ;main.c: 212: ANSELH = 0x00;
+"212
 [e = _ANSELH -> -> 0 `i `uc ]
-[; ;main.c: 217: PORTA = 0x00;
-"217
+[; ;main.c: 215: PORTA = 0x00;
+"215
 [e = _PORTA -> -> 0 `i `uc ]
-[; ;main.c: 218: PEIE = 1;
-"218
+[; ;main.c: 216: PEIE = 1;
+"216
 [e = _PEIE -> -> 1 `i `b ]
-[; ;main.c: 219: GIE = 1;
-"219
+[; ;main.c: 217: GIE = 1;
+"217
 [e = _GIE -> -> 1 `i `b ]
-[; ;main.c: 221: while(1){
-"221
+[; ;main.c: 219: while(1){
+"219
 [e :U 133 ]
 {
-[; ;main.c: 223: PORTA = posArray1[counter1];
+[; ;main.c: 223: tmp1 = motor1_data;
 "223
-[e = _PORTA *U + &U _posArray1 * -> -> _counter1 `ui `ux -> -> # *U &U _posArray1 `ui `ux ]
-[; ;main.c: 225: tmp1 = motor1_data;
-"225
 [e = _tmp1 _motor1_data ]
-[; ;main.c: 228: if(tmp1 >=60){
-"228
+[; ;main.c: 226: if(tmp1 >=60){
+"226
 [e $ ! >= -> _tmp1 `i -> 60 `i 135  ]
 {
-[; ;main.c: 229: tmp1 = tmp1 - 15;
-"229
+[; ;main.c: 227: tmp1 = tmp1 - 15;
+"227
 [e = _tmp1 -> - -> _tmp1 `i -> 15 `i `uc ]
-[; ;main.c: 230: direction1 = -1;
-"230
+[; ;main.c: 228: direction1 = -1;
+"228
 [e = _direction1 -U -> 1 `i ]
-"231
+"229
 }
-[; ;main.c: 231: }
+[; ;main.c: 229: }
 [e $U 136  ]
-"232
+"230
 [e :U 135 ]
-[; ;main.c: 232: else
-[; ;main.c: 233: direction1 = 1;
-"233
+[; ;main.c: 230: else
+[; ;main.c: 231: direction1 = 1;
+"231
 [e = _direction1 -> 1 `i ]
 [e :U 136 ]
-[; ;main.c: 235: tmp1 = tmp1 - 45;
-"235
+[; ;main.c: 233: tmp1 = tmp1 - 45;
+"233
 [e = _tmp1 -> - -> _tmp1 `i -> 45 `i `uc ]
-[; ;main.c: 236: if(tmp1 == 0)
-"236
+[; ;main.c: 234: if(tmp1 == 0)
+"234
 [e $ ! == -> _tmp1 `i -> 0 `i 137  ]
-[; ;main.c: 237: incremental1 = 2;
-"237
+[; ;main.c: 235: incremental1 = 2;
+"235
 [e = _incremental1 -> -> 2 `i `uc ]
 [e $U 138  ]
-"238
+"236
 [e :U 137 ]
-[; ;main.c: 238: else if(tmp1 == 1)
+[; ;main.c: 236: else if(tmp1 == 1)
 [e $ ! == -> _tmp1 `i -> 1 `i 139  ]
-[; ;main.c: 239: incremental1 = 1;
-"239
+[; ;main.c: 237: incremental1 = 1;
+"237
 [e = _incremental1 -> -> 1 `i `uc ]
 [e $U 140  ]
-"240
+"238
 [e :U 139 ]
-[; ;main.c: 240: else
-[; ;main.c: 241: incremental1 = 0;
-"241
+[; ;main.c: 238: else
+[; ;main.c: 239: incremental1 = 0;
+"239
 [e = _incremental1 -> -> 0 `i `uc ]
 [e :U 140 ]
 [e :U 138 ]
-[; ;main.c: 243: motor1 = tmp1;
-"243
+[; ;main.c: 241: motor1 = tmp1;
+"241
 [e = _motor1 _tmp1 ]
-"260
+"258
 }
 [e :U 132 ]
-"221
+"219
 [e $U 133  ]
 [e :U 134 ]
-[; ;main.c: 260: }
-[; ;main.c: 261: }
-"261
+[; ;main.c: 258: }
+[; ;main.c: 259: }
+"259
 [e :UE 131 ]
 }

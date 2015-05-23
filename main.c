@@ -104,11 +104,9 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
         }
         else{
             TMR0 = motor1Array[motor1];
-        //TMR0 = 161;
             loop1 = incremental1;
             counter1 += direction1;
-            //counter1 += 1;
-              if(counter1 == 8)
+           if(counter1 == 8)
             counter1 = 0;
           else if(counter1 < 0)
             counter1 = 8;
@@ -220,7 +218,7 @@ int main(void){
 
     while(1){
 
-PORTA = posArray1[counter1];
+//PORTA = posArray1[counter1];
         // PORTA = uart_data[5];
         tmp1 =  motor1_data;
        //tmp1 =  60;

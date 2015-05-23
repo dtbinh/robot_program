@@ -105,7 +105,7 @@
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
 "56 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
-"152
+"150
 [v _main main `(i  1 e 2 0 ]
 "53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f687.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
@@ -266,13 +266,13 @@
 [v _tmp_data tmp_data `uc  1 e 1 0 ]
 "54
 [v _tmp_data2 tmp_data2 `uc  1 e 1 0 ]
-"152
+"150
 [v _main main `(i  1 e 2 0 ]
 {
-"261
+"259
 } 0
 "56
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
 {
-"150
+"148
 } 0
