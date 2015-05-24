@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+$C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 end_init CODE 0 10 10 1 2
 reset_vec CODE 0 0 0 1 2
 config CONFIG 0 2007 2007 1 2
@@ -72,50 +72,50 @@ STRING 01DF-07FF 2
 %LINETAB
 $dist/default/production\robot_program.production.obj
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":50 4 intentry CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":452 11 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":455 11 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":555 11 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":556 12 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":557 13 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":558 14 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":561 15 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":562 16 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":563 17 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":564 18 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":565 19 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":570 1A cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":571 1B cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":572 1C cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":573 1D cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":574 1E cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":575 1F cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":576 20 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":577 21 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":578 22 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":579 23 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":580 24 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":581 25 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":582 26 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":583 27 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":584 28 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":585 29 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":586 2A cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":587 2B cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":588 2C cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":589 2D cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":590 2E cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":591 2F cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":592 30 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":593 31 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":594 32 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":595 33 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":596 34 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":597 35 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":598 36 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":599 37 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":605 38 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":606 38 cinit CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":607 39 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":452 11 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":455 11 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":555 11 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":556 12 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":557 13 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":558 14 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":561 15 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":562 16 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":563 17 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":564 18 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":565 19 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":570 1A cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":571 1B cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":572 1C cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":573 1D cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":574 1E cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":575 1F cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":576 20 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":577 21 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":578 22 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":579 23 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":580 24 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":581 25 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":582 26 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":583 27 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":584 28 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":585 29 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":586 2A cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":587 2B cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":588 2C cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":589 2D cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":590 2E cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":591 2F cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":592 30 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":593 31 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":594 32 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":595 33 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":596 34 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":597 35 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":598 36 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":599 37 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":605 38 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":606 38 cinit CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":607 39 cinit CODE
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":147 3A maintext CODE
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":149 3A maintext CODE
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":150 3D maintext CODE
@@ -224,16 +224,16 @@ $dist/default/production\robot_program.production.obj
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":134 164 text1 CODE
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":137 171 text1 CODE
 "C:\Users\Kadir\Documents\GitHub\robot_program\main.c":145 172 text1 CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":542 1D7 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":543 1D7 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":544 1D8 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":545 1D8 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":546 1D9 clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":547 1DA clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":548 1DB clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":549 1DC clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":550 1DD clrtext CODE
-"C:\Users\Kadir\AppData\Local\Temp\s7a8.":551 1DE clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":542 1D7 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":543 1D7 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":544 1D8 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":545 1D8 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":546 1D9 clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":547 1DA clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":548 1DB clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":549 1DC clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":550 1DD clrtext CODE
+"C:\Users\Kadir\AppData\Local\Temp\s5q0.":551 1DE clrtext CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -273,12 +273,12 @@ _tmp3 36 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 _FERR C2 0 ABS 0 - dist/default/production\robot_program.production.obj
 _OERR C1 0 ABS 0 - dist/default/production\robot_program.production.obj
 _main 74 0 CODE 0 maintext dist/default/production\robot_program.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+___sp 0 0 STACK 2 stack C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 btemp 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
 ttemp 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
-start 20 0 CODE 0 init C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+start 20 0 CODE 0 init C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 _BRG16 4DB 0 ABS 0 - dist/default/production\robot_program.production.obj
 _TMR1H F 0 ABS 0 - dist/default/production\robot_program.production.obj
 _TMR1L E 0 ABS 0 - dist/default/production\robot_program.production.obj
@@ -288,7 +288,7 @@ _TRISB 86 0 ABS 0 - dist/default/production\robot_program.production.obj
 _tmp_data 75 0 COMMON 1 bssCOMMON dist/default/production\robot_program.production.obj
 _TRISC 87 0 ABS 0 - dist/default/production\robot_program.production.obj
 _PORTA 5 0 ABS 0 - dist/default/production\robot_program.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 _PORTB 6 0 ABS 0 - dist/default/production\robot_program.production.obj
 _SPBRG 99 0 ABS 0 - dist/default/production\robot_program.production.obj
 _PORTC 7 0 ABS 0 - dist/default/production\robot_program.production.obj
@@ -327,7 +327,7 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 _TMR1GE 86 0 ABS 0 - dist/default/production\robot_program.production.obj
 _TMR1IE 460 0 ABS 0 - dist/default/production\robot_program.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 _SPBRGH 9A 0 ABS 0 - dist/default/production\robot_program.production.obj
 _ANSELH 11F 0 ABS 0 - dist/default/production\robot_program.production.obj
 _uart_data 38 0 BANK0 1 dataBANK0 dist/default/production\robot_program.production.obj
@@ -349,11 +349,11 @@ _motor2 73 0 COMMON 1 bssCOMMON dist/default/production\robot_program.production
 _motor3 34 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 __Hcode 0 0 ABS 0 code -
 __Lcode 0 0 ABS 0 code -
-stackhi 0 0 ABS 0 - C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+stackhi 0 0 ABS 0 - C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __pcstackBANK0 47 0 BANK0 1 cstackBANK0 dist/default/production\robot_program.production.obj
-stacklo 0 0 ABS 0 - C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+stacklo 0 0 ABS 0 - C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 saved_w 7E 0 ABS 0 - dist/default/production\robot_program.production.obj
 __Hinit 20 0 CODE 0 init -
 __Linit 20 0 CODE 0 init -
@@ -443,14 +443,14 @@ __Lend_init 20 0 CODE 0 end_init -
 __Hreset_vec 2 0 CODE 0 reset_vec -
 __Lreset_vec 0 0 CODE 0 reset_vec -
 _global_interrupt 1BE 0 CODE 0 text1 dist/default/production\robot_program.production.obj
-intlevel0 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\robot_program.production.obj
-intlevel1 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
-intlevel2 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
-intlevel3 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
-intlevel4 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 _counter1 20 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
-intlevel5 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
 _counter2 22 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 _counter3 24 0 BANK0 1 bssBANK0 dist/default/production\robot_program.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -

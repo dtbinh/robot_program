@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
   -h+dist/default/production\robot_program.production.sym \
   --cmf=dist/default/production\robot_program.production.cmf -z -Q16F687 \
-  -oC:\Users\Kadir\AppData\Local\Temp\s7a8.6 \
+  -oC:\Users\Kadir\AppData\Local\Temp\s5q0.6 \
   -Mdist/default/production/robot_program.production.map -E1 -ver=XC8 \
   -ASTACK=048h-06fh -pstack=STACK -ACONST=00h-0FFhx8 -ACODE=00h-07FFh \
   -ASTRCODE=00h-07FFh -AENTRY=00h-0FFhx8 -ASTRING=00h-0FFhx8 \
@@ -16,7 +16,7 @@ Linker command line:
   -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Kadir\AppData\Local\Temp\s7a8.obj \
+  -DENTRY=2 -k C:\Users\Kadir\AppData\Local\Temp\s5q0.obj \
   dist/default/production\robot_program.production.obj 
 
 Object code version is 3.11
@@ -26,7 +26,7 @@ Machine type is 16F687
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Kadir\AppData\Local\Temp\s7a8.obj
+C:\Users\Kadir\AppData\Local\Temp\s5q0.obj
                 end_init                             10       10        1        8       0
                 reset_vec                             0        0        1        0       0
                 config                             2007     2007        1     400E       0

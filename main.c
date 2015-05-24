@@ -103,7 +103,7 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
            if(counter1 == 8)
             counter1 = 0;
           else if(counter1 < 0)
-            counter1 = 8;
+            counter1 = 7;
             
            PORTA = posArray1[counter1] & motor1run;
        
@@ -123,7 +123,7 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
         if(counter2 == 8)
             counter2 = 0;
         else if(counter2 < 0)
-            counter2 = 8;
+            counter2 = 7;
 
         TMR1H = motor2_1Array[motor2];
         TMR1L = motor2_2Array[motor2];

@@ -1718,9 +1718,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 129 ]
 [; ;main.c: 105: else if(counter1 < 0)
 [e $ ! < _counter1 -> 0 `i 131  ]
-[; ;main.c: 106: counter1 = 8;
+[; ;main.c: 106: counter1 = 7;
 "106
-[e = _counter1 -> 8 `i ]
+[e = _counter1 -> 7 `i ]
 [e :U 131 ]
 "108
 [e :U 130 ]
@@ -1762,9 +1762,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 133 ]
 [; ;main.c: 125: else if(counter2 < 0)
 [e $ ! < _counter2 -> 0 `i 135  ]
-[; ;main.c: 126: counter2 = 8;
+[; ;main.c: 126: counter2 = 7;
 "126
-[e = _counter2 -> 8 `i ]
+[e = _counter2 -> 7 `i ]
 [e :U 135 ]
 "128
 [e :U 134 ]

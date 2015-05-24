@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.33 build 59893 
-                                                                                               Sun May 24 00:27:36 2015
+                                                                                               Sun May 24 14:56:30 2015
 
 Microchip Technology Omniscient Code Generator (Lite mode) build 59893
      1                           	processor	16F687
@@ -945,8 +945,8 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    939  0136  1FA1               	btfss	_counter1+1,7
    940  0137  293C               	goto	i1l871
    941                           
-   942                           ;main.c: 106: counter1 = 8;
-   943  0138  3008               	movlw	8
+   942                           ;main.c: 106: counter1 = 7;
+   943  0138  3007               	movlw	7
    944  0139  00A0               	movwf	_counter1
    945  013A  3000               	movlw	0
    946  013B  00A1               	movwf	_counter1+1
@@ -1000,8 +1000,8 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    994  0154  1FA3               	btfss	_counter2+1,7
    995  0155  295A               	goto	i1l885
    996                           
-   997                           ;main.c: 126: counter2 = 8;
-   998  0156  3008               	movlw	8
+   997                           ;main.c: 126: counter2 = 7;
+   998  0156  3007               	movlw	7
    999  0157  00A2               	movwf	_counter2
   1000  0158  3000               	movlw	0
   1001  0159  00A3               	movwf	_counter2+1
@@ -1189,7 +1189,7 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.33 build 59893 
-Symbol Table                                                                                   Sun May 24 00:27:36 2015
+Symbol Table                                                                                   Sun May 24 14:56:30 2015
 
                         pc 0002                __CFG_CP$OFF 0000                         fsr 0004  
                       l167 00C4                        l159 008C                        _GIE 005F  
