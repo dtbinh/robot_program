@@ -11,6 +11,8 @@ const char motor1Array[15] = {15, 135, 5, 67, 105, 130, 148, 161, 172, 180, 187,
 const char motor2_1Array[15] = {0xa2, 0xd1, 0xe0, 0xe8, 0xed, 0xf0, 0xf2, 0xf4, 0xf5, 0xf6, 0xf7, 0xf8, 0xf8, 0xf9, 0xf9};
 const char motor2_2Array[15] = {0x3f, 0x1f, 0xbf, 0x8f, 0x3f, 0x5f, 0x9a, 0x47, 0x94, 0x9f, 0x79, 0x2f, 0xc9, 0x4d, 0xbf};
 
+const char motor3Array[15] = {240, 120, 250, 187, 150, 125, 107, 93, 83, 75, 68, 62, 58, 24, 50};
+//incremental  = [2 1 0 0 0 0 0 0 0 0 0 0 0 0 0];
 
 //char  counter = 0;
 int counter1 = 0;
@@ -115,8 +117,8 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
     }
 
        //Timer1 interrupt
-    if(T1IF){
-        T1IF = 0; //clear interrupt flag
+    if(TMR1IF){
+        TMR1IF = 0; //clear interrupt flag
        
         counter2 += direction2;
 
@@ -130,7 +132,31 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
      
        
     }
- 
+
+/*
+    if(TMR2IF){
+     TMR2IF = 0;
+
+
+        if(loop3 == 2){
+            loop3 = 1;
+            TMR2 = 0;
+         }
+        else if(loop3 == 1){
+            loop3 = 0;
+            TMR2 = 0;
+        }
+        else{
+            TMR2 = motor3Array[motor3];
+            loop3 = incremental3;
+            counter3 += direction3;
+           if(counter3 == 8)
+            counter3 = 0;
+          else if(counter3 < 0)
+            counter3 = 7;
+          }
+        }
+*/
 PORTC = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
 
 
@@ -156,7 +182,7 @@ int main(void){
       OPTION_REG |= 0b00000100;
       TMR0 = 0x00;
       T0IE = 1;
-      //Timer0 clock=Fosc/4, prescaler = 1/256;
+      //Timer0 clock=Fosc/4, prescaler = 1/32;
 
      
       //Timer1 clock=Fosc/4, prescaler = 1/1;
@@ -183,18 +209,19 @@ int main(void){
       //UART 9600 8 bit asenkron konfig
        
       
-    
-      //Timer2 clock=Fosc/4, prescaler = 1/16 , postscaler = 1/16;
-     // T2CONbits.T2CKPS0= 1;
-      //T2CONbits.T2CKPS1= 1;
-      //T2CONbits.T2OUTPS0 = 1;
-      //T2CONbits.T2OUTPS1 = 1;
-      //T2CONbits.T2OUTPS2 = 1;
-      //T2CONbits.T2OUTPS3 = 1;
-      //TMR2ON = 1;
-      //TMR2IE = 1;
+    /*
+      //Timer2 clock=Fosc/4, prescaler = 1/16 , postscaler = 1/2;
+        T2CONbits.T2CKPS0= 1;
+        T2CONbits.T2CKPS1= 1;
+        T2CONbits.T2OUTPS0 = 1;
+        T2CONbits.T2OUTPS1 = 0;
+        T2CONbits.T2OUTPS2 = 0;
+        T2CONbits.T2OUTPS3 = 0;
+        PR2    = 0xFF;
+        TMR2ON = 1;
+        TMR2IE = 1;
     //Timer2 clock=Fosc/4, prescaler = 1/16 , postscaler = 1/16;
-
+*/
 
       //PORTA yI konfigure edelim
       TRISA = 0x00;
@@ -246,7 +273,7 @@ int main(void){
       tmp2 =  uart_data[13];
         if(tmp2 == 75)
       motor2run = 0x00;
-  else
+      else
       motor2run = 0xFF;
 
       if(tmp2 >=60){
@@ -259,7 +286,36 @@ int main(void){
         tmp2 = tmp2 - 45;
         motor2 =  tmp2;
       
-        
+
+
+         tmp3 =  uart_data[12];
+
+  if(tmp3 == 75)
+      motor3run = 0x00;
+  else
+      motor3run = 0xFF;
+
+        if(tmp3 >=60){
+            tmp3 = tmp3 - 15;
+            direction3 = -1;
+        }
+        else
+            direction3 = 1;
+
+
+
+
+        tmp3 = tmp3 - 45;
+        if(tmp3 == 0)
+            incremental3 = 2;
+        else if(tmp3 == 1)
+            incremental3 = 1;
+        else
+            incremental3 = 0;
+
+
+        motor3 = tmp3;
+
     }
 }
 

@@ -103,9 +103,9 @@
 [v ___fltoee __fltoee `(d  1 e 3 0 ]
 "49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"50 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
+"52 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
-"147
+"173
 [v _main main `(i  1 e 2 0 ]
 "53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f687.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
@@ -194,8 +194,6 @@
 [v _T0IE T0IE `VEb  1 e 0 @93 ]
 "3139
 [v _T0IF T0IF `VEb  1 e 0 @90 ]
-"3153
-[v _T1IF T1IF `VEb  1 e 0 @96 ]
 "3155
 [v _T1OSCEN T1OSCEN `VEb  1 e 0 @131 ]
 "3157
@@ -204,6 +202,8 @@
 [v _TMR1GE TMR1GE `VEb  1 e 0 @134 ]
 "3161
 [v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"3163
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
 "3165
 [v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
 "3281
@@ -222,61 +222,63 @@
 [v _motor2_1Array motor2_1Array `DCC[15]uc  1 e 15 0 ]
 "12
 [v _motor2_2Array motor2_2Array `DCC[15]uc  1 e 15 0 ]
-"16
-[v _counter1 counter1 `i  1 e 2 0 ]
-"17
-[v _counter2 counter2 `i  1 e 2 0 ]
+"14
+[v _motor3Array motor3Array `DCC[15]uc  1 e 15 0 ]
 "18
-[v _counter3 counter3 `i  1 e 2 0 ]
+[v _counter1 counter1 `i  1 e 2 0 ]
+"19
+[v _counter2 counter2 `i  1 e 2 0 ]
 "20
-[v _motor1 motor1 `uc  1 e 1 0 ]
-"21
-[v _motor2 motor2 `uc  1 e 1 0 ]
+[v _counter3 counter3 `i  1 e 2 0 ]
 "22
-[v _motor3 motor3 `uc  1 e 1 0 ]
+[v _motor1 motor1 `uc  1 e 1 0 ]
 "23
-[v _tmp1 tmp1 `uc  1 e 1 0 ]
+[v _motor2 motor2 `uc  1 e 1 0 ]
 "24
-[v _tmp2 tmp2 `uc  1 e 1 0 ]
+[v _motor3 motor3 `uc  1 e 1 0 ]
 "25
-[v _tmp3 tmp3 `uc  1 e 1 0 ]
+[v _tmp1 tmp1 `uc  1 e 1 0 ]
+"26
+[v _tmp2 tmp2 `uc  1 e 1 0 ]
 "27
-[v _motor1run motor1run `uc  1 e 1 0 ]
-"28
-[v _motor2run motor2run `uc  1 e 1 0 ]
+[v _tmp3 tmp3 `uc  1 e 1 0 ]
 "29
-[v _motor3run motor3run `uc  1 e 1 0 ]
+[v _motor1run motor1run `uc  1 e 1 0 ]
+"30
+[v _motor2run motor2run `uc  1 e 1 0 ]
 "31
-[v _incremental1 incremental1 `uc  1 e 1 0 ]
-"32
-[v _incremental3 incremental3 `uc  1 e 1 0 ]
+[v _motor3run motor3run `uc  1 e 1 0 ]
 "33
-[v _direction1 direction1 `i  1 e 2 0 ]
+[v _incremental1 incremental1 `uc  1 e 1 0 ]
 "34
-[v _direction2 direction2 `i  1 e 2 0 ]
+[v _incremental3 incremental3 `uc  1 e 1 0 ]
 "35
-[v _direction3 direction3 `i  1 e 2 0 ]
+[v _direction1 direction1 `i  1 e 2 0 ]
 "36
-[v _loop1 loop1 `i  1 e 2 0 ]
+[v _direction2 direction2 `i  1 e 2 0 ]
 "37
+[v _direction3 direction3 `i  1 e 2 0 ]
+"38
+[v _loop1 loop1 `i  1 e 2 0 ]
+"39
 [v _loop3 loop3 `i  1 e 2 0 ]
-"40
-[v _counter_uart counter_uart `uc  1 e 1 0 ]
 "42
+[v _counter_uart counter_uart `uc  1 e 1 0 ]
+"44
 [v _uart_data uart_data `[15]uc  1 e 15 0 ]
-"45
-[v _init_received init_received `uc  1 e 1 0 ]
 "47
+[v _init_received init_received `uc  1 e 1 0 ]
+"49
 [v _tmp_data tmp_data `uc  1 e 1 0 ]
-"48
+"50
 [v _tmp_data2 tmp_data2 `uc  1 e 1 0 ]
-"147
+"173
 [v _main main `(i  1 e 2 0 ]
 {
-"264
+"320
 } 0
-"50
+"52
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
 {
-"145
+"171
 } 0

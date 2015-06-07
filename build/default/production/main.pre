@@ -1678,6 +1678,8 @@ const char motor1Array[15] = {15, 135, 5, 67, 105, 130, 148, 161, 172, 180, 187,
 const char motor2_1Array[15] = {0xa2, 0xd1, 0xe0, 0xe8, 0xed, 0xf0, 0xf2, 0xf4, 0xf5, 0xf6, 0xf7, 0xf8, 0xf8, 0xf9, 0xf9};
 const char motor2_2Array[15] = {0x3f, 0x1f, 0xbf, 0x8f, 0x3f, 0x5f, 0x9a, 0x47, 0x94, 0x9f, 0x79, 0x2f, 0xc9, 0x4d, 0xbf};
 
+const char motor3Array[15] = {240, 120, 250, 187, 150, 125, 107, 93, 83, 75, 68, 62, 58, 24, 50};
+
 
 
 int counter1 = 0;
@@ -1782,8 +1784,8 @@ return;
 }
 
 
-if(T1IF){
-T1IF = 0;
+if(TMR1IF){
+TMR1IF = 0;
 
 counter2 += direction2;
 
@@ -1798,13 +1800,14 @@ TMR1L = motor2_2Array[motor2];
 
 }
 
+# 160
 PORTC = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
 
 
 GIE = 1 ;
 return;
 
-# 145
+# 171
 }
 
 int main(void){
@@ -1844,7 +1847,7 @@ SPEN = 1;
 RCIE = 1;
 CREN = 1;
 
-# 200
+# 227
 TRISA = 0x00;
 TRISB = 0b00100000;
 TRISC = 0x00;
@@ -1907,6 +1910,35 @@ direction2 = 1;
 tmp2 = tmp2 - 45;
 motor2 = tmp2;
 
+
+
+tmp3 = uart_data[12];
+
+if(tmp3 == 75)
+motor3run = 0x00;
+else
+motor3run = 0xFF;
+
+if(tmp3 >=60){
+tmp3 = tmp3 - 15;
+direction3 = -1;
+}
+else
+direction3 = 1;
+
+
+
+
+tmp3 = tmp3 - 45;
+if(tmp3 == 0)
+incremental3 = 2;
+else if(tmp3 == 1)
+incremental3 = 1;
+else
+incremental3 = 0;
+
+
+motor3 = tmp3;
 
 }
 }
