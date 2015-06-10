@@ -1944,6 +1944,7 @@ char tmp3 = 0;
 char flag1 = 0;
 char flag2 = 0;
 char flag3 = 0;
+char flag4 = 0;
 char motor1run = 0;
 char motor2run = 0;
 char motor3run = 0;
@@ -1972,17 +1973,18 @@ char tmp_data2 = 0;
 void handle_counter1(void);
 void handle_counter2(void);
 void handle_counter3(void);
+void handle_uart_data(void);
 
 
 void interrupt global_interrupt(){
 
 GIE = 0 ;
-CREN = 1;
+
 
 if(RCIF){
 
 
-if(FERR == 0 && OERR == 0){
+
 tmp_data = RCREG;
 
 if(tmp_data == 0x55){
@@ -1996,16 +1998,10 @@ uart_data[counter_uart] = tmp_data;
 counter_uart += 1;
 if(counter_uart == 15){
 counter_uart = 0;
+flag4 = 1;
 }
 
-
-
-}
-else{
-CREN = 0;
-tmp_data = RCREG;
-counter_uart = 0;
-}
+# 97
 GIE = 1;
 
 return;
@@ -2016,16 +2012,10 @@ return;
 if(T0IF){
 T0IF = 0;
 
-loop1 -= 1;
-if(loop1 <= 0){
-handle_counter1();
+flag1 = 1;
 GIE = 1 ;
 return;
-}
-TMR0 = 0;
-GIE = 1 ;
 
-return;
 
 }
 
@@ -2034,14 +2024,23 @@ return;
 
 if(TMR1IF){
 TMR1IF = 0;
-handle_counter2();
 
+flag2 = 1;
 GIE = 1 ;
 
 return;
 }
 
-# 155
+
+if(TMR2IF){
+TMR2IF = 0;
+flag3 = 1;
+GIE = 1 ;
+
+return;
+}
+
+# 157
 }
 
 int main(void){
@@ -2081,7 +2080,20 @@ SPEN = 1;
 RCIE = 1;
 CREN = 1;
 
-# 211
+# 200
+T2CONbits.T2CKPS0= 1;
+T2CONbits.T2CKPS1= 1;
+T2CONbits.TOUTPS0 = 1;
+T2CONbits.TOUTPS1 = 0;
+T2CONbits.TOUTPS2 = 0;
+T2CONbits.TOUTPS3 = 0;
+PR2 = 0xFF;
+TMR2ON = 1;
+TMR2IE = 1;
+
+
+
+
 TRISA = 0x00;
 TRISB = 0b00100000;
 TRISC = 0x00;
@@ -2096,7 +2108,71 @@ PEIE = 1;
 GIE = 1;
 
 while(1){
+if(flag4){
+handle_uart_data();
+flag4 = 0;
+}
 
+if(flag1){
+handle_counter1();
+flag1 = 0;
+}
+if(flag2){
+handle_counter2();
+flag2 = 0;
+}
+if(flag3){
+handle_counter3();
+flag3 = 0;
+}
+
+}
+}
+
+void handle_counter2(void){
+char temp;
+counter2 += direction2;
+counter2 &= 0x07;
+TMR1H = motor2_1Array[motor2];
+TMR1L = motor2_2Array[motor2];
+temp = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
+PORTC = temp;
+
+}
+
+void handle_counter1(void){
+char temp;
+loop1 -= 1;
+if(loop1 <= 0){
+TMR0 = motor1Array[motor1];
+loop1 = incremental1;
+counter1 += direction1;
+counter1 &= 0x07;
+temp = posArray1[counter1] & motor1run;
+PORTA = temp;
+}
+else{
+TMR0 = 0;
+}
+}
+
+void handle_counter3(void){
+char temp;
+loop3 -= 1;
+if(loop3 <= 0){
+PR2 = motor3Array[motor3];
+loop3 = incremental3;
+counter3 += direction3;
+counter3 &= 0x07;
+temp = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
+PORTC = temp;
+}
+else{
+PR2 = 0xFF;
+}
+}
+
+void handle_uart_data(void){
 
 tmp1 = uart_data[14];
 
@@ -2173,31 +2249,5 @@ incremental3 = 0;
 
 
 motor3 = tmp3;
-
-}
-}
-
-void handle_counter2(void){
-counter2 += direction2;
-counter2 &= 0x07;
-TMR1H = motor2_1Array[motor2];
-TMR1L = motor2_2Array[motor2];
-
-PORTC = (posArray2[counter2] & motor2run);
-}
-
-void handle_counter1(void){
-TMR0 = motor1Array[motor1];
-loop1 = incremental1;
-counter1 += direction1;
-counter1 &= 0x07;
-PORTA = posArray1[counter1] & motor1run;
-}
-
-void handle_counter3(void){
-PR2 = motor3Array[motor3];
-loop3 = incremental3;
-counter3 += direction3;
-counter3 &= 0x07;
 }
 
