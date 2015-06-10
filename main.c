@@ -26,6 +26,9 @@ char tmp1   = 0;
 char tmp2   = 0;
 char tmp3   = 0;
 
+char flag1 = 0;
+char flag2 = 0;
+char flag3 = 0;
 char motor1run = 0;
 char motor2run = 0;
 char motor3run = 0;
@@ -36,7 +39,7 @@ int direction1 = 0;
 int direction2 = 0;
 int direction3 = 0;
 int loop1 = 0;
-char loop3 = 0;
+int loop3 = 0;
 
 
 char counter_uart = 0;
@@ -60,7 +63,7 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
 
     GIE = 0 ;//Global interrupt disable in ISR
     CREN = 1; // seri port kapand?ysa acal?m
-
+    //PEIE = 0;
     if(RCIF){
         
 
@@ -70,6 +73,7 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
             if(tmp_data == 0x55){
                 counter_uart = 0;
                  GIE = 1;
+                 //PEIE = 1;
                  return;
             }
 
@@ -88,6 +92,7 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
              counter_uart = 0;
         }
         GIE = 1;
+        //PEIE = 1;
         return;
 
     }
@@ -104,12 +109,12 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
          }
         TMR0 = 0;
         GIE = 1 ;//Global interrupt enable in ISR
+        //PEIE = 1;
         return;
         
        }
    
       
-    
 
        //Timer1 interrupt
     if(TMR1IF){
@@ -117,31 +122,24 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
         handle_counter2();
      
          GIE = 1 ;//Global interrupt enable in ISR
+         //PEIE = 1;
          return;
     }
 
 /*
     if(TMR2IF){
      TMR2IF = 0;
- 
 
-        if(loop3 == 2){
-            loop3 = 1;
-            TMR2 = 0;
+        loop3 -= 1;
+        if(loop3 <= 0){
+         //handle_counter3();
+         GIE = 1 ;//Global interrupt enable in ISR
+         return;
          }
-        else if(loop3 == 1){
-            loop3 = 0;
-            TMR2 = 0;
-        }
-        else{
-            TMR2 = motor3Array[motor3];
-            loop3 = incremental3;
-            counter3 += direction3;
-           if(counter3 == 8)
-            counter3 = 0;
-          else if(counter3 < 0)
-            counter3 = 7;
-          }
+        PR2 = 0xFF;
+        GIE = 1 ;//Global interrupt enable in ISR
+        //PEIE = 1;
+        return;
         }
 */
 
@@ -322,6 +320,12 @@ void handle_counter1(void){
   PORTA = posArray1[counter1] & motor1run;
 }
 
+void handle_counter3(void){
+   PR2 = motor3Array[motor3];
+   loop3 = incremental3;
+   counter3 += direction3;
+   counter3 &= 0x07;
+}
 
 
 /*

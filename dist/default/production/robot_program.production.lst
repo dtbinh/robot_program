@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC PRO Macro Assembler V1.33 build 59893 
-                                                                                               Wed Jun 10 19:57:40 2015
+                                                                                               Wed Jun 10 20:23:31 2015
 
 Microchip Technology Omniscient Code Generator (PRO mode) build 59893
      1                           	processor	16F690
@@ -355,13 +355,13 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    349 ;;
    350 ;; *************** function _main *****************
    351 ;; Defined at:
-   352 ;;		line 159 in file "main.c"
+   352 ;;		line 157 in file "main.c"
    353 ;; Parameters:    Size  Location     Type
    354 ;;		None
    355 ;; Auto vars:     Size  Location     Type
    356 ;;		None
    357 ;; Return value:  Size  Location     Type
-   358 ;;                  2  153[COMMON] int 
+   358 ;;                  2  161[COMMON] int 
    359 ;; Registers used:
    360 ;;		wreg, status,2, status,0
    361 ;; Tracked objects:
@@ -386,291 +386,291 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    380                           ;psect for function _main
    381  0037                     _main:	
    382                           
-   383                           ;main.c: 161: OSCCON = 0x00;
+   383                           ;main.c: 159: OSCCON = 0x00;
    384                           
    385                           ;incstack = 0
    386                           ; Regs used in _main: [wreg+status,2+status,0]
    387  0037  1683               	bsf	3,5	;RP0=1, select bank1
    388  0038  018F               	clrf	15	;volatile
    389                           
-   390                           ;main.c: 162: OSCCON |= 0b01110001;
+   390                           ;main.c: 160: OSCCON |= 0b01110001;
    391  0039  3071               	movlw	113
    392  003A  048F               	iorwf	15,f	;volatile
    393                           
-   394                           ;main.c: 163: OSCTUNE = 0x00;
+   394                           ;main.c: 161: OSCTUNE = 0x00;
    395  003B  0190               	clrf	16	;volatile
    396                           
-   397                           ;main.c: 167: OPTION_REG &= 0b11010000;
+   397                           ;main.c: 165: OPTION_REG &= 0b11010000;
    398  003C  30D0               	movlw	208
    399  003D  0581               	andwf	1,f	;volatile
    400                           
-   401                           ;main.c: 168: OPTION_REG |= 0b00000100;
+   401                           ;main.c: 166: OPTION_REG |= 0b00000100;
    402  003E  1501               	bsf	1,2	;volatile
    403                           
-   404                           ;main.c: 169: TMR0 = 0x00;
+   404                           ;main.c: 167: TMR0 = 0x00;
    405  003F  1283               	bcf	3,5	;RP0=0, select bank0
    406  0040  0181               	clrf	1	;volatile
    407                           
-   408                           ;main.c: 170: T0IE = 1;
+   408                           ;main.c: 168: T0IE = 1;
    409  0041  168B               	bsf	11,5	;volatile
    410                           
-   411                           ;main.c: 175: TMR1GE = 0;
+   411                           ;main.c: 173: TMR1GE = 0;
    412  0042  1310               	bcf	16,6	;volatile
    413                           
-   414                           ;main.c: 176: T1CONbits.T1CKPS0 = 0;
+   414                           ;main.c: 174: T1CONbits.T1CKPS0 = 0;
    415  0043  1210               	bcf	16,4	;volatile
    416                           
-   417                           ;main.c: 177: T1CONbits.T1CKPS1 = 0;
+   417                           ;main.c: 175: T1CONbits.T1CKPS1 = 0;
    418  0044  1290               	bcf	16,5	;volatile
    419                           
-   420                           ;main.c: 178: T1OSCEN = 0;
+   420                           ;main.c: 176: T1OSCEN = 0;
    421  0045  1190               	bcf	16,3	;volatile
    422                           
-   423                           ;main.c: 179: TMR1CS = 0;
+   423                           ;main.c: 177: TMR1CS = 0;
    424  0046  1090               	bcf	16,1	;volatile
    425                           
-   426                           ;main.c: 180: TMR1ON = 1;
+   426                           ;main.c: 178: TMR1ON = 1;
    427  0047  1410               	bsf	16,0	;volatile
    428                           
-   429                           ;main.c: 181: TMR1H = 0x00;
+   429                           ;main.c: 179: TMR1H = 0x00;
    430  0048  018F               	clrf	15	;volatile
    431                           
-   432                           ;main.c: 182: TMR1H = 0x00;
+   432                           ;main.c: 180: TMR1H = 0x00;
    433  0049  018F               	clrf	15	;volatile
    434                           
-   435                           ;main.c: 183: TMR1IE = 1;
+   435                           ;main.c: 181: TMR1IE = 1;
    436  004A  1683               	bsf	3,5	;RP0=1, select bank1
    437  004B  140C               	bsf	12,0	;volatile
    438                           
-   439                           ;main.c: 187: BRG16 = 0;
+   439                           ;main.c: 185: BRG16 = 0;
    440  004C  119B               	bcf	27,3	;volatile
    441                           
-   442                           ;main.c: 188: BRGH = 0;
+   442                           ;main.c: 186: BRGH = 0;
    443  004D  1118               	bcf	24,2	;volatile
    444                           
-   445                           ;main.c: 189: SPBRGH = 0;
+   445                           ;main.c: 187: SPBRGH = 0;
    446  004E  019A               	clrf	26	;volatile
    447                           
-   448                           ;main.c: 190: SPBRG = 0x0C;
+   448                           ;main.c: 188: SPBRG = 0x0C;
    449  004F  300C               	movlw	12
    450  0050  0099               	movwf	25	;volatile
    451                           
-   452                           ;main.c: 191: SYNC = 0;
+   452                           ;main.c: 189: SYNC = 0;
    453  0051  1218               	bcf	24,4	;volatile
    454                           
-   455                           ;main.c: 192: SPEN = 1;
+   455                           ;main.c: 190: SPEN = 1;
    456  0052  1283               	bcf	3,5	;RP0=0, select bank0
    457  0053  1798               	bsf	24,7	;volatile
    458                           
-   459                           ;main.c: 193: RCIE = 1;
+   459                           ;main.c: 191: RCIE = 1;
    460  0054  1683               	bsf	3,5	;RP0=1, select bank1
    461  0055  168C               	bsf	12,5	;volatile
    462                           
-   463                           ;main.c: 194: CREN = 1;
+   463                           ;main.c: 192: CREN = 1;
    464  0056  1283               	bcf	3,5	;RP0=0, select bank0
    465  0057  1618               	bsf	24,4	;volatile
    466                           
-   467                           ;main.c: 213: TRISA = 0x00;
+   467                           ;main.c: 211: TRISA = 0x00;
    468  0058  1683               	bsf	3,5	;RP0=1, select bank1
    469  0059  0185               	clrf	5	;volatile
    470                           
-   471                           ;main.c: 214: TRISB = 0b00100000;
+   471                           ;main.c: 212: TRISB = 0b00100000;
    472  005A  3020               	movlw	32
    473  005B  0086               	movwf	6	;volatile
    474                           
-   475                           ;main.c: 215: TRISC = 0x00;
+   475                           ;main.c: 213: TRISC = 0x00;
    476  005C  0187               	clrf	7	;volatile
    477                           
-   478                           ;main.c: 216: ANSEL = 0x00;
+   478                           ;main.c: 214: ANSEL = 0x00;
    479  005D  1283               	bcf	3,5	;RP0=0, select bank2
    480  005E  1703               	bsf	3,6	;RP1=1, select bank2
    481  005F  019E               	clrf	30	;volatile
    482                           
-   483                           ;main.c: 217: ANSELH = 0x00;
+   483                           ;main.c: 215: ANSELH = 0x00;
    484  0060  019F               	clrf	31	;volatile
    485                           
-   486                           ;main.c: 220: PORTA = 0x00;
+   486                           ;main.c: 218: PORTA = 0x00;
    487  0061  1303               	bcf	3,6	;RP1=0, select bank0
    488  0062  0185               	clrf	5	;volatile
    489                           
-   490                           ;main.c: 221: PORTB = 0x00;
+   490                           ;main.c: 219: PORTB = 0x00;
    491  0063  0186               	clrf	6	;volatile
    492                           
-   493                           ;main.c: 222: PORTC = 0x00;
+   493                           ;main.c: 220: PORTC = 0x00;
    494  0064  0187               	clrf	7	;volatile
    495                           
-   496                           ;main.c: 223: PEIE = 1;
+   496                           ;main.c: 221: PEIE = 1;
    497  0065  170B               	bsf	11,6	;volatile
    498                           
-   499                           ;main.c: 224: GIE = 1;
+   499                           ;main.c: 222: GIE = 1;
    500  0066  178B               	bsf	11,7	;volatile
-   501  0067                     l1106:	
+   501  0067                     l1117:	
    502                           
-   503                           ;main.c: 229: tmp1 = uart_data[14];
+   503                           ;main.c: 227: tmp1 = uart_data[14];
    504  0067  082E               	movf	_uart_data+14,w
    505  0068  00B6               	movwf	_tmp1
    506                           
-   507                           ;main.c: 231: if(tmp1 == 75)
+   507                           ;main.c: 229: if(tmp1 == 75)
    508  0069  3A4B               	xorlw	75
    509  006A  1D03               	skipz
-   510  006B  286E               	goto	l1112
+   510  006B  286E               	goto	l1123
    511                           
-   512                           ;main.c: 232: motor1run = 0x00;
+   512                           ;main.c: 230: motor1run = 0x00;
    513  006C  01F4               	clrf	_motor1run
-   514  006D  2870               	goto	l156
-   515  006E                     l1112:	
+   514  006D  2870               	goto	l164
+   515  006E                     l1123:	
    516                           
-   517                           ;main.c: 233: else
-   518                           ;main.c: 234: motor1run = 0xFF;
+   517                           ;main.c: 231: else
+   518                           ;main.c: 232: motor1run = 0xFF;
    519  006E  30FF               	movlw	255
    520  006F  00F4               	movwf	_motor1run
-   521  0070                     l156:	
+   521  0070                     l164:	
    522                           
-   523                           ;main.c: 236: if(tmp1 >=60){
+   523                           ;main.c: 234: if(tmp1 >=60){
    524  0070  303C               	movlw	60
    525  0071  0236               	subwf	_tmp1,w
    526  0072  1C03               	skipc
-   527  0073  287A               	goto	l1118
+   527  0073  287A               	goto	l1129
    528                           
-   529                           ;main.c: 237: tmp1 = tmp1 - 15;
+   529                           ;main.c: 235: tmp1 = tmp1 - 15;
    530  0074  30F1               	movlw	241
    531  0075  07B6               	addwf	_tmp1,f
    532                           
-   533                           ;main.c: 238: direction1 = -1;
+   533                           ;main.c: 236: direction1 = -1;
    534  0076  30FF               	movlw	255
    535  0077  00AF               	movwf	_direction1
    536  0078  00B0               	movwf	_direction1+1
    537                           
-   538                           ;main.c: 239: }
-   539  0079  287D               	goto	l1120
-   540  007A                     l1118:	
+   538                           ;main.c: 237: }
+   539  0079  287D               	goto	l1131
+   540  007A                     l1129:	
    541                           
-   542                           ;main.c: 240: else
-   543                           ;main.c: 241: direction1 = 1;
+   542                           ;main.c: 238: else
+   543                           ;main.c: 239: direction1 = 1;
    544  007A  01AF               	clrf	_direction1
    545  007B  0AAF               	incf	_direction1,f
    546  007C  01B0               	clrf	_direction1+1
-   547  007D                     l1120:	
+   547  007D                     l1131:	
    548                           
-   549                           ;main.c: 246: tmp1 = tmp1 - 45;
+   549                           ;main.c: 244: tmp1 = tmp1 - 45;
    550  007D  30D3               	movlw	211
    551  007E  07B6               	addwf	_tmp1,f
    552                           
-   553                           ;main.c: 247: if(tmp1 == 0)
+   553                           ;main.c: 245: if(tmp1 == 0)
    554  007F  08B6               	movf	_tmp1,f
    555  0080  1D03               	skipz
-   556  0081  2885               	goto	l1126
+   556  0081  2885               	goto	l1137
    557                           
-   558                           ;main.c: 248: incremental1 = 2;
+   558                           ;main.c: 246: incremental1 = 2;
    559  0082  3002               	movlw	2
    560  0083  00B5               	movwf	_incremental1
-   561  0084  288B               	goto	l1132
-   562  0085                     l1126:	
+   561  0084  288B               	goto	l1143
+   562  0085                     l1137:	
    563                           
-   564                           ;main.c: 249: else if(tmp1 == 1)
+   564                           ;main.c: 247: else if(tmp1 == 1)
    565  0085  0B36               	decfsz	_tmp1,w
-   566  0086  288A               	goto	l1130
+   566  0086  288A               	goto	l1141
    567                           
-   568                           ;main.c: 250: incremental1 = 1;
+   568                           ;main.c: 248: incremental1 = 1;
    569  0087  01B5               	clrf	_incremental1
    570  0088  0AB5               	incf	_incremental1,f
-   571  0089  288B               	goto	l1132
-   572  008A                     l1130:	
+   571  0089  288B               	goto	l1143
+   572  008A                     l1141:	
    573                           
-   574                           ;main.c: 251: else
-   575                           ;main.c: 252: incremental1 = 0;
+   574                           ;main.c: 249: else
+   575                           ;main.c: 250: incremental1 = 0;
    576  008A  01B5               	clrf	_incremental1
-   577  008B                     l1132:	
+   577  008B                     l1143:	
    578                           
-   579                           ;main.c: 255: motor1 = tmp1;
+   579                           ;main.c: 253: motor1 = tmp1;
    580  008B  0836               	movf	_tmp1,w
    581  008C  00F3               	movwf	_motor1
    582                           
-   583                           ;main.c: 259: tmp2 = uart_data[13];
+   583                           ;main.c: 257: tmp2 = uart_data[13];
    584  008D  082D               	movf	_uart_data+13,w
    585  008E  00F7               	movwf	_tmp2
    586                           
-   587                           ;main.c: 260: if(tmp2 == 75)
+   587                           ;main.c: 258: if(tmp2 == 75)
    588  008F  3A4B               	xorlw	75
    589  0090  1D03               	skipz
-   590  0091  2894               	goto	l1140
+   590  0091  2894               	goto	l1151
    591                           
-   592                           ;main.c: 261: motor2run = 0x00;
+   592                           ;main.c: 259: motor2run = 0x00;
    593  0092  01F6               	clrf	_motor2run
-   594  0093  2896               	goto	l164
-   595  0094                     l1140:	
+   594  0093  2896               	goto	l172
+   595  0094                     l1151:	
    596                           
-   597                           ;main.c: 262: else
-   598                           ;main.c: 263: motor2run = 0xFF;
+   597                           ;main.c: 260: else
+   598                           ;main.c: 261: motor2run = 0xFF;
    599  0094  30FF               	movlw	255
    600  0095  00F6               	movwf	_motor2run
-   601  0096                     l164:	
+   601  0096                     l172:	
    602                           
-   603                           ;main.c: 265: if(tmp2 >=60){
+   603                           ;main.c: 263: if(tmp2 >=60){
    604  0096  303C               	movlw	60
    605  0097  0277               	subwf	_tmp2,w
    606  0098  1C03               	skipc
-   607  0099  28A0               	goto	l1146
+   607  0099  28A0               	goto	l1157
    608                           
-   609                           ;main.c: 266: tmp2 = tmp2 - 15;
+   609                           ;main.c: 264: tmp2 = tmp2 - 15;
    610  009A  30F1               	movlw	241
    611  009B  07F7               	addwf	_tmp2,f
    612                           
-   613                           ;main.c: 267: direction2 = -1;
+   613                           ;main.c: 265: direction2 = -1;
    614  009C  30FF               	movlw	255
    615  009D  00B1               	movwf	_direction2
    616  009E  00B2               	movwf	_direction2+1
    617                           
-   618                           ;main.c: 268: }
-   619  009F  28A3               	goto	l1148
-   620  00A0                     l1146:	
+   618                           ;main.c: 266: }
+   619  009F  28A3               	goto	l1159
+   620  00A0                     l1157:	
    621                           
-   622                           ;main.c: 269: else
-   623                           ;main.c: 270: direction2 = 1;
+   622                           ;main.c: 267: else
+   623                           ;main.c: 268: direction2 = 1;
    624  00A0  01B1               	clrf	_direction2
    625  00A1  0AB1               	incf	_direction2,f
    626  00A2  01B2               	clrf	_direction2+1
-   627  00A3                     l1148:	
+   627  00A3                     l1159:	
    628                           
-   629                           ;main.c: 272: tmp2 = tmp2 - 45;
+   629                           ;main.c: 270: tmp2 = tmp2 - 45;
    630  00A3  30D3               	movlw	211
    631  00A4  07F7               	addwf	_tmp2,f
    632                           
-   633                           ;main.c: 273: motor2 = tmp2;
+   633                           ;main.c: 271: motor2 = tmp2;
    634  00A5  0877               	movf	_tmp2,w
    635  00A6  00F5               	movwf	_motor2
    636                           
-   637                           ;main.c: 280: motor3run = 0x00;
+   637                           ;main.c: 278: motor3run = 0x00;
    638  00A7  082C               	movf	_uart_data+12,w
    639  00A8  00F8               	movwf	_tmp3
    640                           
-   641                           ;main.c: 284: if(tmp3 >=60){
+   641                           ;main.c: 282: if(tmp3 >=60){
    642  00A9  303C               	movlw	60
    643  00AA  0278               	subwf	_tmp3,w
    644  00AB  1C03               	skipc
-   645  00AC  28AF               	goto	l1156
+   645  00AC  28AF               	goto	l1167
    646                           
-   647                           ;main.c: 286: direction3 = -1;
+   647                           ;main.c: 284: direction3 = -1;
    648  00AD  30F1               	movlw	241
    649  00AE  07F8               	addwf	_tmp3,f
-   650  00AF                     l1156:	
-   651                           ;main.c: 287: }
+   650  00AF                     l1167:	
+   651                           ;main.c: 285: }
    652                           
    653                           
-   654                           ;main.c: 294: tmp3 = tmp3 - 45;
+   654                           ;main.c: 292: tmp3 = tmp3 - 45;
    655  00AF  30D3               	movlw	211
    656  00B0  07F8               	addwf	_tmp3,f
    657                           
-   658                           ;main.c: 296: incremental3 = 2;
+   658                           ;main.c: 294: incremental3 = 2;
    659  00B1  08F8               	movf	_tmp3,f
-   660  00B2  2867               	goto	l1106
+   660  00B2  2867               	goto	l1117
    661  00B3                     __end_of_main:	
    662                           
    663                           	psect	text1
    664  00B3                     __ptext1:	
    665 ;; *************** function _global_interrupt *****************
    666 ;; Defined at:
-   667 ;;		line 59 in file "main.c"
+   667 ;;		line 62 in file "main.c"
    668 ;; Parameters:    Size  Location     Type
    669 ;;		None
    670 ;; Auto vars:     Size  Location     Type
@@ -703,38 +703,38 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    697                           ;psect for function _global_interrupt
    698  00B3                     _global_interrupt:	
    699                           
-   700                           ;main.c: 61: GIE = 0 ;
+   700                           ;main.c: 64: GIE = 0 ;
    701  00B3  138B               	bcf	11,7	;volatile
    702                           
-   703                           ;main.c: 62: CREN = 1;
+   703                           ;main.c: 65: CREN = 1;
    704  00B4  1618               	bsf	24,4	;volatile
    705                           
-   706                           ;main.c: 64: if(RCIF){
+   706                           ;main.c: 67: if(RCIF){
    707  00B5  1E8C               	btfss	12,5	;volatile
-   708  00B6  28D1               	goto	i1l143
+   708  00B6  28D1               	goto	i1l151
    709                           
-   710                           ;main.c: 67: if(FERR == 0 && OERR == 0){
+   710                           ;main.c: 70: if(FERR == 0 && OERR == 0){
    711  00B7  1D18               	btfss	24,2	;volatile
    712  00B8  1898               	btfsc	24,1	;volatile
-   713  00B9  28CD               	goto	i1l144
+   713  00B9  28CD               	goto	i1l152
    714                           
-   715                           ;main.c: 68: tmp_data = RCREG;
+   715                           ;main.c: 71: tmp_data = RCREG;
    716  00BA  081A               	movf	26,w	;volatile
    717  00BB  00F9               	movwf	_tmp_data
    718                           
-   719                           ;main.c: 70: if(tmp_data == 0x55){
+   719                           ;main.c: 73: if(tmp_data == 0x55){
    720  00BC  3A55               	xorlw	85
    721  00BD  1D03               	skipz
-   722  00BE  28C1               	goto	i1l872
-   723  00BF                     i1l866:	
+   722  00BE  28C1               	goto	i1l883
+   723  00BF                     i1l877:	
    724                           
-   725                           ;main.c: 71: counter_uart = 0;
+   725                           ;main.c: 74: counter_uart = 0;
    726  00BF  01F2               	clrf	_counter_uart
-   727  00C0  28EE               	goto	i1l868
-   728  00C1                     i1l872:	
+   727  00C0  28EE               	goto	i1l879
+   728  00C1                     i1l883:	
    729                           
-   730                           ;main.c: 74: }
-   731                           ;main.c: 76: uart_data[counter_uart] = tmp_data;
+   730                           ;main.c: 78: }
+   731                           ;main.c: 80: uart_data[counter_uart] = tmp_data;
    732  00C1  0872               	movf	_counter_uart,w
    733  00C2  3E20               	addlw	_uart_data& (0+255)
    734  00C3  0084               	movwf	4
@@ -742,42 +742,42 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    736  00C5  1383               	bcf	3,7	;select IRP bank0
    737  00C6  0080               	movwf	0
    738                           
-   739                           ;main.c: 77: counter_uart += 1;
+   739                           ;main.c: 81: counter_uart += 1;
    740  00C7  0AF2               	incf	_counter_uart,f
    741                           
-   742                           ;main.c: 78: if(counter_uart == 15){
+   742                           ;main.c: 82: if(counter_uart == 15){
    743  00C8  0872               	movf	_counter_uart,w
    744  00C9  3A0F               	xorlw	15
    745  00CA  1903               	btfsc	3,2
-   746  00CB  28BF               	goto	i1l866
-   747  00CC  28EE               	goto	i1l868
-   748  00CD                     i1l144:	
+   746  00CB  28BF               	goto	i1l877
+   747  00CC  28EE               	goto	i1l879
+   748  00CD                     i1l152:	
    749                           
-   750                           ;main.c: 85: else{
-   751                           ;main.c: 86: CREN = 0;
+   750                           ;main.c: 89: else{
+   751                           ;main.c: 90: CREN = 0;
    752  00CD  1218               	bcf	24,4	;volatile
    753                           
-   754                           ;main.c: 87: tmp_data = RCREG;
+   754                           ;main.c: 91: tmp_data = RCREG;
    755  00CE  081A               	movf	26,w	;volatile
    756  00CF  00F9               	movwf	_tmp_data
-   757  00D0  28BF               	goto	i1l866
-   758  00D1                     i1l143:	
+   757  00D0  28BF               	goto	i1l877
+   758  00D1                     i1l151:	
    759                           
-   760                           ;main.c: 93: }
-   761                           ;main.c: 96: if(T0IF){
+   760                           ;main.c: 98: }
+   761                           ;main.c: 101: if(T0IF){
    762  00D1  1D0B               	btfss	11,2	;volatile
-   763  00D2  28EA               	goto	i1l149
+   763  00D2  28EA               	goto	i1l157
    764                           
-   765                           ;main.c: 97: T0IF = 0;
+   765                           ;main.c: 102: T0IF = 0;
    766  00D3  110B               	bcf	11,2	;volatile
    767                           
-   768                           ;main.c: 99: loop1 -= 1;
+   768                           ;main.c: 104: loop1 -= 1;
    769  00D4  30FF               	movlw	-1
    770  00D5  07B3               	addwf	_loop1,f
    771  00D6  1C03               	skipc
    772  00D7  03B4               	decf	_loop1+1,f
    773                           
-   774                           ;main.c: 100: if(loop1 <= 0){
+   774                           ;main.c: 105: if(loop1 <= 0){
    775  00D8  0834               	movf	_loop1+1,w
    776  00D9  3A80               	xorlw	128
    777  00DA  00FF               	movwf	127
@@ -789,36 +789,36 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    783  00E0  0233               	subwf	_loop1,w
    784  00E1                     u23_25:	
    785  00E1  1803               	skipnc
-   786  00E2  28E6               	goto	i1l900
+   786  00E2  28E6               	goto	i1l911
    787                           
-   788                           ;main.c: 101: handle_counter1();
+   788                           ;main.c: 106: handle_counter1();
    789  00E3  20FA  118A         	fcall	_handle_counter1
-   790  00E5  28EE               	goto	i1l868
-   791  00E6                     i1l900:	
+   790  00E5  28EE               	goto	i1l879
+   791  00E6                     i1l911:	
    792                           
-   793                           ;main.c: 104: }
-   794                           ;main.c: 105: TMR0 = 0;
+   793                           ;main.c: 109: }
+   794                           ;main.c: 110: TMR0 = 0;
    795  00E6  1283               	bcf	3,5	;RP0=0, select bank0
    796  00E7  1303               	bcf	3,6	;RP1=0, select bank0
    797  00E8  0181               	clrf	1	;volatile
-   798  00E9  28EE               	goto	i1l868
-   799  00EA                     i1l149:	
+   798  00E9  28EE               	goto	i1l879
+   799  00EA                     i1l157:	
    800                           
-   801                           ;main.c: 109: }
-   802                           ;main.c: 115: if(TMR1IF){
+   801                           ;main.c: 115: }
+   802                           ;main.c: 120: if(TMR1IF){
    803  00EA  1C0C               	btfss	12,0	;volatile
-   804  00EB  28EF               	goto	i1l146
+   804  00EB  28EF               	goto	i1l154
    805                           
-   806                           ;main.c: 116: TMR1IF = 0;
+   806                           ;main.c: 121: TMR1IF = 0;
    807  00EC  100C               	bcf	12,0	;volatile
    808                           
-   809                           ;main.c: 117: handle_counter2();
+   809                           ;main.c: 122: handle_counter2();
    810  00ED  2112               	fcall	_handle_counter2
-   811  00EE                     i1l868:	
+   811  00EE                     i1l879:	
    812                           
-   813                           ;main.c: 72: GIE = 1;
+   813                           ;main.c: 75: GIE = 1;
    814  00EE  178B               	bsf	11,7	;volatile
-   815  00EF                     i1l146:	
+   815  00EF                     i1l154:	
    816  00EF  087D               	movf	??_global_interrupt+3,w
    817  00F0  00FF               	movwf	127
    818  00F1  087C               	movf	??_global_interrupt+2,w
@@ -834,7 +834,7 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    828  00FA                     __ptext3:	
    829 ;; *************** function _handle_counter1 *****************
    830 ;; Defined at:
-   831 ;;		line 317 in file "main.c"
+   831 ;;		line 315 in file "main.c"
    832 ;; Parameters:    Size  Location     Type
    833 ;;		None
    834 ;; Auto vars:     Size  Location     Type
@@ -865,7 +865,7 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    859                           ;psect for function _handle_counter1
    860  00FA                     _handle_counter1:	
    861                           
-   862                           ;main.c: 318: TMR0 = motor1Array[motor1];
+   862                           ;main.c: 316: TMR0 = motor1Array[motor1];
    863                           
    864                           ;incstack = 0
    865                           ; Regs used in _handle_counter1: [wreg-fsr0h+status,2+status,0+pclath]
@@ -877,20 +877,20 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    871  0101  1303               	bcf	3,6	;RP1=0, select bank0
    872  0102  0081               	movwf	1	;volatile
    873                           
-   874                           ;main.c: 319: loop1 = incremental1;
+   874                           ;main.c: 317: loop1 = incremental1;
    875  0103  0835               	movf	_incremental1,w
    876  0104  00B3               	movwf	_loop1
    877  0105  01B4               	clrf	_loop1+1
    878                           
-   879                           ;main.c: 320: counter1 += direction1;
+   879                           ;main.c: 318: counter1 += direction1;
    880  0106  082F               	movf	_direction1,w
    881  0107  07F0               	addwf	_counter1,f
    882                           
-   883                           ;main.c: 321: counter1 &= 0x07;
+   883                           ;main.c: 319: counter1 &= 0x07;
    884  0108  3007               	movlw	7
    885  0109  05F0               	andwf	_counter1,f
    886                           
-   887                           ;main.c: 322: PORTA = posArray1[counter1] & motor1run;
+   887                           ;main.c: 320: PORTA = posArray1[counter1] & motor1run;
    888  010A  0870               	movf	_counter1,w
    889  010B  3E2E               	addlw	low (_posArray1-__stringbase)
    890  010C  0084               	movwf	4
@@ -922,7 +922,7 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    916  0112                     __ptext2:	
    917 ;; *************** function _handle_counter2 *****************
    918 ;; Defined at:
-   919 ;;		line 308 in file "main.c"
+   919 ;;		line 306 in file "main.c"
    920 ;; Parameters:    Size  Location     Type
    921 ;;		None
    922 ;; Auto vars:     Size  Location     Type
@@ -953,32 +953,32 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    947                           ;psect for function _handle_counter2
    948  0112                     _handle_counter2:	
    949                           
-   950                           ;main.c: 309: counter2 += direction2;
+   950                           ;main.c: 307: counter2 += direction2;
    951                           
    952                           ;incstack = 0
    953                           ; Regs used in _handle_counter2: [wreg-fsr0h+status,2+status,0+pclath]
    954  0112  0831               	movf	_direction2,w
    955  0113  07F1               	addwf	_counter2,f
    956                           
-   957                           ;main.c: 310: counter2 &= 0x07;
+   957                           ;main.c: 308: counter2 &= 0x07;
    958  0114  3007               	movlw	7
    959  0115  05F1               	andwf	_counter2,f
    960                           
-   961                           ;main.c: 311: TMR1H = motor2_1Array[motor2];
+   961                           ;main.c: 309: TMR1H = motor2_1Array[motor2];
    962  0116  0875               	movf	_motor2,w
    963  0117  3E10               	addlw	low (_motor2_1Array-__stringbase)
    964  0118  0084               	movwf	4
    965  0119  118A  212C  118A   	fcall	stringdir
    966  011C  008F               	movwf	15	;volatile
    967                           
-   968                           ;main.c: 312: TMR1L = motor2_2Array[motor2];
+   968                           ;main.c: 310: TMR1L = motor2_2Array[motor2];
    969  011D  0875               	movf	_motor2,w
    970  011E  3E1F               	addlw	low (_motor2_2Array-__stringbase)
    971  011F  0084               	movwf	4
    972  0120  118A  212C  118A   	fcall	stringdir
    973  0123  008E               	movwf	14	;volatile
    974                           
-   975                           ;main.c: 314: PORTC = (posArray2[counter2] & motor2run);
+   975                           ;main.c: 312: PORTC = (posArray2[counter2] & motor2run);
    976  0124  0871               	movf	_counter2,w
    977  0125  3E36               	addlw	low (_posArray2-__stringbase)
    978  0126  0084               	movwf	4
@@ -1118,15 +1118,15 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.33 build 59893 
-Symbol Table                                                                                   Wed Jun 10 19:57:40 2015
+Symbol Table                                                                                   Wed Jun 10 20:23:31 2015
 
                         pc 0002                __CFG_CP$OFF 0000                         fsr 0004  
-                      l164 0096                        l156 0070                        _GIE 005F  
+                      l172 0096                        l164 0070                        _GIE 005F  
              __CFG_CPD$OFF 0000                        fsr0 0004                        indf 0000  
-             __CFG_IESO$ON 0000                       l1120 007D                       l1112 006E  
-                     l1130 008A                       l1106 0067                       l1140 0094  
-                     l1132 008B                       l1126 0085                       l1118 007A  
-                     l1146 00A0                       l1156 00AF                       l1148 00A3  
+             __CFG_IESO$ON 0000                       l1131 007D                       l1123 006E  
+                     l1141 008A                       l1117 0067                       l1151 0094  
+                     l1143 008B                       l1137 0085                       l1129 007A  
+                     l1157 00A0                       l1167 00AF                       l1159 00A3  
                      _BRGH 04C2                       _T0IE 005D                       _T0IF 005A  
                      _CREN 00C4                       _FERR 00C2                       _PEIE 005E  
                      _RCIE 0465                       _RCIF 0065                       _OERR 00C1  
@@ -1136,9 +1136,9 @@ Symbol Table                                                                    
             __CFG_BOREN$ON 0000                       ltemp 007E                       start 0011  
                      ttemp 007E                       wtemp 007E                      ?_main 007A  
                     _BRG16 04DB              __CFG_WDTE$OFF 0000                      _ANSEL 011E  
-                    i1l143 00D1                      i1l144 00CD                      i1l146 00EF  
-                    i1l149 00EA                      i1l900 00E6                      i1l872 00C1  
-                    i1l866 00BF                      i1l868 00EE                      _RCREG 001A  
+                    i1l151 00D1                      i1l152 00CD                      i1l154 00EF  
+                    i1l157 00EA                      i1l911 00E6                      i1l883 00C1  
+                    i1l877 00BF                      i1l879 00EE                      _RCREG 001A  
                     u23_25 00E1                      _TMR1H 000F                      _TMR1L 000E  
                     _SPBRG 0099                      _PORTA 0005                      _PORTB 0006  
                     _PORTC 0007                      _TRISA 0085                      _TRISB 0086  

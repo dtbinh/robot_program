@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
   -h+dist/default/production\robot_program.production.sym \
   --cmf=dist/default/production\robot_program.production.cmf -z -Q16F690 \
-  -oC:\Users\Kadir\AppData\Local\Temp\s6i0.6 \
+  -oC:\Users\Kadir\AppData\Local\Temp\s6f8.6 \
   -Mdist/default/production/robot_program.production.map -E1 -ver=XC8 \
   -ASTACK=0A0h-0efh -pstack=STACK -ACONST=00h-0FFhx16 -ACODE=00h-07FFhx2 \
   -ASTRCODE=00h-0FFFh -AENTRY=00h-0FFhx16 -ASTRING=00h-0FFhx16 \
@@ -17,7 +17,7 @@ Linker command line:
   -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Kadir\AppData\Local\Temp\s6i0.obj \
+  -DENTRY=2 -k C:\Users\Kadir\AppData\Local\Temp\s6f8.obj \
   dist/default/production\robot_program.production.obj 
 
 Object code version is 3.11
@@ -27,7 +27,7 @@ Machine type is 16F690
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Kadir\AppData\Local\Temp\s6i0.obj
+C:\Users\Kadir\AppData\Local\Temp\s6f8.obj
                 end_init                             11       11        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             2007     2007        1     400E       0
@@ -366,13 +366,13 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 159 in file "main.c"
+		line 157 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  2  153[COMMON] int 
+                  2  161[COMMON] int 
  Registers used:
 		wreg, status,2, status,0
  Tracked objects:
@@ -395,7 +395,7 @@ Total ram usage:        0 bytes
 
  *************** function _global_interrupt *****************
  Defined at:
-		line 59 in file "main.c"
+		line 62 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -426,7 +426,7 @@ Total ram usage:        4 bytes
 
  *************** function _handle_counter2 *****************
  Defined at:
-		line 308 in file "main.c"
+		line 306 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -455,7 +455,7 @@ Total ram usage:        0 bytes
 
  *************** function _handle_counter1 *****************
  Defined at:
-		line 317 in file "main.c"
+		line 315 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

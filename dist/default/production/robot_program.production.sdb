@@ -103,14 +103,16 @@
 [v ___fltoee __fltoee `(d  1 e 3 0 ]
 "49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"59 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
+"62 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
-"159
+"157
 [v _main main `(i  1 e 2 0 ]
-"308
+"306
 [v _handle_counter2 handle_counter2 `(v  1 e 0 0 ]
-"317
+"315
 [v _handle_counter1 handle_counter1 `(v  1 e 0 0 ]
+"323
+[v _handle_counter3 handle_counter3 `(v  1 e 0 0 ]
 "53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f690.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "158
@@ -152,6 +154,8 @@
 [v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
 "1567
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @144 ]
+"1618
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
 "2367
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
 "2428
@@ -238,41 +242,41 @@
 [v _tmp2 tmp2 `uc  1 e 1 0 ]
 "27
 [v _tmp3 tmp3 `uc  1 e 1 0 ]
-"29
+"32
 [v _motor1run motor1run `uc  1 e 1 0 ]
-"30
-[v _motor2run motor2run `uc  1 e 1 0 ]
 "33
-[v _incremental1 incremental1 `uc  1 e 1 0 ]
-"35
-[v _direction1 direction1 `i  1 e 2 0 ]
+[v _motor2run motor2run `uc  1 e 1 0 ]
 "36
-[v _direction2 direction2 `i  1 e 2 0 ]
+[v _incremental1 incremental1 `uc  1 e 1 0 ]
 "38
+[v _direction1 direction1 `i  1 e 2 0 ]
+"39
+[v _direction2 direction2 `i  1 e 2 0 ]
+"41
 [v _loop1 loop1 `i  1 e 2 0 ]
-"42
+"45
 [v _counter_uart counter_uart `uc  1 e 1 0 ]
-"44
+"47
 [v _uart_data uart_data `[15]uc  1 e 15 0 ]
-"49
+"52
 [v _tmp_data tmp_data `uc  1 e 1 0 ]
-"159
+"157
 [v _main main `(i  1 e 2 0 ]
 {
-"306
+"304
 } 0
-"59
+"62
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
 {
-"157
+"155
 } 0
-"308
+"306
 [v _handle_counter2 handle_counter2 `(v  1 e 0 0 ]
 {
-"315
+"313
 } 0
-"317
+"315
 [v _handle_counter1 handle_counter1 `(v  1 e 0 0 ]
 {
-"323
+"321
 } 0
