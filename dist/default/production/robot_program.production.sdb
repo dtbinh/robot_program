@@ -1,7 +1,7 @@
-[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID SPACEOPT ]
 [d version 1.1 ]
 [d edition pro ]
-[d chip 16F687 ]
+[d chip 16F690 ]
 [d frameptr 6 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
 [v ___abdiv __abdiv `(c  1 e 1 0 ]
@@ -103,11 +103,15 @@
 [v ___fltoee __fltoee `(d  1 e 3 0 ]
 "49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"52 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
+"59 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
-"173
+"159
 [v _main main `(i  1 e 2 0 ]
-"53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f687.h
+"308
+[v _handle_counter2 handle_counter2 `(v  1 e 0 0 ]
+"317
+[v _handle_counter1 handle_counter1 `(v  1 e 0 0 ]
+"53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f690.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "158
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -115,11 +119,11 @@
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
 "245
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
-"469
+"486
 [v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
-"475
+"492
 [v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
-[s S37 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S41 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 TMR1CS 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
@@ -127,115 +131,107 @@
 `uc 1 TMR1GE 1 0 :1:6 
 `uc 1 T1GINV 1 0 :1:7 
 ]
-"502
-[s S45 . 1 `uc 1 . 1 0 :4:0 
+"519
+[s S49 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
-[u S49 . 1 `S37 1 . 1 0 `S45 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES49  1 e 1 @16 ]
-"693
+[u S53 . 1 `S41 1 . 1 0 `S49 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES53  1 e 1 @16 ]
+"885
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
-"799
+"1141
 [v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
-"868
+"1210
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
-"917
+"1259
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
-"955
+"1297
 [v _TRISC TRISC `VEuc  1 e 1 @135 ]
-"1144
+"1503
 [v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
-"1208
+"1567
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @144 ]
-"2002
+"2367
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
-"2063
+"2428
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
-"2227
+"2592
 [v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
-"2233
+"2598
 [v _EEADR EEADR `VEuc  1 e 1 @269 ]
-"2559
+"2936
 [v _ANSEL ANSEL `VEuc  1 e 1 @286 ]
-"2620
+"2997
 [v _ANSELH ANSELH `VEuc  1 e 1 @287 ]
-"2657
+"3034
 [v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
-"2694
+"3078
 [v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
-"2827
+"3254
 [v _BRG16 BRG16 `VEb  1 e 0 @1243 ]
-"2845
+"3272
 [v _BRGH BRGH `VEb  1 e 0 @1218 ]
-"2893
+"3320
 [v _CARRY CARRY `VEb  1 e 0 @24 ]
-"2907
+"3346
 [v _CREN CREN `VEb  1 e 0 @196 ]
-"2923
+"3376
 [v _FERR FERR `VEb  1 e 0 @194 ]
-"2925
+"3378
 [v _GIE GIE `VEb  1 e 0 @95 ]
-"3011
+"3464
 [v _OERR OERR `VEb  1 e 0 @193 ]
-"3019
+"3490
 [v _PEIE PEIE `VEb  1 e 0 @94 ]
-"3075
+"3556
 [v _RCIE RCIE `VEb  1 e 0 @1125 ]
-"3077
+"3558
 [v _RCIF RCIF `VEb  1 e 0 @101 ]
-"3079
+"3560
 [v _RD RD `VEb  1 e 0 @3168 ]
-"3107
+"3588
 [v _SPEN SPEN `VEb  1 e 0 @199 ]
-"3133
+"3624
 [v _SYNC SYNC `VEb  1 e 0 @1220 ]
-"3137
+"3628
 [v _T0IE T0IE `VEb  1 e 0 @93 ]
-"3139
+"3630
 [v _T0IF T0IF `VEb  1 e 0 @90 ]
-"3155
+"3646
 [v _T1OSCEN T1OSCEN `VEb  1 e 0 @131 ]
-"3157
+"3656
 [v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
-"3159
+"3658
 [v _TMR1GE TMR1GE `VEb  1 e 0 @134 ]
-"3161
+"3660
 [v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
-"3163
+"3662
 [v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
-"3165
+"3664
 [v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
-"3281
+"3794
 [v _WR WR `VEb  1 e 0 @3169 ]
-"3283
+"3796
 [v _WREN WREN `VEb  1 e 0 @3170 ]
 "4 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _posArray1 posArray1 `DCC[8]uc  1 e 8 0 ]
 "5
 [v _posArray2 posArray2 `DCC[8]uc  1 e 8 0 ]
-"6
-[v _posArray3 posArray3 `DCC[8]uc  1 e 8 0 ]
 "8
 [v _motor1Array motor1Array `DCC[15]uc  1 e 15 0 ]
 "11
 [v _motor2_1Array motor2_1Array `DCC[15]uc  1 e 15 0 ]
 "12
 [v _motor2_2Array motor2_2Array `DCC[15]uc  1 e 15 0 ]
-"14
-[v _motor3Array motor3Array `DCC[15]uc  1 e 15 0 ]
 "18
-[v _counter1 counter1 `i  1 e 2 0 ]
+[v _counter1 counter1 `uc  1 e 1 0 ]
 "19
-[v _counter2 counter2 `i  1 e 2 0 ]
-"20
-[v _counter3 counter3 `i  1 e 2 0 ]
+[v _counter2 counter2 `uc  1 e 1 0 ]
 "22
 [v _motor1 motor1 `uc  1 e 1 0 ]
 "23
 [v _motor2 motor2 `uc  1 e 1 0 ]
-"24
-[v _motor3 motor3 `uc  1 e 1 0 ]
 "25
 [v _tmp1 tmp1 `uc  1 e 1 0 ]
 "26
@@ -246,39 +242,37 @@
 [v _motor1run motor1run `uc  1 e 1 0 ]
 "30
 [v _motor2run motor2run `uc  1 e 1 0 ]
-"31
-[v _motor3run motor3run `uc  1 e 1 0 ]
 "33
 [v _incremental1 incremental1 `uc  1 e 1 0 ]
-"34
-[v _incremental3 incremental3 `uc  1 e 1 0 ]
 "35
 [v _direction1 direction1 `i  1 e 2 0 ]
 "36
 [v _direction2 direction2 `i  1 e 2 0 ]
-"37
-[v _direction3 direction3 `i  1 e 2 0 ]
 "38
 [v _loop1 loop1 `i  1 e 2 0 ]
-"39
-[v _loop3 loop3 `i  1 e 2 0 ]
 "42
 [v _counter_uart counter_uart `uc  1 e 1 0 ]
 "44
 [v _uart_data uart_data `[15]uc  1 e 15 0 ]
-"47
-[v _init_received init_received `uc  1 e 1 0 ]
 "49
 [v _tmp_data tmp_data `uc  1 e 1 0 ]
-"50
-[v _tmp_data2 tmp_data2 `uc  1 e 1 0 ]
-"173
+"159
 [v _main main `(i  1 e 2 0 ]
 {
-"320
+"306
 } 0
-"52
+"59
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
 {
-"171
+"157
+} 0
+"308
+[v _handle_counter2 handle_counter2 `(v  1 e 0 0 ]
+{
+"315
+} 0
+"317
+[v _handle_counter1 handle_counter1 `(v  1 e 0 0 ]
+{
+"323
 } 0

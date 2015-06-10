@@ -15,9 +15,9 @@ const char motor3Array[15] = {240, 120, 250, 187, 150, 125, 107, 93, 83, 75, 68,
 //incremental  = [2 1 0 0 0 0 0 0 0 0 0 0 0 0 0];
 
 //char  counter = 0;
-int counter1 = 0;
-int counter2 = 0;
-int counter3 = 0;
+char counter1 = 0;
+char counter2 = 0;
+char counter3 = 0;
 
 char motor1 = 0;
 char motor2 = 0;
@@ -36,7 +36,7 @@ int direction1 = 0;
 int direction2 = 0;
 int direction3 = 0;
 int loop1 = 0;
-int loop3 = 0;
+char loop3 = 0;
 
 
 char counter_uart = 0;
@@ -48,6 +48,13 @@ char init_received = 0;
 
 char tmp_data=0;
 char tmp_data2 = 0;
+
+
+
+void handle_counter1(void);
+void handle_counter2(void);
+void handle_counter3(void);
+
 
 void interrupt global_interrupt(){          //single interrupt vector to handle all of ISR's
 
@@ -88,55 +95,35 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
     //Timer0 interrupt
     if(T0IF){
         T0IF = 0; //clear interrupt flag
- 
-
-        if(loop1 == 2){
-            loop1 = 1;
-            TMR0 = 0;
+     
+        loop1 -= 1;
+        if(loop1 <= 0){
+         handle_counter1();
+         GIE = 1 ;//Global interrupt enable in ISR
+         return;
          }
-        else if(loop1 == 1){
-            loop1 = 0;
-            TMR0 = 0;
-        }
-        else{
-            TMR0 = motor1Array[motor1];
-            loop1 = incremental1;
-            counter1 += direction1;
-           if(counter1 == 8)
-            counter1 = 0;
-          else if(counter1 < 0)
-            counter1 = 7;
-            
-           PORTA = posArray1[counter1] & motor1run;
-       
-               
-         }
+        TMR0 = 0;
         GIE = 1 ;//Global interrupt enable in ISR
-  return;
+        return;
+        
+       }
+   
       
-    }
+    
 
        //Timer1 interrupt
     if(TMR1IF){
         TMR1IF = 0; //clear interrupt flag
-       
-        counter2 += direction2;
-
-        if(counter2 == 8)
-            counter2 = 0;
-        else if(counter2 < 0)
-            counter2 = 7;
-
-        TMR1H = motor2_1Array[motor2];
-        TMR1L = motor2_2Array[motor2];
+        handle_counter2();
      
-       
+         GIE = 1 ;//Global interrupt enable in ISR
+         return;
     }
 
 /*
     if(TMR2IF){
      TMR2IF = 0;
-
+ 
 
         if(loop3 == 2){
             loop3 = 1;
@@ -157,11 +144,10 @@ void interrupt global_interrupt(){          //single interrupt vector to handle 
           }
         }
 */
-PORTC = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
 
 
-  GIE = 1 ;//Global interrupt enable in ISR
-  return;
+
+
    
       
 
@@ -213,10 +199,10 @@ int main(void){
       //Timer2 clock=Fosc/4, prescaler = 1/16 , postscaler = 1/2;
         T2CONbits.T2CKPS0= 1;
         T2CONbits.T2CKPS1= 1;
-        T2CONbits.T2OUTPS0 = 1;
-        T2CONbits.T2OUTPS1 = 0;
-        T2CONbits.T2OUTPS2 = 0;
-        T2CONbits.T2OUTPS3 = 0;
+        T2CONbits.TOUTPS0 = 1;
+        T2CONbits.TOUTPS1 = 0;
+        T2CONbits.TOUTPS2 = 0;
+        T2CONbits.TOUTPS3 = 0;
         PR2    = 0xFF;
         TMR2ON = 1;
         TMR2IE = 1;
@@ -319,9 +305,22 @@ int main(void){
     }
 }
 
+void handle_counter2(void){
+  counter2 += direction2;
+  counter2 &= 0x07;
+  TMR1H = motor2_1Array[motor2];
+  TMR1L = motor2_2Array[motor2];
+  //PORTC = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
+  PORTC = (posArray2[counter2] & motor2run);
+}
 
-
-
+void handle_counter1(void){
+  TMR0 = motor1Array[motor1];
+  loop1 = incremental1;
+  counter1 += direction1;
+  counter1 &= 0x07;
+  PORTA = posArray1[counter1] & motor1run;
+}
 
 
 
