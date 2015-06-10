@@ -1915,7 +1915,7 @@ extern __nonreentrant void _delay(unsigned long);
 #pragma config IESO = ON
 #pragma config FCMEN = ON
 
-# 4 "main.c"
+# 8 "main.c"
 const char posArray1[8] = {0x11, 0x01, 0x03, 0x02, 0x06, 0x04, 0x14, 0x10};
 const char posArray2[8] = {0x09, 0x01, 0x03, 0x02, 0x06, 0x04, 0x0C, 0x08};
 const char posArray3[8] = {0x90, 0x10, 0x30, 0x20, 0x60, 0x40, 0xC0, 0x80};
@@ -1926,7 +1926,7 @@ const char motor1Array[15] = {15, 135, 5, 67, 105, 130, 148, 161, 172, 180, 187,
 const char motor2_1Array[15] = {0xa2, 0xd1, 0xe0, 0xe8, 0xed, 0xf0, 0xf2, 0xf4, 0xf5, 0xf6, 0xf7, 0xf8, 0xf8, 0xf9, 0xf9};
 const char motor2_2Array[15] = {0x3f, 0x1f, 0xbf, 0x8f, 0x3f, 0x5f, 0x9a, 0x47, 0x94, 0x9f, 0x79, 0x2f, 0xc9, 0x4d, 0xbf};
 
-const char motor3Array[15] = {240, 120, 250, 187, 150, 125, 107, 93, 83, 75, 68, 62, 58, 24, 50};
+const char motor3Array[15] = {240, 120, 250, 187, 150, 125, 107, 93, 83, 75, 68, 62, 58, 54, 50};
 
 
 
@@ -1961,62 +1961,39 @@ int loop3 = 0;
 char counter_uart = 0;
 
 char uart_data[15] = {0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B,0x4B};
-
-
-char init_received = 0;
-
 char tmp_data=0;
-char tmp_data2 = 0;
-
 
 
 void handle_counter1(void);
 void handle_counter2(void);
 void handle_counter3(void);
 void handle_uart_data(void);
-
+void handle_uart_buffer(char);
 
 void interrupt global_interrupt(){
 
-GIE = 0 ;
 
-
+CREN = 1;
 if(RCIF){
-
-
-
+if(FERR == 0 && OERR == 0){
 tmp_data = RCREG;
-
-if(tmp_data == 0x55){
+handle_uart_buffer(tmp_data);
+}
+else{
+CREN = 0;
+tmp_data = RCREG;
 counter_uart = 0;
-GIE = 1;
-
-return;
 }
 
-uart_data[counter_uart] = tmp_data;
-counter_uart += 1;
-if(counter_uart == 15){
-counter_uart = 0;
-flag4 = 1;
-}
-
-# 97
-GIE = 1;
-
 return;
-
 }
 
 
 if(T0IF){
 T0IF = 0;
-
 flag1 = 1;
-GIE = 1 ;
+
 return;
-
-
 }
 
 
@@ -2024,9 +2001,7 @@ return;
 
 if(TMR1IF){
 TMR1IF = 0;
-
 flag2 = 1;
-GIE = 1 ;
 
 return;
 }
@@ -2035,12 +2010,9 @@ return;
 if(TMR2IF){
 TMR2IF = 0;
 flag3 = 1;
-GIE = 1 ;
 
 return;
 }
-
-# 157
 }
 
 int main(void){
@@ -2058,7 +2030,6 @@ T0IE = 1;
 
 
 
-
 TMR1GE = 0;
 T1CONbits.T1CKPS0 = 0;
 T1CONbits.T1CKPS1 = 0;
@@ -2071,16 +2042,7 @@ TMR1IE = 1;
 
 
 
-BRG16 = 0;
-BRGH = 0;
-SPBRGH = 0;
-SPBRG = 0x0C;
-SYNC = 0;
-SPEN = 1;
-RCIE = 1;
-CREN = 1;
 
-# 200
 T2CONbits.T2CKPS0= 1;
 T2CONbits.T2CKPS1= 1;
 T2CONbits.TOUTPS0 = 1;
@@ -2090,6 +2052,17 @@ T2CONbits.TOUTPS3 = 0;
 PR2 = 0xFF;
 TMR2ON = 1;
 TMR2IE = 1;
+
+
+
+BRG16 = 0;
+BRGH = 0;
+SPBRGH = 0;
+SPBRG = 0x0C;
+SYNC = 0;
+SPEN = 1;
+RCIE = 1;
+CREN = 1;
 
 
 
@@ -2137,13 +2110,12 @@ TMR1H = motor2_1Array[motor2];
 TMR1L = motor2_2Array[motor2];
 temp = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3run);
 PORTC = temp;
-
 }
 
 void handle_counter1(void){
 char temp;
 loop1 -= 1;
-if(loop1 <= 0){
+if(loop1 < 0){
 TMR0 = motor1Array[motor1];
 loop1 = incremental1;
 counter1 += direction1;
@@ -2159,7 +2131,7 @@ TMR0 = 0;
 void handle_counter3(void){
 char temp;
 loop3 -= 1;
-if(loop3 <= 0){
+if(loop3 < 0){
 PR2 = motor3Array[motor3];
 loop3 = incremental3;
 counter3 += direction3;
@@ -2170,12 +2142,13 @@ PORTC = temp;
 else{
 PR2 = 0xFF;
 }
+
+
 }
 
 void handle_uart_data(void){
 
 tmp1 = uart_data[14];
-
 if(tmp1 == 75)
 motor1run = 0x00;
 else
@@ -2188,9 +2161,6 @@ direction1 = -1;
 else
 direction1 = 1;
 
-
-
-
 tmp1 = tmp1 - 45;
 if(tmp1 == 0)
 incremental1 = 2;
@@ -2199,10 +2169,7 @@ incremental1 = 1;
 else
 incremental1 = 0;
 
-
 motor1 = tmp1;
-
-
 
 tmp2 = uart_data[13];
 if(tmp2 == 75)
@@ -2221,9 +2188,7 @@ tmp2 = tmp2 - 45;
 motor2 = tmp2;
 
 
-
 tmp3 = uart_data[12];
-
 if(tmp3 == 75)
 motor3run = 0x00;
 else
@@ -2236,9 +2201,6 @@ direction3 = -1;
 else
 direction3 = 1;
 
-
-
-
 tmp3 = tmp3 - 45;
 if(tmp3 == 0)
 incremental3 = 2;
@@ -2247,7 +2209,20 @@ incremental3 = 1;
 else
 incremental3 = 0;
 
-
 motor3 = tmp3;
 }
 
+void handle_uart_buffer(char data){
+if(data == 0x55){
+counter_uart = 0;
+return;
+}
+
+uart_data[counter_uart] = data;
+counter_uart += 1;
+if(counter_uart == 15){
+counter_uart = 0;
+flag4 = 1;
+}
+return;
+}

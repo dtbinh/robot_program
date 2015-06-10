@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC PRO Macro Assembler V1.33 build 59893 
-                                                                                               Wed Jun 10 20:51:01 2015
+                                                                                               Wed Jun 10 23:01:00 2015
 
 Microchip Technology Omniscient Code Generator (PRO mode) build 59893
      1                           	processor	16F690
@@ -103,119 +103,119 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
     97  0000                     __pidataBANK0:	
     98                           
     99                           	psect	strings
-   100  0095                     __pstrings:	
-   101  0095                     stringtab:	
-   102  0095                     __stringtab:	
-   103  0095                     stringcode:	
+   100  0100                     __pstrings:	
+   101  0100                     stringtab:	
+   102  0100                     __stringtab:	
+   103  0100                     stringcode:	
    104                           ;	String table - string pointers are 1 byte each
    105                           
-   106  0095                     stringdir:	
-   107  0095  3000               	movlw	high stringdir
-   108  0096  008A               	movwf	10
-   109  0097  0804               	movf	4,w
-   110  0098  0A84               	incf	4,f
-   111  0099  0782               	addwf	2,f
-   112  009A                     __stringbase:	
-   113  009A  3400               	retlw	0
-   114  009B                     __end_of__stringtab:	
-   115  009B                     _motor1Array:	
-   116  009B  340F               	retlw	15
-   117  009C  3487               	retlw	135
-   118  009D  3405               	retlw	5
-   119  009E  3443               	retlw	67
-   120  009F  3469               	retlw	105
-   121  00A0  3482               	retlw	130
-   122  00A1  3494               	retlw	148
-   123  00A2  34A1               	retlw	161
-   124  00A3  34AC               	retlw	172
-   125  00A4  34B4               	retlw	180
-   126  00A5  34BB               	retlw	187
-   127  00A6  34C0               	retlw	192
-   128  00A7  34C5               	retlw	197
-   129  00A8  34C9               	retlw	201
-   130  00A9  34CD               	retlw	205
-   131  00AA                     __end_of_motor1Array:	
-   132  00AA                     _motor2_1Array:	
-   133  00AA  34A2               	retlw	162
-   134  00AB  34D1               	retlw	209
-   135  00AC  34E0               	retlw	224
-   136  00AD  34E8               	retlw	232
-   137  00AE  34ED               	retlw	237
-   138  00AF  34F0               	retlw	240
-   139  00B0  34F2               	retlw	242
-   140  00B1  34F4               	retlw	244
-   141  00B2  34F5               	retlw	245
-   142  00B3  34F6               	retlw	246
-   143  00B4  34F7               	retlw	247
-   144  00B5  34F8               	retlw	248
-   145  00B6  34F8               	retlw	248
-   146  00B7  34F9               	retlw	249
-   147  00B8  34F9               	retlw	249
-   148  00B9                     __end_of_motor2_1Array:	
-   149  00B9                     _motor2_2Array:	
-   150  00B9  343F               	retlw	63
-   151  00BA  341F               	retlw	31
-   152  00BB  34BF               	retlw	191
-   153  00BC  348F               	retlw	143
-   154  00BD  343F               	retlw	63
-   155  00BE  345F               	retlw	95
-   156  00BF  349A               	retlw	154
-   157  00C0  3447               	retlw	71
-   158  00C1  3494               	retlw	148
-   159  00C2  349F               	retlw	159
-   160  00C3  3479               	retlw	121
-   161  00C4  342F               	retlw	47
-   162  00C5  34C9               	retlw	201
-   163  00C6  344D               	retlw	77
-   164  00C7  34BF               	retlw	191
-   165  00C8                     __end_of_motor2_2Array:	
-   166  00C8                     _motor3Array:	
-   167  00C8  34F0               	retlw	240
-   168  00C9  3478               	retlw	120
-   169  00CA  34FA               	retlw	250
-   170  00CB  34BB               	retlw	187
-   171  00CC  3496               	retlw	150
-   172  00CD  347D               	retlw	125
-   173  00CE  346B               	retlw	107
-   174  00CF  345D               	retlw	93
-   175  00D0  3453               	retlw	83
-   176  00D1  344B               	retlw	75
-   177  00D2  3444               	retlw	68
-   178  00D3  343E               	retlw	62
-   179  00D4  343A               	retlw	58
-   180  00D5  3418               	retlw	24
-   181  00D6  3432               	retlw	50
-   182  00D7                     __end_of_motor3Array:	
-   183  00D7                     _posArray1:	
-   184  00D7  3411               	retlw	17
-   185  00D8  3401               	retlw	1
-   186  00D9  3403               	retlw	3
-   187  00DA  3402               	retlw	2
-   188  00DB  3406               	retlw	6
-   189  00DC  3404               	retlw	4
-   190  00DD  3414               	retlw	20
-   191  00DE  3410               	retlw	16
-   192  00DF                     __end_of_posArray1:	
-   193  00DF                     _posArray2:	
-   194  00DF  3409               	retlw	9
-   195  00E0  3401               	retlw	1
-   196  00E1  3403               	retlw	3
-   197  00E2  3402               	retlw	2
-   198  00E3  3406               	retlw	6
-   199  00E4  3404               	retlw	4
-   200  00E5  340C               	retlw	12
-   201  00E6  3408               	retlw	8
-   202  00E7                     __end_of_posArray2:	
-   203  00E7                     _posArray3:	
-   204  00E7  3490               	retlw	144
-   205  00E8  3410               	retlw	16
-   206  00E9  3430               	retlw	48
-   207  00EA  3420               	retlw	32
-   208  00EB  3460               	retlw	96
-   209  00EC  3440               	retlw	64
-   210  00ED  34C0               	retlw	192
-   211  00EE  3480               	retlw	128
-   212  00EF                     __end_of_posArray3:	
+   106  0100                     stringdir:	
+   107  0100  3001               	movlw	high stringdir
+   108  0101  008A               	movwf	10
+   109  0102  0804               	movf	4,w
+   110  0103  0A84               	incf	4,f
+   111  0104  0782               	addwf	2,f
+   112  0105                     __stringbase:	
+   113  0105  3400               	retlw	0
+   114  0106                     __end_of__stringtab:	
+   115  0106                     _motor1Array:	
+   116  0106  340F               	retlw	15
+   117  0107  3487               	retlw	135
+   118  0108  3405               	retlw	5
+   119  0109  3443               	retlw	67
+   120  010A  3469               	retlw	105
+   121  010B  3482               	retlw	130
+   122  010C  3494               	retlw	148
+   123  010D  34A1               	retlw	161
+   124  010E  34AC               	retlw	172
+   125  010F  34B4               	retlw	180
+   126  0110  34BB               	retlw	187
+   127  0111  34C0               	retlw	192
+   128  0112  34C5               	retlw	197
+   129  0113  34C9               	retlw	201
+   130  0114  34CD               	retlw	205
+   131  0115                     __end_of_motor1Array:	
+   132  0115                     _motor2_1Array:	
+   133  0115  34A2               	retlw	162
+   134  0116  34D1               	retlw	209
+   135  0117  34E0               	retlw	224
+   136  0118  34E8               	retlw	232
+   137  0119  34ED               	retlw	237
+   138  011A  34F0               	retlw	240
+   139  011B  34F2               	retlw	242
+   140  011C  34F4               	retlw	244
+   141  011D  34F5               	retlw	245
+   142  011E  34F6               	retlw	246
+   143  011F  34F7               	retlw	247
+   144  0120  34F8               	retlw	248
+   145  0121  34F8               	retlw	248
+   146  0122  34F9               	retlw	249
+   147  0123  34F9               	retlw	249
+   148  0124                     __end_of_motor2_1Array:	
+   149  0124                     _motor2_2Array:	
+   150  0124  343F               	retlw	63
+   151  0125  341F               	retlw	31
+   152  0126  34BF               	retlw	191
+   153  0127  348F               	retlw	143
+   154  0128  343F               	retlw	63
+   155  0129  345F               	retlw	95
+   156  012A  349A               	retlw	154
+   157  012B  3447               	retlw	71
+   158  012C  3494               	retlw	148
+   159  012D  349F               	retlw	159
+   160  012E  3479               	retlw	121
+   161  012F  342F               	retlw	47
+   162  0130  34C9               	retlw	201
+   163  0131  344D               	retlw	77
+   164  0132  34BF               	retlw	191
+   165  0133                     __end_of_motor2_2Array:	
+   166  0133                     _motor3Array:	
+   167  0133  34F0               	retlw	240
+   168  0134  3478               	retlw	120
+   169  0135  34FA               	retlw	250
+   170  0136  34BB               	retlw	187
+   171  0137  3496               	retlw	150
+   172  0138  347D               	retlw	125
+   173  0139  346B               	retlw	107
+   174  013A  345D               	retlw	93
+   175  013B  3453               	retlw	83
+   176  013C  344B               	retlw	75
+   177  013D  3444               	retlw	68
+   178  013E  343E               	retlw	62
+   179  013F  343A               	retlw	58
+   180  0140  3436               	retlw	54
+   181  0141  3432               	retlw	50
+   182  0142                     __end_of_motor3Array:	
+   183  0142                     _posArray1:	
+   184  0142  3411               	retlw	17
+   185  0143  3401               	retlw	1
+   186  0144  3403               	retlw	3
+   187  0145  3402               	retlw	2
+   188  0146  3406               	retlw	6
+   189  0147  3404               	retlw	4
+   190  0148  3414               	retlw	20
+   191  0149  3410               	retlw	16
+   192  014A                     __end_of_posArray1:	
+   193  014A                     _posArray2:	
+   194  014A  3409               	retlw	9
+   195  014B  3401               	retlw	1
+   196  014C  3403               	retlw	3
+   197  014D  3402               	retlw	2
+   198  014E  3406               	retlw	6
+   199  014F  3404               	retlw	4
+   200  0150  340C               	retlw	12
+   201  0151  3408               	retlw	8
+   202  0152                     __end_of_posArray2:	
+   203  0152                     _posArray3:	
+   204  0152  3490               	retlw	144
+   205  0153  3410               	retlw	16
+   206  0154  3430               	retlw	48
+   207  0155  3420               	retlw	32
+   208  0156  3460               	retlw	96
+   209  0157  3440               	retlw	64
+   210  0158  34C0               	retlw	192
+   211  0159  3480               	retlw	128
+   212  015A                     __end_of_posArray3:	
    213  0005                     _PORTA	set	5
    214  0006                     _PORTB	set	6
    215  0007                     _PORTC	set	7
@@ -226,100 +226,100 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    220  000F                     _TMR1H	set	15
    221  000E                     _TMR1L	set	14
    222  00C4                     _CREN	set	196
-   223  005F                     _GIE	set	95
-   224  005E                     _PEIE	set	94
-   225  0065                     _RCIF	set	101
-   226  00C7                     _SPEN	set	199
-   227  005D                     _T0IE	set	93
-   228  005A                     _T0IF	set	90
-   229  0083                     _T1OSCEN	set	131
-   230  0081                     _TMR1CS	set	129
-   231  0086                     _TMR1GE	set	134
-   232  0060                     _TMR1IF	set	96
-   233  0080                     _TMR1ON	set	128
-   234  0061                     _TMR2IF	set	97
-   235  0092                     _TMR2ON	set	146
-   236  0081                     _OPTION_REG	set	129
-   237  008F                     _OSCCON	set	143
-   238  0090                     _OSCTUNE	set	144
-   239  0092                     _PR2	set	146
-   240  0099                     _SPBRG	set	153
-   241  009A                     _SPBRGH	set	154
-   242  0085                     _TRISA	set	133
-   243  0086                     _TRISB	set	134
-   244  0087                     _TRISC	set	135
-   245  04DB                     _BRG16	set	1243
-   246  04C2                     _BRGH	set	1218
-   247  0465                     _RCIE	set	1125
-   248  04C4                     _SYNC	set	1220
-   249  0460                     _TMR1IE	set	1120
-   250  0461                     _TMR2IE	set	1121
-   251  011E                     _ANSEL	set	286
-   252  011F                     _ANSELH	set	287
-   253                           
-   254                           ; #config settings
-   255  0000                     
-   256                           	psect	cinit
-   257  000F                     start_initialization:	
-   258  000F                     __initialization:	
-   259                           
-   260                           ; Clear objects allocated to COMMON
-   261  000F  3070               	movlw	low __pbssCOMMON
-   262  0010  0084               	movwf	4
-   263  0011  3079               	movlw	low (__pbssCOMMON+9)
-   264  0012  118A  2209  118A   	fcall	clear_ram0
-   265  0015  3020               	movlw	low __pbssBANK0
-   266                           
-   267                           ; Clear objects allocated to BANK0
-   268  0016  1383               	bcf	3,7	;select IRP bank0
-   269  0017  0084               	movwf	4
-   270  0018  3035               	movlw	low (__pbssBANK0+21)
-   271  0019  118A  2209         	fcall	clear_ram0
-   272                           
-   273                           ;initializer for _uart_data
-   274  001B  304B               	movlw	75
-   275  001C  00B5               	movwf	__pdataBANK0& (0+127)
-   276  001D  00B6               	movwf	(__pdataBANK0+1)& (0+127)
-   277  001E  00B7               	movwf	(__pdataBANK0+2)& (0+127)
-   278  001F  00B8               	movwf	(__pdataBANK0+3)& (0+127)
-   279  0020  00B9               	movwf	(__pdataBANK0+4)& (0+127)
-   280  0021  00BA               	movwf	(__pdataBANK0+5)& (0+127)
-   281  0022  00BB               	movwf	(__pdataBANK0+6)& (0+127)
-   282  0023  00BC               	movwf	(__pdataBANK0+7)& (0+127)
-   283  0024  00BD               	movwf	(__pdataBANK0+8)& (0+127)
-   284  0025  00BE               	movwf	(__pdataBANK0+9)& (0+127)
-   285  0026  00BF               	movwf	(__pdataBANK0+10)& (0+127)
-   286  0027  00C0               	movwf	(__pdataBANK0+11)& (0+127)
-   287  0028  00C1               	movwf	(__pdataBANK0+12)& (0+127)
-   288  0029  00C2               	movwf	(__pdataBANK0+13)& (0+127)
-   289  002A  00C3               	movwf	(__pdataBANK0+14)& (0+127)
-   290  002B                     end_of_initialization:	
-   291                           ;End of C runtime variable initialization code
-   292                           
-   293  002B                     __end_of__initialization:	
-   294  002B  0183               	clrf	3
-   295  002C  118A  28EF         	ljmp	_main	;jump to C main() function
-   296                           
-   297                           	psect	bssCOMMON
-   298  0070                     __pbssCOMMON:	
-   299  0070                     _counter2:	
-   300  0070                     	ds	1
-   301  0071                     _counter3:	
-   302  0071                     	ds	1
-   303  0072                     _counter_uart:	
-   304  0072                     	ds	1
-   305  0073                     _motor2:	
-   306  0073                     	ds	1
-   307  0074                     _motor2run:	
-   308  0074                     	ds	1
-   309  0075                     _motor3run:	
-   310  0075                     	ds	1
-   311  0076                     _tmp1:	
-   312  0076                     	ds	1
-   313  0077                     _tmp2:	
-   314  0077                     	ds	1
-   315  0078                     _tmp3:	
-   316  0078                     	ds	1
+   223  00C2                     _FERR	set	194
+   224  005F                     _GIE	set	95
+   225  00C1                     _OERR	set	193
+   226  005E                     _PEIE	set	94
+   227  0065                     _RCIF	set	101
+   228  00C7                     _SPEN	set	199
+   229  005D                     _T0IE	set	93
+   230  005A                     _T0IF	set	90
+   231  0083                     _T1OSCEN	set	131
+   232  0081                     _TMR1CS	set	129
+   233  0086                     _TMR1GE	set	134
+   234  0060                     _TMR1IF	set	96
+   235  0080                     _TMR1ON	set	128
+   236  0061                     _TMR2IF	set	97
+   237  0092                     _TMR2ON	set	146
+   238  0081                     _OPTION_REG	set	129
+   239  008F                     _OSCCON	set	143
+   240  0090                     _OSCTUNE	set	144
+   241  0092                     _PR2	set	146
+   242  0099                     _SPBRG	set	153
+   243  009A                     _SPBRGH	set	154
+   244  0085                     _TRISA	set	133
+   245  0086                     _TRISB	set	134
+   246  0087                     _TRISC	set	135
+   247  04DB                     _BRG16	set	1243
+   248  04C2                     _BRGH	set	1218
+   249  0465                     _RCIE	set	1125
+   250  04C4                     _SYNC	set	1220
+   251  0460                     _TMR1IE	set	1120
+   252  0461                     _TMR2IE	set	1121
+   253  011E                     _ANSEL	set	286
+   254  011F                     _ANSELH	set	287
+   255                           
+   256                           ; #config settings
+   257  0000                     
+   258                           	psect	cinit
+   259  000F                     start_initialization:	
+   260  000F                     __initialization:	
+   261                           
+   262                           ; Clear objects allocated to COMMON
+   263  000F  3070               	movlw	low __pbssCOMMON
+   264  0010  0084               	movwf	4
+   265  0011  3078               	movlw	low (__pbssCOMMON+8)
+   266  0012  118A  220C  118A   	fcall	clear_ram0
+   267  0015  3020               	movlw	low __pbssBANK0
+   268                           
+   269                           ; Clear objects allocated to BANK0
+   270  0016  1383               	bcf	3,7	;select IRP bank0
+   271  0017  0084               	movwf	4
+   272  0018  3036               	movlw	low (__pbssBANK0+22)
+   273  0019  118A  220C         	fcall	clear_ram0
+   274                           
+   275                           ;initializer for _uart_data
+   276  001B  304B               	movlw	75
+   277  001C  00B6               	movwf	__pdataBANK0& (0+127)
+   278  001D  00B7               	movwf	(__pdataBANK0+1)& (0+127)
+   279  001E  00B8               	movwf	(__pdataBANK0+2)& (0+127)
+   280  001F  00B9               	movwf	(__pdataBANK0+3)& (0+127)
+   281  0020  00BA               	movwf	(__pdataBANK0+4)& (0+127)
+   282  0021  00BB               	movwf	(__pdataBANK0+5)& (0+127)
+   283  0022  00BC               	movwf	(__pdataBANK0+6)& (0+127)
+   284  0023  00BD               	movwf	(__pdataBANK0+7)& (0+127)
+   285  0024  00BE               	movwf	(__pdataBANK0+8)& (0+127)
+   286  0025  00BF               	movwf	(__pdataBANK0+9)& (0+127)
+   287  0026  00C0               	movwf	(__pdataBANK0+10)& (0+127)
+   288  0027  00C1               	movwf	(__pdataBANK0+11)& (0+127)
+   289  0028  00C2               	movwf	(__pdataBANK0+12)& (0+127)
+   290  0029  00C3               	movwf	(__pdataBANK0+13)& (0+127)
+   291  002A  00C4               	movwf	(__pdataBANK0+14)& (0+127)
+   292  002B                     end_of_initialization:	
+   293                           ;End of C runtime variable initialization code
+   294                           
+   295  002B                     __end_of__initialization:	
+   296  002B  0183               	clrf	3
+   297  002C  118A  2895         	ljmp	_main	;jump to C main() function
+   298                           
+   299                           	psect	bssCOMMON
+   300  0070                     __pbssCOMMON:	
+   301  0070                     _counter2:	
+   302  0070                     	ds	1
+   303  0071                     _counter3:	
+   304  0071                     	ds	1
+   305  0072                     _motor2:	
+   306  0072                     	ds	1
+   307  0073                     _motor2run:	
+   308  0073                     	ds	1
+   309  0074                     _motor3run:	
+   310  0074                     	ds	1
+   311  0075                     _tmp1:	
+   312  0075                     	ds	1
+   313  0076                     _tmp2:	
+   314  0076                     	ds	1
+   315  0077                     _tmp3:	
+   316  0077                     	ds	1
    317                           
    318                           	psect	bssBANK0
    319  0020                     __pbssBANK0:	
@@ -335,1092 +335,1133 @@ Microchip Technology Omniscient Code Generator (PRO mode) build 59893
    329  0028                     	ds	2
    330  002A                     _counter1:	
    331  002A                     	ds	1
-   332  002B                     _flag1:	
+   332  002B                     _counter_uart:	
    333  002B                     	ds	1
-   334  002C                     _flag2:	
+   334  002C                     _flag1:	
    335  002C                     	ds	1
-   336  002D                     _flag3:	
+   336  002D                     _flag2:	
    337  002D                     	ds	1
-   338  002E                     _flag4:	
+   338  002E                     _flag3:	
    339  002E                     	ds	1
-   340  002F                     _incremental1:	
+   340  002F                     _flag4:	
    341  002F                     	ds	1
-   342  0030                     _incremental3:	
+   342  0030                     _incremental1:	
    343  0030                     	ds	1
-   344  0031                     _motor1:	
+   344  0031                     _incremental3:	
    345  0031                     	ds	1
-   346  0032                     _motor1run:	
+   346  0032                     _motor1:	
    347  0032                     	ds	1
-   348  0033                     _motor3:	
+   348  0033                     _motor1run:	
    349  0033                     	ds	1
-   350  0034                     _tmp_data:	
+   350  0034                     _motor3:	
    351  0034                     	ds	1
-   352                           
-   353                           	psect	dataBANK0
-   354  0035                     __pdataBANK0:	
-   355  0035                     _uart_data:	
-   356  0035                     	ds	15
-   357                           
-   358                           	psect	clrtext
-   359  0209                     clear_ram0:	
-   360                           ;	Called with FSR containing the base address, and
-   361                           ;	W with the last address+1
-   362                           
-   363  0209  0064               	clrwdt	;clear the watchdog before getting into this loop
-   364  020A                     clrloop0:	
-   365  020A  0180               	clrf	0	;clear RAM location pointed to by FSR
-   366  020B  0A84               	incf	4,f	;increment pointer
-   367  020C  0604               	xorwf	4,w	;XOR with final address
-   368  020D  1903               	btfsc	3,2	;have we reached the end yet?
-   369  020E  3400               	retlw	0	;all done for this memory range, return
-   370  020F  0604               	xorwf	4,w	;XOR again to restore value
-   371  0210  2A0A               	goto	clrloop0	;do the next byte
-   372                           
-   373                           	psect	cstackCOMMON
-   374  0079                     __pcstackCOMMON:	
-   375  0079                     ?_handle_uart_data:	
-   376  0079                     ?_handle_counter1:	
-   377                           ; 0 bytes @ 0x0
-   378                           
-   379  0079                     ?_handle_counter2:	
-   380                           ; 0 bytes @ 0x0
-   381                           
-   382  0079                     ?_handle_counter3:	
-   383                           ; 0 bytes @ 0x0
-   384                           
-   385  0079                     ?_global_interrupt:	
-   386                           ; 0 bytes @ 0x0
-   387                           
-   388  0079                     ??_global_interrupt:	
-   389                           ; 0 bytes @ 0x0
-   390                           
-   391  0079                     ?_main:	
-   392                           ; 0 bytes @ 0x0
-   393                           
-   394                           
-   395                           ; 2 bytes @ 0x0
-   396  0079                     	ds	3
-   397                           
-   398                           	psect	cstackBANK0
-   399  0044                     __pcstackBANK0:	
-   400  0044                     ??_handle_uart_data:	
-   401  0044                     ??_handle_counter1:	
-   402                           ; 0 bytes @ 0x0
-   403                           
-   404  0044                     ??_handle_counter2:	
-   405                           ; 0 bytes @ 0x0
+   352  0035                     _tmp_data:	
+   353  0035                     	ds	1
+   354                           
+   355                           	psect	dataBANK0
+   356  0036                     __pdataBANK0:	
+   357  0036                     _uart_data:	
+   358  0036                     	ds	15
+   359                           
+   360                           	psect	clrtext
+   361  020C                     clear_ram0:	
+   362                           ;	Called with FSR containing the base address, and
+   363                           ;	W with the last address+1
+   364                           
+   365  020C  0064               	clrwdt	;clear the watchdog before getting into this loop
+   366  020D                     clrloop0:	
+   367  020D  0180               	clrf	0	;clear RAM location pointed to by FSR
+   368  020E  0A84               	incf	4,f	;increment pointer
+   369  020F  0604               	xorwf	4,w	;XOR with final address
+   370  0210  1903               	btfsc	3,2	;have we reached the end yet?
+   371  0211  3400               	retlw	0	;all done for this memory range, return
+   372  0212  0604               	xorwf	4,w	;XOR again to restore value
+   373  0213  2A0D               	goto	clrloop0	;do the next byte
+   374                           
+   375                           	psect	cstackCOMMON
+   376  0078                     __pcstackCOMMON:	
+   377  0078                     ?_handle_uart_buffer:	
+   378  0078                     ??_handle_uart_buffer:	
+   379                           ; 0 bytes @ 0x0
+   380                           
+   381  0078                     ?_handle_uart_data:	
+   382                           ; 0 bytes @ 0x0
+   383                           
+   384  0078                     ?_handle_counter1:	
+   385                           ; 0 bytes @ 0x0
+   386                           
+   387  0078                     ?_handle_counter2:	
+   388                           ; 0 bytes @ 0x0
+   389                           
+   390  0078                     ?_handle_counter3:	
+   391                           ; 0 bytes @ 0x0
+   392                           
+   393  0078                     ?_global_interrupt:	
+   394                           ; 0 bytes @ 0x0
+   395                           
+   396  0078                     ?_main:	
+   397                           ; 0 bytes @ 0x0
+   398                           
+   399  0078                     handle_uart_buffer@data:	
+   400                           ; 2 bytes @ 0x0
+   401                           
+   402                           
+   403                           ; 1 bytes @ 0x0
+   404  0078                     	ds	1
+   405  0079                     ??_global_interrupt:	
    406                           
-   407  0044                     ??_handle_counter3:	
-   408                           ; 0 bytes @ 0x0
+   407                           ; 0 bytes @ 0x1
+   408  0079                     	ds	3
    409                           
-   410  0044                     handle_counter1@temp:	
-   411                           ; 0 bytes @ 0x0
-   412                           
-   413                           
-   414                           ; 1 bytes @ 0x0
-   415  0044                     	ds	1
-   416  0045                     handle_counter2@temp:	
-   417  0045                     handle_counter3@temp:	
-   418                           ; 1 bytes @ 0x1
-   419                           
-   420                           
-   421                           ; 1 bytes @ 0x1
-   422  0045                     	ds	1
-   423  0046                     ??_main:	
+   410                           	psect	cstackBANK0
+   411  0045                     __pcstackBANK0:	
+   412  0045                     ??_handle_uart_data:	
+   413  0045                     ??_handle_counter1:	
+   414                           ; 0 bytes @ 0x0
+   415                           
+   416  0045                     ??_handle_counter2:	
+   417                           ; 0 bytes @ 0x0
+   418                           
+   419  0045                     ??_handle_counter3:	
+   420                           ; 0 bytes @ 0x0
+   421                           
+   422  0045                     handle_counter1@temp:	
+   423                           ; 0 bytes @ 0x0
    424                           
-   425                           	psect	maintext
-   426  00EF                     __pmaintext:	
-   427                           ; 0 bytes @ 0x2
-   428 ;;
-   429 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
-   430 ;;
-   431 ;; *************** function _main *****************
-   432 ;; Defined at:
-   433 ;;		line 159 in file "main.c"
-   434 ;; Parameters:    Size  Location     Type
-   435 ;;		None
-   436 ;; Auto vars:     Size  Location     Type
-   437 ;;		None
-   438 ;; Return value:  Size  Location     Type
-   439 ;;                  2  169[COMMON] int 
-   440 ;; Registers used:
-   441 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
-   442 ;; Tracked objects:
-   443 ;;		On entry : 17F/0
-   444 ;;		On exit  : 60/0
-   445 ;;		Unchanged: 0/0
-   446 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-   447 ;;      Params:         0       0       0       0
-   448 ;;      Locals:         0       0       0       0
-   449 ;;      Temps:          0       0       0       0
-   450 ;;      Totals:         0       0       0       0
-   451 ;;Total ram usage:        0 bytes
-   452 ;; Hardware stack levels required when called:    3
-   453 ;; This function calls:
-   454 ;;		_handle_counter1
-   455 ;;		_handle_counter2
-   456 ;;		_handle_counter3
-   457 ;;		_handle_uart_data
-   458 ;; This function is called by:
-   459 ;;		Startup code after reset
-   460 ;; This function uses a non-reentrant model
-   461 ;;
-   462                           
-   463                           
-   464                           ;psect for function _main
-   465  00EF                     _main:	
-   466                           
-   467                           ;main.c: 161: OSCCON = 0x00;
-   468                           
-   469                           ;incstack = 0
-   470                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
-   471  00EF  1683               	bsf	3,5	;RP0=1, select bank1
-   472  00F0  018F               	clrf	15	;volatile
-   473                           
-   474                           ;main.c: 162: OSCCON |= 0b01110001;
-   475  00F1  3071               	movlw	113
-   476  00F2  048F               	iorwf	15,f	;volatile
-   477                           
-   478                           ;main.c: 163: OSCTUNE = 0x00;
-   479  00F3  0190               	clrf	16	;volatile
+   425                           
+   426                           ; 1 bytes @ 0x0
+   427  0045                     	ds	1
+   428  0046                     handle_counter2@temp:	
+   429  0046                     handle_counter3@temp:	
+   430                           ; 1 bytes @ 0x1
+   431                           
+   432                           
+   433                           ; 1 bytes @ 0x1
+   434  0046                     	ds	1
+   435  0047                     ??_main:	
+   436                           
+   437                           	psect	maintext
+   438  0095                     __pmaintext:	
+   439                           ; 0 bytes @ 0x2
+   440 ;;
+   441 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   442 ;;
+   443 ;; *************** function _main *****************
+   444 ;; Defined at:
+   445 ;;		line 107 in file "main.c"
+   446 ;; Parameters:    Size  Location     Type
+   447 ;;		None
+   448 ;; Auto vars:     Size  Location     Type
+   449 ;;		None
+   450 ;; Return value:  Size  Location     Type
+   451 ;;                  2  171[COMMON] int 
+   452 ;; Registers used:
+   453 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   454 ;; Tracked objects:
+   455 ;;		On entry : 17F/0
+   456 ;;		On exit  : 60/0
+   457 ;;		Unchanged: 0/0
+   458 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   459 ;;      Params:         0       0       0       0
+   460 ;;      Locals:         0       0       0       0
+   461 ;;      Temps:          0       0       0       0
+   462 ;;      Totals:         0       0       0       0
+   463 ;;Total ram usage:        0 bytes
+   464 ;; Hardware stack levels required when called:    3
+   465 ;; This function calls:
+   466 ;;		_handle_counter1
+   467 ;;		_handle_counter2
+   468 ;;		_handle_counter3
+   469 ;;		_handle_uart_data
+   470 ;; This function is called by:
+   471 ;;		Startup code after reset
+   472 ;; This function uses a non-reentrant model
+   473 ;;
+   474                           
+   475                           
+   476                           ;psect for function _main
+   477  0095                     _main:	
+   478                           
+   479                           ;main.c: 109: OSCCON = 0x00;
    480                           
-   481                           ;main.c: 167: OPTION_REG &= 0b11010000;
-   482  00F4  30D0               	movlw	208
-   483  00F5  0581               	andwf	1,f	;volatile
-   484                           
-   485                           ;main.c: 168: OPTION_REG |= 0b00000100;
-   486  00F6  1501               	bsf	1,2	;volatile
-   487                           
-   488                           ;main.c: 169: TMR0 = 0x00;
-   489  00F7  1283               	bcf	3,5	;RP0=0, select bank0
-   490  00F8  0181               	clrf	1	;volatile
-   491                           
-   492                           ;main.c: 170: T0IE = 1;
-   493  00F9  168B               	bsf	11,5	;volatile
-   494                           
-   495                           ;main.c: 175: TMR1GE = 0;
-   496  00FA  1310               	bcf	16,6	;volatile
-   497                           
-   498                           ;main.c: 176: T1CONbits.T1CKPS0 = 0;
-   499  00FB  1210               	bcf	16,4	;volatile
-   500                           
-   501                           ;main.c: 177: T1CONbits.T1CKPS1 = 0;
-   502  00FC  1290               	bcf	16,5	;volatile
+   481                           ;incstack = 0
+   482                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   483  0095  1683               	bsf	3,5	;RP0=1, select bank1
+   484  0096  018F               	clrf	15	;volatile
+   485                           
+   486                           ;main.c: 110: OSCCON |= 0b01110001;
+   487  0097  3071               	movlw	113
+   488  0098  048F               	iorwf	15,f	;volatile
+   489                           
+   490                           ;main.c: 111: OSCTUNE = 0x00;
+   491  0099  0190               	clrf	16	;volatile
+   492                           
+   493                           ;main.c: 115: OPTION_REG &= 0b11010000;
+   494  009A  30D0               	movlw	208
+   495  009B  0581               	andwf	1,f	;volatile
+   496                           
+   497                           ;main.c: 116: OPTION_REG |= 0b00000100;
+   498  009C  1501               	bsf	1,2	;volatile
+   499                           
+   500                           ;main.c: 117: TMR0 = 0x00;
+   501  009D  1283               	bcf	3,5	;RP0=0, select bank0
+   502  009E  0181               	clrf	1	;volatile
    503                           
-   504                           ;main.c: 178: T1OSCEN = 0;
-   505  00FD  1190               	bcf	16,3	;volatile
+   504                           ;main.c: 118: T0IE = 1;
+   505  009F  168B               	bsf	11,5	;volatile
    506                           
-   507                           ;main.c: 179: TMR1CS = 0;
-   508  00FE  1090               	bcf	16,1	;volatile
+   507                           ;main.c: 122: TMR1GE = 0;
+   508  00A0  1310               	bcf	16,6	;volatile
    509                           
-   510                           ;main.c: 180: TMR1ON = 1;
-   511  00FF  1410               	bsf	16,0	;volatile
+   510                           ;main.c: 123: T1CONbits.T1CKPS0 = 0;
+   511  00A1  1210               	bcf	16,4	;volatile
    512                           
-   513                           ;main.c: 181: TMR1H = 0x00;
-   514  0100  018F               	clrf	15	;volatile
+   513                           ;main.c: 124: T1CONbits.T1CKPS1 = 0;
+   514  00A2  1290               	bcf	16,5	;volatile
    515                           
-   516                           ;main.c: 182: TMR1H = 0x00;
-   517  0101  018F               	clrf	15	;volatile
+   516                           ;main.c: 125: T1OSCEN = 0;
+   517  00A3  1190               	bcf	16,3	;volatile
    518                           
-   519                           ;main.c: 183: TMR1IE = 1;
-   520  0102  1683               	bsf	3,5	;RP0=1, select bank1
-   521  0103  140C               	bsf	12,0	;volatile
-   522                           
-   523                           ;main.c: 187: BRG16 = 0;
-   524  0104  119B               	bcf	27,3	;volatile
-   525                           
-   526                           ;main.c: 188: BRGH = 0;
-   527  0105  1118               	bcf	24,2	;volatile
-   528                           
-   529                           ;main.c: 189: SPBRGH = 0;
-   530  0106  019A               	clrf	26	;volatile
-   531                           
-   532                           ;main.c: 190: SPBRG = 0x0C;
-   533  0107  300C               	movlw	12
-   534  0108  0099               	movwf	25	;volatile
-   535                           
-   536                           ;main.c: 191: SYNC = 0;
-   537  0109  1218               	bcf	24,4	;volatile
+   519                           ;main.c: 126: TMR1CS = 0;
+   520  00A4  1090               	bcf	16,1	;volatile
+   521                           
+   522                           ;main.c: 127: TMR1ON = 1;
+   523  00A5  1410               	bsf	16,0	;volatile
+   524                           
+   525                           ;main.c: 128: TMR1H = 0x00;
+   526  00A6  018F               	clrf	15	;volatile
+   527                           
+   528                           ;main.c: 129: TMR1H = 0x00;
+   529  00A7  018F               	clrf	15	;volatile
+   530                           
+   531                           ;main.c: 130: TMR1IE = 1;
+   532  00A8  1683               	bsf	3,5	;RP0=1, select bank1
+   533  00A9  140C               	bsf	12,0	;volatile
+   534                           
+   535                           ;main.c: 135: T2CONbits.T2CKPS0= 1;
+   536  00AA  1283               	bcf	3,5	;RP0=0, select bank0
+   537  00AB  1412               	bsf	18,0	;volatile
    538                           
-   539                           ;main.c: 192: SPEN = 1;
-   540  010A  1283               	bcf	3,5	;RP0=0, select bank0
-   541  010B  1798               	bsf	24,7	;volatile
-   542                           
-   543                           ;main.c: 193: RCIE = 1;
-   544  010C  1683               	bsf	3,5	;RP0=1, select bank1
-   545  010D  168C               	bsf	12,5	;volatile
-   546                           
-   547                           ;main.c: 194: CREN = 1;
-   548  010E  1283               	bcf	3,5	;RP0=0, select bank0
-   549  010F  1618               	bsf	24,4	;volatile
+   539                           ;main.c: 136: T2CONbits.T2CKPS1= 1;
+   540  00AC  1492               	bsf	18,1	;volatile
+   541                           
+   542                           ;main.c: 137: T2CONbits.TOUTPS0 = 1;
+   543  00AD  1592               	bsf	18,3	;volatile
+   544                           
+   545                           ;main.c: 138: T2CONbits.TOUTPS1 = 0;
+   546  00AE  1212               	bcf	18,4	;volatile
+   547                           
+   548                           ;main.c: 139: T2CONbits.TOUTPS2 = 0;
+   549  00AF  1292               	bcf	18,5	;volatile
    550                           
-   551                           ;main.c: 200: T2CONbits.T2CKPS0= 1;
-   552  0110  1412               	bsf	18,0	;volatile
+   551                           ;main.c: 140: T2CONbits.TOUTPS3 = 0;
+   552  00B0  1312               	bcf	18,6	;volatile
    553                           
-   554                           ;main.c: 201: T2CONbits.T2CKPS1= 1;
-   555  0111  1492               	bsf	18,1	;volatile
-   556                           
-   557                           ;main.c: 202: T2CONbits.TOUTPS0 = 1;
-   558  0112  1592               	bsf	18,3	;volatile
-   559                           
-   560                           ;main.c: 203: T2CONbits.TOUTPS1 = 0;
-   561  0113  1212               	bcf	18,4	;volatile
+   554                           ;main.c: 141: PR2 = 0xFF;
+   555  00B1  30FF               	movlw	255
+   556  00B2  1683               	bsf	3,5	;RP0=1, select bank1
+   557  00B3  0092               	movwf	18	;volatile
+   558                           
+   559                           ;main.c: 142: TMR2ON = 1;
+   560  00B4  1283               	bcf	3,5	;RP0=0, select bank0
+   561  00B5  1512               	bsf	18,2	;volatile
    562                           
-   563                           ;main.c: 204: T2CONbits.TOUTPS2 = 0;
-   564  0114  1292               	bcf	18,5	;volatile
-   565                           
-   566                           ;main.c: 205: T2CONbits.TOUTPS3 = 0;
-   567  0115  1312               	bcf	18,6	;volatile
-   568                           
-   569                           ;main.c: 206: PR2 = 0xFF;
-   570  0116  30FF               	movlw	255
-   571  0117  1683               	bsf	3,5	;RP0=1, select bank1
-   572  0118  0092               	movwf	18	;volatile
-   573                           
-   574                           ;main.c: 207: TMR2ON = 1;
-   575  0119  1283               	bcf	3,5	;RP0=0, select bank0
-   576  011A  1512               	bsf	18,2	;volatile
-   577                           
-   578                           ;main.c: 208: TMR2IE = 1;
-   579  011B  1683               	bsf	3,5	;RP0=1, select bank1
-   580  011C  148C               	bsf	12,1	;volatile
-   581                           
-   582                           ;main.c: 213: TRISA = 0x00;
-   583  011D  0185               	clrf	5	;volatile
-   584                           
-   585                           ;main.c: 214: TRISB = 0b00100000;
-   586  011E  3020               	movlw	32
-   587  011F  0086               	movwf	6	;volatile
-   588                           
-   589                           ;main.c: 215: TRISC = 0x00;
-   590  0120  0187               	clrf	7	;volatile
-   591                           
-   592                           ;main.c: 216: ANSEL = 0x00;
-   593  0121  1283               	bcf	3,5	;RP0=0, select bank2
-   594  0122  1703               	bsf	3,6	;RP1=1, select bank2
-   595  0123  019E               	clrf	30	;volatile
-   596                           
-   597                           ;main.c: 217: ANSELH = 0x00;
-   598  0124  019F               	clrf	31	;volatile
-   599                           
-   600                           ;main.c: 220: PORTA = 0x00;
-   601  0125  1303               	bcf	3,6	;RP1=0, select bank0
-   602  0126  0185               	clrf	5	;volatile
-   603                           
-   604                           ;main.c: 221: PORTB = 0x00;
-   605  0127  0186               	clrf	6	;volatile
-   606                           
-   607                           ;main.c: 222: PORTC = 0x00;
-   608  0128  0187               	clrf	7	;volatile
-   609                           
-   610                           ;main.c: 223: PEIE = 1;
-   611  0129  170B               	bsf	11,6	;volatile
-   612                           
-   613                           ;main.c: 224: GIE = 1;
-   614  012A  178B               	bsf	11,7	;volatile
-   615  012B                     l1366:	
-   616                           
-   617                           ;main.c: 227: if(flag4){
-   618  012B  082E               	movf	_flag4,w
-   619  012C  1903               	btfsc	3,2
-   620  012D  2932               	goto	l1372
-   621                           
-   622                           ;main.c: 228: handle_uart_data();
-   623  012E  118A  202E  118A   	fcall	_handle_uart_data
-   624                           
-   625                           ;main.c: 229: flag4 = 0;
-   626  0131  01AE               	clrf	_flag4
-   627  0132                     l1372:	
-   628                           
-   629                           ;main.c: 230: }
-   630                           ;main.c: 232: if(flag1){
-   631  0132  082B               	movf	_flag1,w
-   632  0133  1903               	btfsc	3,2
-   633  0134  2939               	goto	l1378
-   634                           
-   635                           ;main.c: 233: handle_counter1();
-   636  0135  118A  21B7  118A   	fcall	_handle_counter1
-   637                           
-   638                           ;main.c: 234: flag1 = 0;
-   639  0138  01AB               	clrf	_flag1
-   640  0139                     l1378:	
-   641                           
-   642                           ;main.c: 235: }
-   643                           ;main.c: 236: if(flag2){
-   644  0139  082C               	movf	_flag2,w
-   645  013A  1903               	btfsc	3,2
-   646  013B  2940               	goto	l1384
-   647                           
-   648                           ;main.c: 237: handle_counter2();
-   649  013C  118A  21E5  118A   	fcall	_handle_counter2
-   650                           
-   651                           ;main.c: 238: flag2 = 0;
-   652  013F  01AC               	clrf	_flag2
-   653  0140                     l1384:	
-   654                           
-   655                           ;main.c: 239: }
-   656                           ;main.c: 240: if(flag3){
-   657  0140  082D               	movf	_flag3,w
-   658  0141  1903               	btfsc	3,2
-   659  0142  292B               	goto	l1366
-   660                           
-   661                           ;main.c: 241: handle_counter3();
-   662  0143  118A  2149  118A   	fcall	_handle_counter3
-   663                           
-   664                           ;main.c: 242: flag3 = 0;
-   665  0146  1283               	bcf	3,5	;RP0=0, select bank0
-   666  0147  01AD               	clrf	_flag3
-   667  0148  292B               	goto	l1366
-   668  0149                     __end_of_main:	
-   669                           
-   670                           	psect	text1
-   671  002E                     __ptext1:	
-   672 ;; *************** function _handle_uart_data *****************
-   673 ;; Defined at:
-   674 ;;		line 291 in file "main.c"
-   675 ;; Parameters:    Size  Location     Type
-   676 ;;		None
-   677 ;; Auto vars:     Size  Location     Type
-   678 ;;		None
-   679 ;; Return value:  Size  Location     Type
-   680 ;;		None               void
-   681 ;; Registers used:
-   682 ;;		wreg, status,2, status,0
-   683 ;; Tracked objects:
-   684 ;;		On entry : 60/0
-   685 ;;		On exit  : 60/0
-   686 ;;		Unchanged: 0/0
-   687 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-   688 ;;      Params:         0       0       0       0
-   689 ;;      Locals:         0       0       0       0
-   690 ;;      Temps:          0       0       0       0
-   691 ;;      Totals:         0       0       0       0
-   692 ;;Total ram usage:        0 bytes
-   693 ;; Hardware stack levels used:    1
-   694 ;; Hardware stack levels required when called:    1
-   695 ;; This function calls:
-   696 ;;		Nothing
-   697 ;; This function is called by:
-   698 ;;		_main
-   699 ;; This function uses a non-reentrant model
-   700 ;;
-   701                           
-   702                           
-   703                           ;psect for function _handle_uart_data
-   704  002E                     _handle_uart_data:	
-   705                           
-   706                           ;main.c: 293: tmp1 = uart_data[14];
-   707                           
-   708                           ;incstack = 0
-   709                           ; Regs used in _handle_uart_data: [wreg+status,2+status,0]
-   710  002E  0843               	movf	_uart_data+14,w
-   711  002F  00F6               	movwf	_tmp1
-   712                           
-   713                           ;main.c: 295: if(tmp1 == 75)
-   714  0030  3A4B               	xorlw	75
-   715  0031  1D03               	skipz
-   716  0032  2835               	goto	l1174
-   717                           
-   718                           ;main.c: 296: motor1run = 0x00;
-   719  0033  01B2               	clrf	_motor1run
-   720  0034  2837               	goto	l194
-   721  0035                     l1174:	
-   722                           
-   723                           ;main.c: 297: else
-   724                           ;main.c: 298: motor1run = 0xFF;
-   725  0035  30FF               	movlw	255
-   726  0036  00B2               	movwf	_motor1run
-   727  0037                     l194:	
-   728                           
-   729                           ;main.c: 300: if(tmp1 >=60){
-   730  0037  303C               	movlw	60
-   731  0038  0276               	subwf	_tmp1,w
-   732  0039  1C03               	skipc
-   733  003A  2841               	goto	l1180
-   734                           
-   735                           ;main.c: 301: tmp1 = tmp1 - 15;
-   736  003B  30F1               	movlw	241
-   737  003C  07F6               	addwf	_tmp1,f
-   738                           
-   739                           ;main.c: 302: direction1 = -1;
-   740  003D  30FF               	movlw	255
-   741  003E  00A0               	movwf	_direction1
-   742  003F  00A1               	movwf	_direction1+1
-   743                           
-   744                           ;main.c: 303: }
-   745  0040  2844               	goto	l1182
-   746  0041                     l1180:	
-   747                           
-   748                           ;main.c: 304: else
-   749                           ;main.c: 305: direction1 = 1;
-   750  0041  01A0               	clrf	_direction1
-   751  0042  0AA0               	incf	_direction1,f
-   752  0043  01A1               	clrf	_direction1+1
-   753  0044                     l1182:	
-   754                           
-   755                           ;main.c: 310: tmp1 = tmp1 - 45;
-   756  0044  30D3               	movlw	211
-   757  0045  07F6               	addwf	_tmp1,f
-   758                           
-   759                           ;main.c: 311: if(tmp1 == 0)
-   760  0046  08F6               	movf	_tmp1,f
-   761  0047  1D03               	skipz
-   762  0048  284C               	goto	l1188
-   763                           
-   764                           ;main.c: 312: incremental1 = 2;
-   765  0049  3002               	movlw	2
-   766  004A  00AF               	movwf	_incremental1
-   767  004B  2852               	goto	l1194
-   768  004C                     l1188:	
-   769                           
-   770                           ;main.c: 313: else if(tmp1 == 1)
-   771  004C  0B76               	decfsz	_tmp1,w
-   772  004D  2851               	goto	l1192
-   773                           
-   774                           ;main.c: 314: incremental1 = 1;
-   775  004E  01AF               	clrf	_incremental1
-   776  004F  0AAF               	incf	_incremental1,f
-   777  0050  2852               	goto	l1194
-   778  0051                     l1192:	
-   779                           
-   780                           ;main.c: 315: else
-   781                           ;main.c: 316: incremental1 = 0;
-   782  0051  01AF               	clrf	_incremental1
-   783  0052                     l1194:	
-   784                           
-   785                           ;main.c: 319: motor1 = tmp1;
-   786  0052  0876               	movf	_tmp1,w
-   787  0053  00B1               	movwf	_motor1
-   788                           
-   789                           ;main.c: 323: tmp2 = uart_data[13];
-   790  0054  0842               	movf	_uart_data+13,w
-   791  0055  00F7               	movwf	_tmp2
-   792                           
-   793                           ;main.c: 324: if(tmp2 == 75)
-   794  0056  3A4B               	xorlw	75
-   795  0057  1D03               	skipz
-   796  0058  285B               	goto	l1202
-   797                           
-   798                           ;main.c: 325: motor2run = 0x00;
-   799  0059  01F4               	clrf	_motor2run
-   800  005A  285D               	goto	l202
-   801  005B                     l1202:	
+   563                           ;main.c: 143: TMR2IE = 1;
+   564  00B6  1683               	bsf	3,5	;RP0=1, select bank1
+   565  00B7  148C               	bsf	12,1	;volatile
+   566                           
+   567                           ;main.c: 147: BRG16 = 0;
+   568  00B8  119B               	bcf	27,3	;volatile
+   569                           
+   570                           ;main.c: 148: BRGH = 0;
+   571  00B9  1118               	bcf	24,2	;volatile
+   572                           
+   573                           ;main.c: 149: SPBRGH = 0;
+   574  00BA  019A               	clrf	26	;volatile
+   575                           
+   576                           ;main.c: 150: SPBRG = 0x0C;
+   577  00BB  300C               	movlw	12
+   578  00BC  0099               	movwf	25	;volatile
+   579                           
+   580                           ;main.c: 151: SYNC = 0;
+   581  00BD  1218               	bcf	24,4	;volatile
+   582                           
+   583                           ;main.c: 152: SPEN = 1;
+   584  00BE  1283               	bcf	3,5	;RP0=0, select bank0
+   585  00BF  1798               	bsf	24,7	;volatile
+   586                           
+   587                           ;main.c: 153: RCIE = 1;
+   588  00C0  1683               	bsf	3,5	;RP0=1, select bank1
+   589  00C1  168C               	bsf	12,5	;volatile
+   590                           
+   591                           ;main.c: 154: CREN = 1;
+   592  00C2  1283               	bcf	3,5	;RP0=0, select bank0
+   593  00C3  1618               	bsf	24,4	;volatile
+   594                           
+   595                           ;main.c: 159: TRISA = 0x00;
+   596  00C4  1683               	bsf	3,5	;RP0=1, select bank1
+   597  00C5  0185               	clrf	5	;volatile
+   598                           
+   599                           ;main.c: 160: TRISB = 0b00100000;
+   600  00C6  3020               	movlw	32
+   601  00C7  0086               	movwf	6	;volatile
+   602                           
+   603                           ;main.c: 161: TRISC = 0x00;
+   604  00C8  0187               	clrf	7	;volatile
+   605                           
+   606                           ;main.c: 162: ANSEL = 0x00;
+   607  00C9  1283               	bcf	3,5	;RP0=0, select bank2
+   608  00CA  1703               	bsf	3,6	;RP1=1, select bank2
+   609  00CB  019E               	clrf	30	;volatile
+   610                           
+   611                           ;main.c: 163: ANSELH = 0x00;
+   612  00CC  019F               	clrf	31	;volatile
+   613                           
+   614                           ;main.c: 166: PORTA = 0x00;
+   615  00CD  1303               	bcf	3,6	;RP1=0, select bank0
+   616  00CE  0185               	clrf	5	;volatile
+   617                           
+   618                           ;main.c: 167: PORTB = 0x00;
+   619  00CF  0186               	clrf	6	;volatile
+   620                           
+   621                           ;main.c: 168: PORTC = 0x00;
+   622  00D0  0187               	clrf	7	;volatile
+   623                           
+   624                           ;main.c: 169: PEIE = 1;
+   625  00D1  170B               	bsf	11,6	;volatile
+   626                           
+   627                           ;main.c: 170: GIE = 1;
+   628  00D2  178B               	bsf	11,7	;volatile
+   629  00D3                     l1393:	
+   630                           
+   631                           ;main.c: 173: if(flag4){
+   632  00D3  082F               	movf	_flag4,w
+   633  00D4  1903               	btfsc	3,2
+   634  00D5  28DA               	goto	l1399
+   635                           
+   636                           ;main.c: 174: handle_uart_data();
+   637  00D6  118A  202E  118A   	fcall	_handle_uart_data
+   638                           
+   639                           ;main.c: 175: flag4 = 0;
+   640  00D9  01AF               	clrf	_flag4
+   641  00DA                     l1399:	
+   642                           
+   643                           ;main.c: 176: }
+   644                           ;main.c: 178: if(flag1){
+   645  00DA  082C               	movf	_flag1,w
+   646  00DB  1903               	btfsc	3,2
+   647  00DC  28E1               	goto	l1405
+   648                           
+   649                           ;main.c: 179: handle_counter1();
+   650  00DD  118A  21EB  118A   	fcall	_handle_counter1
+   651                           
+   652                           ;main.c: 180: flag1 = 0;
+   653  00E0  01AC               	clrf	_flag1
+   654  00E1                     l1405:	
+   655                           
+   656                           ;main.c: 181: }
+   657                           ;main.c: 182: if(flag2){
+   658  00E1  082D               	movf	_flag2,w
+   659  00E2  1903               	btfsc	3,2
+   660  00E3  28E8               	goto	l1411
+   661                           
+   662                           ;main.c: 183: handle_counter2();
+   663  00E4  118A  21C7  118A   	fcall	_handle_counter2
+   664                           
+   665                           ;main.c: 184: flag2 = 0;
+   666  00E7  01AD               	clrf	_flag2
+   667  00E8                     l1411:	
+   668                           
+   669                           ;main.c: 185: }
+   670                           ;main.c: 186: if(flag3){
+   671  00E8  082E               	movf	_flag3,w
+   672  00E9  1903               	btfsc	3,2
+   673  00EA  28D3               	goto	l1393
+   674                           
+   675                           ;main.c: 187: handle_counter3();
+   676  00EB  118A  219B  118A   	fcall	_handle_counter3
+   677                           
+   678                           ;main.c: 188: flag3 = 0;
+   679  00EE  1283               	bcf	3,5	;RP0=0, select bank0
+   680  00EF  01AE               	clrf	_flag3
+   681  00F0  28D3               	goto	l1393
+   682  00F1                     __end_of_main:	
+   683                           
+   684                           	psect	text1
+   685  002E                     __ptext1:	
+   686 ;; *************** function _handle_uart_data *****************
+   687 ;; Defined at:
+   688 ;;		line 238 in file "main.c"
+   689 ;; Parameters:    Size  Location     Type
+   690 ;;		None
+   691 ;; Auto vars:     Size  Location     Type
+   692 ;;		None
+   693 ;; Return value:  Size  Location     Type
+   694 ;;		None               void
+   695 ;; Registers used:
+   696 ;;		wreg, status,2, status,0
+   697 ;; Tracked objects:
+   698 ;;		On entry : 60/0
+   699 ;;		On exit  : 60/0
+   700 ;;		Unchanged: 0/0
+   701 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   702 ;;      Params:         0       0       0       0
+   703 ;;      Locals:         0       0       0       0
+   704 ;;      Temps:          0       0       0       0
+   705 ;;      Totals:         0       0       0       0
+   706 ;;Total ram usage:        0 bytes
+   707 ;; Hardware stack levels used:    1
+   708 ;; Hardware stack levels required when called:    2
+   709 ;; This function calls:
+   710 ;;		Nothing
+   711 ;; This function is called by:
+   712 ;;		_main
+   713 ;; This function uses a non-reentrant model
+   714 ;;
+   715                           
+   716                           
+   717                           ;psect for function _handle_uart_data
+   718  002E                     _handle_uart_data:	
+   719                           
+   720                           ;main.c: 240: tmp1 = uart_data[14];
+   721                           
+   722                           ;incstack = 0
+   723                           ; Regs used in _handle_uart_data: [wreg+status,2+status,0]
+   724  002E  0844               	movf	_uart_data+14,w
+   725  002F  00F5               	movwf	_tmp1
+   726                           
+   727                           ;main.c: 241: if(tmp1 == 75)
+   728  0030  3A4B               	xorlw	75
+   729  0031  1D03               	skipz
+   730  0032  2835               	goto	l1201
+   731                           
+   732                           ;main.c: 242: motor1run = 0x00;
+   733  0033  01B3               	clrf	_motor1run
+   734  0034  2837               	goto	l196
+   735  0035                     l1201:	
+   736                           
+   737                           ;main.c: 243: else
+   738                           ;main.c: 244: motor1run = 0xFF;
+   739  0035  30FF               	movlw	255
+   740  0036  00B3               	movwf	_motor1run
+   741  0037                     l196:	
+   742                           
+   743                           ;main.c: 246: if(tmp1 >=60){
+   744  0037  303C               	movlw	60
+   745  0038  0275               	subwf	_tmp1,w
+   746  0039  1C03               	skipc
+   747  003A  2841               	goto	l1207
+   748                           
+   749                           ;main.c: 247: tmp1 = tmp1 - 15;
+   750  003B  30F1               	movlw	241
+   751  003C  07F5               	addwf	_tmp1,f
+   752                           
+   753                           ;main.c: 248: direction1 = -1;
+   754  003D  30FF               	movlw	255
+   755  003E  00A0               	movwf	_direction1
+   756  003F  00A1               	movwf	_direction1+1
+   757                           
+   758                           ;main.c: 249: }
+   759  0040  2844               	goto	l1209
+   760  0041                     l1207:	
+   761                           
+   762                           ;main.c: 250: else
+   763                           ;main.c: 251: direction1 = 1;
+   764  0041  01A0               	clrf	_direction1
+   765  0042  0AA0               	incf	_direction1,f
+   766  0043  01A1               	clrf	_direction1+1
+   767  0044                     l1209:	
+   768                           
+   769                           ;main.c: 253: tmp1 = tmp1 - 45;
+   770  0044  30D3               	movlw	211
+   771  0045  07F5               	addwf	_tmp1,f
+   772                           
+   773                           ;main.c: 254: if(tmp1 == 0)
+   774  0046  08F5               	movf	_tmp1,f
+   775  0047  1D03               	skipz
+   776  0048  284C               	goto	l1215
+   777                           
+   778                           ;main.c: 255: incremental1 = 2;
+   779  0049  3002               	movlw	2
+   780  004A  00B0               	movwf	_incremental1
+   781  004B  2852               	goto	l1221
+   782  004C                     l1215:	
+   783                           
+   784                           ;main.c: 256: else if(tmp1 == 1)
+   785  004C  0B75               	decfsz	_tmp1,w
+   786  004D  2851               	goto	l1219
+   787                           
+   788                           ;main.c: 257: incremental1 = 1;
+   789  004E  01B0               	clrf	_incremental1
+   790  004F  0AB0               	incf	_incremental1,f
+   791  0050  2852               	goto	l1221
+   792  0051                     l1219:	
+   793                           
+   794                           ;main.c: 258: else
+   795                           ;main.c: 259: incremental1 = 0;
+   796  0051  01B0               	clrf	_incremental1
+   797  0052                     l1221:	
+   798                           
+   799                           ;main.c: 261: motor1 = tmp1;
+   800  0052  0875               	movf	_tmp1,w
+   801  0053  00B2               	movwf	_motor1
    802                           
-   803                           ;main.c: 326: else
-   804                           ;main.c: 327: motor2run = 0xFF;
-   805  005B  30FF               	movlw	255
-   806  005C  00F4               	movwf	_motor2run
-   807  005D                     l202:	
-   808                           
-   809                           ;main.c: 329: if(tmp2 >=60){
-   810  005D  303C               	movlw	60
-   811  005E  0277               	subwf	_tmp2,w
-   812  005F  1C03               	skipc
-   813  0060  2867               	goto	l1208
-   814                           
-   815                           ;main.c: 330: tmp2 = tmp2 - 15;
-   816  0061  30F1               	movlw	241
-   817  0062  07F7               	addwf	_tmp2,f
-   818                           
-   819                           ;main.c: 331: direction2 = -1;
-   820  0063  30FF               	movlw	255
-   821  0064  00A2               	movwf	_direction2
-   822  0065  00A3               	movwf	_direction2+1
-   823                           
-   824                           ;main.c: 332: }
-   825  0066  286A               	goto	l1210
-   826  0067                     l1208:	
-   827                           
-   828                           ;main.c: 333: else
-   829                           ;main.c: 334: direction2 = 1;
-   830  0067  01A2               	clrf	_direction2
-   831  0068  0AA2               	incf	_direction2,f
-   832  0069  01A3               	clrf	_direction2+1
-   833  006A                     l1210:	
-   834                           
-   835                           ;main.c: 336: tmp2 = tmp2 - 45;
-   836  006A  30D3               	movlw	211
-   837  006B  07F7               	addwf	_tmp2,f
-   838                           
-   839                           ;main.c: 337: motor2 = tmp2;
-   840  006C  0877               	movf	_tmp2,w
-   841  006D  00F3               	movwf	_motor2
-   842                           
-   843                           ;main.c: 341: tmp3 = uart_data[12];
-   844  006E  0841               	movf	_uart_data+12,w
-   845  006F  00F8               	movwf	_tmp3
-   846                           
-   847                           ;main.c: 343: if(tmp3 == 75)
-   848  0070  3A4B               	xorlw	75
-   849  0071  1D03               	skipz
-   850  0072  2875               	goto	l1214
-   851                           
-   852                           ;main.c: 344: motor3run = 0x00;
-   853  0073  01F5               	clrf	_motor3run
-   854  0074  2877               	goto	l206
-   855  0075                     l1214:	
+   803                           ;main.c: 263: tmp2 = uart_data[13];
+   804  0054  0843               	movf	_uart_data+13,w
+   805  0055  00F6               	movwf	_tmp2
+   806                           
+   807                           ;main.c: 264: if(tmp2 == 75)
+   808  0056  3A4B               	xorlw	75
+   809  0057  1D03               	skipz
+   810  0058  285B               	goto	l1229
+   811                           
+   812                           ;main.c: 265: motor2run = 0x00;
+   813  0059  01F3               	clrf	_motor2run
+   814  005A  285D               	goto	l204
+   815  005B                     l1229:	
+   816                           
+   817                           ;main.c: 266: else
+   818                           ;main.c: 267: motor2run = 0xFF;
+   819  005B  30FF               	movlw	255
+   820  005C  00F3               	movwf	_motor2run
+   821  005D                     l204:	
+   822                           
+   823                           ;main.c: 269: if(tmp2 >=60){
+   824  005D  303C               	movlw	60
+   825  005E  0276               	subwf	_tmp2,w
+   826  005F  1C03               	skipc
+   827  0060  2867               	goto	l1235
+   828                           
+   829                           ;main.c: 270: tmp2 = tmp2 - 15;
+   830  0061  30F1               	movlw	241
+   831  0062  07F6               	addwf	_tmp2,f
+   832                           
+   833                           ;main.c: 271: direction2 = -1;
+   834  0063  30FF               	movlw	255
+   835  0064  00A2               	movwf	_direction2
+   836  0065  00A3               	movwf	_direction2+1
+   837                           
+   838                           ;main.c: 272: }
+   839  0066  286A               	goto	l1237
+   840  0067                     l1235:	
+   841                           
+   842                           ;main.c: 273: else
+   843                           ;main.c: 274: direction2 = 1;
+   844  0067  01A2               	clrf	_direction2
+   845  0068  0AA2               	incf	_direction2,f
+   846  0069  01A3               	clrf	_direction2+1
+   847  006A                     l1237:	
+   848                           
+   849                           ;main.c: 276: tmp2 = tmp2 - 45;
+   850  006A  30D3               	movlw	211
+   851  006B  07F6               	addwf	_tmp2,f
+   852                           
+   853                           ;main.c: 277: motor2 = tmp2;
+   854  006C  0876               	movf	_tmp2,w
+   855  006D  00F2               	movwf	_motor2
    856                           
-   857                           ;main.c: 345: else
-   858                           ;main.c: 346: motor3run = 0xFF;
-   859  0075  30FF               	movlw	255
-   860  0076  00F5               	movwf	_motor3run
-   861  0077                     l206:	
-   862                           
-   863                           ;main.c: 348: if(tmp3 >=60){
-   864  0077  303C               	movlw	60
-   865  0078  0278               	subwf	_tmp3,w
-   866  0079  1C03               	skipc
-   867  007A  2881               	goto	l1220
-   868                           
-   869                           ;main.c: 349: tmp3 = tmp3 - 15;
-   870  007B  30F1               	movlw	241
-   871  007C  07F8               	addwf	_tmp3,f
-   872                           
-   873                           ;main.c: 350: direction3 = -1;
-   874  007D  30FF               	movlw	255
-   875  007E  00A4               	movwf	_direction3
-   876  007F  00A5               	movwf	_direction3+1
-   877                           
-   878                           ;main.c: 351: }
-   879  0080  2884               	goto	l1222
-   880  0081                     l1220:	
-   881                           
-   882                           ;main.c: 352: else
-   883                           ;main.c: 353: direction3 = 1;
-   884  0081  01A4               	clrf	_direction3
-   885  0082  0AA4               	incf	_direction3,f
-   886  0083  01A5               	clrf	_direction3+1
-   887  0084                     l1222:	
-   888                           
-   889                           ;main.c: 358: tmp3 = tmp3 - 45;
-   890  0084  30D3               	movlw	211
-   891  0085  07F8               	addwf	_tmp3,f
-   892                           
-   893                           ;main.c: 359: if(tmp3 == 0)
-   894  0086  08F8               	movf	_tmp3,f
-   895  0087  1D03               	skipz
-   896  0088  288C               	goto	l1228
-   897                           
-   898                           ;main.c: 360: incremental3 = 2;
-   899  0089  3002               	movlw	2
-   900  008A  00B0               	movwf	_incremental3
-   901  008B  2892               	goto	l1234
-   902  008C                     l1228:	
-   903                           
-   904                           ;main.c: 361: else if(tmp3 == 1)
-   905  008C  0B78               	decfsz	_tmp3,w
-   906  008D  2891               	goto	l1232
-   907                           
-   908                           ;main.c: 362: incremental3 = 1;
-   909  008E  01B0               	clrf	_incremental3
-   910  008F  0AB0               	incf	_incremental3,f
-   911  0090  2892               	goto	l1234
-   912  0091                     l1232:	
-   913                           
-   914                           ;main.c: 363: else
-   915                           ;main.c: 364: incremental3 = 0;
-   916  0091  01B0               	clrf	_incremental3
-   917  0092                     l1234:	
-   918                           
-   919                           ;main.c: 367: motor3 = tmp3;
-   920  0092  0878               	movf	_tmp3,w
-   921  0093  00B3               	movwf	_motor3
-   922  0094  0008               	return
-   923  0095                     __end_of_handle_uart_data:	
-   924                           
-   925                           	psect	text2
-   926  0149                     __ptext2:	
-   927 ;; *************** function _handle_counter3 *****************
-   928 ;; Defined at:
-   929 ;;		line 275 in file "main.c"
-   930 ;; Parameters:    Size  Location     Type
-   931 ;;		None
-   932 ;; Auto vars:     Size  Location     Type
-   933 ;;  temp            1    1[BANK0 ] unsigned char 
-   934 ;; Return value:  Size  Location     Type
-   935 ;;		None               void
-   936 ;; Registers used:
-   937 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath
-   938 ;; Tracked objects:
-   939 ;;		On entry : 60/0
-   940 ;;		On exit  : 40/0
-   941 ;;		Unchanged: 0/0
-   942 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-   943 ;;      Params:         0       0       0       0
-   944 ;;      Locals:         0       1       0       0
-   945 ;;      Temps:          0       1       0       0
-   946 ;;      Totals:         0       2       0       0
-   947 ;;Total ram usage:        2 bytes
-   948 ;; Hardware stack levels used:    2
-   949 ;; Hardware stack levels required when called:    1
-   950 ;; This function calls:
-   951 ;;		Nothing
-   952 ;; This function is called by:
-   953 ;;		_main
-   954 ;; This function uses a non-reentrant model
-   955 ;;
-   956                           
-   957                           
-   958                           ;psect for function _handle_counter3
-   959  0149                     _handle_counter3:	
-   960                           
-   961                           ;main.c: 276: char temp;
-   962                           ;main.c: 277: loop3 -= 1;
-   963                           
-   964                           ;incstack = 0
-   965                           ; Regs used in _handle_counter3: [wreg-fsr0h+status,2+status,0+btemp+1+pclath]
-   966  0149  30FF               	movlw	-1
-   967  014A  07A8               	addwf	_loop3,f
-   968  014B  1C03               	skipc
-   969  014C  03A9               	decf	_loop3+1,f
+   857                           ;main.c: 280: tmp3 = uart_data[12];
+   858  006E  0842               	movf	_uart_data+12,w
+   859  006F  00F7               	movwf	_tmp3
+   860                           
+   861                           ;main.c: 281: if(tmp3 == 75)
+   862  0070  3A4B               	xorlw	75
+   863  0071  1D03               	skipz
+   864  0072  2875               	goto	l1241
+   865                           
+   866                           ;main.c: 282: motor3run = 0x00;
+   867  0073  01F4               	clrf	_motor3run
+   868  0074  2877               	goto	l208
+   869  0075                     l1241:	
+   870                           
+   871                           ;main.c: 283: else
+   872                           ;main.c: 284: motor3run = 0xFF;
+   873  0075  30FF               	movlw	255
+   874  0076  00F4               	movwf	_motor3run
+   875  0077                     l208:	
+   876                           
+   877                           ;main.c: 286: if(tmp3 >=60){
+   878  0077  303C               	movlw	60
+   879  0078  0277               	subwf	_tmp3,w
+   880  0079  1C03               	skipc
+   881  007A  2881               	goto	l1247
+   882                           
+   883                           ;main.c: 287: tmp3 = tmp3 - 15;
+   884  007B  30F1               	movlw	241
+   885  007C  07F7               	addwf	_tmp3,f
+   886                           
+   887                           ;main.c: 288: direction3 = -1;
+   888  007D  30FF               	movlw	255
+   889  007E  00A4               	movwf	_direction3
+   890  007F  00A5               	movwf	_direction3+1
+   891                           
+   892                           ;main.c: 289: }
+   893  0080  2884               	goto	l1249
+   894  0081                     l1247:	
+   895                           
+   896                           ;main.c: 290: else
+   897                           ;main.c: 291: direction3 = 1;
+   898  0081  01A4               	clrf	_direction3
+   899  0082  0AA4               	incf	_direction3,f
+   900  0083  01A5               	clrf	_direction3+1
+   901  0084                     l1249:	
+   902                           
+   903                           ;main.c: 293: tmp3 = tmp3 - 45;
+   904  0084  30D3               	movlw	211
+   905  0085  07F7               	addwf	_tmp3,f
+   906                           
+   907                           ;main.c: 294: if(tmp3 == 0)
+   908  0086  08F7               	movf	_tmp3,f
+   909  0087  1D03               	skipz
+   910  0088  288C               	goto	l1255
+   911                           
+   912                           ;main.c: 295: incremental3 = 2;
+   913  0089  3002               	movlw	2
+   914  008A  00B1               	movwf	_incremental3
+   915  008B  2892               	goto	l1261
+   916  008C                     l1255:	
+   917                           
+   918                           ;main.c: 296: else if(tmp3 == 1)
+   919  008C  0B77               	decfsz	_tmp3,w
+   920  008D  2891               	goto	l1259
+   921                           
+   922                           ;main.c: 297: incremental3 = 1;
+   923  008E  01B1               	clrf	_incremental3
+   924  008F  0AB1               	incf	_incremental3,f
+   925  0090  2892               	goto	l1261
+   926  0091                     l1259:	
+   927                           
+   928                           ;main.c: 298: else
+   929                           ;main.c: 299: incremental3 = 0;
+   930  0091  01B1               	clrf	_incremental3
+   931  0092                     l1261:	
+   932                           
+   933                           ;main.c: 301: motor3 = tmp3;
+   934  0092  0877               	movf	_tmp3,w
+   935  0093  00B4               	movwf	_motor3
+   936  0094  0008               	return
+   937  0095                     __end_of_handle_uart_data:	
+   938                           
+   939                           	psect	text2
+   940  019B                     __ptext2:	
+   941 ;; *************** function _handle_counter3 *****************
+   942 ;; Defined at:
+   943 ;;		line 220 in file "main.c"
+   944 ;; Parameters:    Size  Location     Type
+   945 ;;		None
+   946 ;; Auto vars:     Size  Location     Type
+   947 ;;  temp            1    1[BANK0 ] unsigned char 
+   948 ;; Return value:  Size  Location     Type
+   949 ;;		None               void
+   950 ;; Registers used:
+   951 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath
+   952 ;; Tracked objects:
+   953 ;;		On entry : 60/0
+   954 ;;		On exit  : 40/0
+   955 ;;		Unchanged: 0/0
+   956 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   957 ;;      Params:         0       0       0       0
+   958 ;;      Locals:         0       1       0       0
+   959 ;;      Temps:          0       1       0       0
+   960 ;;      Totals:         0       2       0       0
+   961 ;;Total ram usage:        2 bytes
+   962 ;; Hardware stack levels used:    1
+   963 ;; Hardware stack levels required when called:    2
+   964 ;; This function calls:
+   965 ;;		Nothing
+   966 ;; This function is called by:
+   967 ;;		_main
+   968 ;; This function uses a non-reentrant model
+   969 ;;
    970                           
-   971                           ;main.c: 278: if(loop3 <= 0){
-   972  014D  0829               	movf	_loop3+1,w
-   973  014E  3A80               	xorlw	128
-   974  014F  00FF               	movwf	127
-   975  0150  3080               	movlw	128
-   976  0151  027F               	subwf	127,w
-   977  0152  1D03               	skipz
-   978  0153  2956               	goto	u565
-   979  0154  3001               	movlw	1
-   980  0155  0228               	subwf	_loop3,w
-   981  0156                     u565:	
-   982  0156  1803               	skipnc
-   983  0157  297C               	goto	l1280
+   971                           
+   972                           ;psect for function _handle_counter3
+   973  019B                     _handle_counter3:	
+   974                           
+   975                           ;main.c: 221: char temp;
+   976                           ;main.c: 222: loop3 -= 1;
+   977                           
+   978                           ;incstack = 0
+   979                           ; Regs used in _handle_counter3: [wreg-fsr0h+status,2+status,0+pclath]
+   980  019B  30FF               	movlw	-1
+   981  019C  07A8               	addwf	_loop3,f
+   982  019D  1C03               	skipc
+   983  019E  03A9               	decf	_loop3+1,f
    984                           
-   985                           ;main.c: 279: PR2 = motor3Array[motor3];
-   986  0158  1283               	bcf	3,5	;RP0=0, select bank0
-   987  0159  1303               	bcf	3,6	;RP1=0, select bank0
-   988  015A  0833               	movf	_motor3,w
-   989  015B  3E2E               	addlw	low (_motor3Array-__stringbase)
-   990  015C  0084               	movwf	4
-   991  015D  118A  2095  118A   	fcall	stringdir
-   992  0160  1683               	bsf	3,5	;RP0=1, select bank1
-   993  0161  0092               	movwf	18	;volatile
-   994                           
-   995                           ;main.c: 280: loop3 = incremental3;
-   996  0162  1283               	bcf	3,5	;RP0=0, select bank0
-   997  0163  0830               	movf	_incremental3,w
-   998  0164  00A8               	movwf	_loop3
-   999  0165  01A9               	clrf	_loop3+1
-  1000                           
-  1001                           ;main.c: 281: counter3 += direction3;
-  1002  0166  0824               	movf	_direction3,w
-  1003  0167  07F1               	addwf	_counter3,f
-  1004                           
-  1005                           ;main.c: 282: counter3 &= 0x07;
-  1006  0168  3007               	movlw	7
-  1007  0169  05F1               	andwf	_counter3,f
-  1008                           
-  1009                           ;main.c: 283: temp = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3ru
+   985                           ;main.c: 223: if(loop3 < 0){
+   986  019F  1FA9               	btfss	_loop3+1,7
+   987  01A0  29C3               	goto	l1307
+   988                           
+   989                           ;main.c: 224: PR2 = motor3Array[motor3];
+   990  01A1  0834               	movf	_motor3,w
+   991  01A2  3E2E               	addlw	low (_motor3Array-__stringbase)
+   992  01A3  0084               	movwf	4
+   993  01A4  118A  2100  118A   	fcall	stringdir
+   994  01A7  1683               	bsf	3,5	;RP0=1, select bank1
+   995  01A8  0092               	movwf	18	;volatile
+   996                           
+   997                           ;main.c: 225: loop3 = incremental3;
+   998  01A9  1283               	bcf	3,5	;RP0=0, select bank0
+   999  01AA  0831               	movf	_incremental3,w
+  1000  01AB  00A8               	movwf	_loop3
+  1001  01AC  01A9               	clrf	_loop3+1
+  1002                           
+  1003                           ;main.c: 226: counter3 += direction3;
+  1004  01AD  0824               	movf	_direction3,w
+  1005  01AE  07F1               	addwf	_counter3,f
+  1006                           
+  1007                           ;main.c: 227: counter3 &= 0x07;
+  1008  01AF  3007               	movlw	7
+  1009  01B0  05F1               	andwf	_counter3,f
+  1010                           
+  1011                           ;main.c: 228: temp = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3ru
       +                          n);
-  1010  016A  0871               	movf	_counter3,w
-  1011  016B  3E4D               	addlw	low (_posArray3-__stringbase)
-  1012  016C  0084               	movwf	4
-  1013  016D  118A  2095  118A   	fcall	stringdir
-  1014  0170  0575               	andwf	_motor3run,w
-  1015  0171  00C4               	movwf	??_handle_counter3
-  1016  0172  0870               	movf	_counter2,w
-  1017  0173  3E45               	addlw	low (_posArray2-__stringbase)
-  1018  0174  0084               	movwf	4
-  1019  0175  118A  2095         	fcall	stringdir
-  1020  0177  0574               	andwf	_motor2run,w
-  1021  0178  0444               	iorwf	??_handle_counter3,w
-  1022  0179  00C5               	movwf	handle_counter3@temp
-  1023                           
-  1024                           ;main.c: 284: PORTC = temp;
-  1025  017A  0087               	movwf	7	;volatile
-  1026                           
-  1027                           ;main.c: 285: }
-  1028  017B  0008               	return
-  1029  017C                     l1280:	
-  1030                           
-  1031                           ;main.c: 286: else{
-  1032                           ;main.c: 287: PR2 = 0xFF;
-  1033  017C  30FF               	movlw	255
-  1034  017D  1683               	bsf	3,5	;RP0=1, select bank1
-  1035  017E  1303               	bcf	3,6	;RP1=0, select bank1
-  1036  017F  0092               	movwf	18	;volatile
-  1037  0180  0008               	return
-  1038  0181                     __end_of_handle_counter3:	
-  1039                           
-  1040                           	psect	text3
-  1041  01E5                     __ptext3:	
-  1042 ;; *************** function _handle_counter2 *****************
-  1043 ;; Defined at:
-  1044 ;;		line 248 in file "main.c"
-  1045 ;; Parameters:    Size  Location     Type
-  1046 ;;		None
-  1047 ;; Auto vars:     Size  Location     Type
-  1048 ;;  temp            1    1[BANK0 ] unsigned char 
-  1049 ;; Return value:  Size  Location     Type
-  1050 ;;		None               void
-  1051 ;; Registers used:
-  1052 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath
-  1053 ;; Tracked objects:
-  1054 ;;		On entry : 60/0
-  1055 ;;		On exit  : 60/0
-  1056 ;;		Unchanged: 0/0
-  1057 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-  1058 ;;      Params:         0       0       0       0
-  1059 ;;      Locals:         0       1       0       0
-  1060 ;;      Temps:          0       1       0       0
-  1061 ;;      Totals:         0       2       0       0
-  1062 ;;Total ram usage:        2 bytes
-  1063 ;; Hardware stack levels used:    2
-  1064 ;; Hardware stack levels required when called:    1
-  1065 ;; This function calls:
-  1066 ;;		Nothing
-  1067 ;; This function is called by:
-  1068 ;;		_main
-  1069 ;; This function uses a non-reentrant model
-  1070 ;;
-  1071                           
+  1012  01B1  0871               	movf	_counter3,w
+  1013  01B2  3E4D               	addlw	low (_posArray3-__stringbase)
+  1014  01B3  0084               	movwf	4
+  1015  01B4  118A  2100  118A   	fcall	stringdir
+  1016  01B7  0574               	andwf	_motor3run,w
+  1017  01B8  00C5               	movwf	??_handle_counter3
+  1018  01B9  0870               	movf	_counter2,w
+  1019  01BA  3E45               	addlw	low (_posArray2-__stringbase)
+  1020  01BB  0084               	movwf	4
+  1021  01BC  118A  2100         	fcall	stringdir
+  1022  01BE  0573               	andwf	_motor2run,w
+  1023  01BF  0445               	iorwf	??_handle_counter3,w
+  1024  01C0  00C6               	movwf	handle_counter3@temp
+  1025                           
+  1026                           ;main.c: 229: PORTC = temp;
+  1027  01C1  0087               	movwf	7	;volatile
+  1028                           
+  1029                           ;main.c: 230: }
+  1030  01C2  0008               	return
+  1031  01C3                     l1307:	
+  1032                           
+  1033                           ;main.c: 231: else{
+  1034                           ;main.c: 232: PR2 = 0xFF;
+  1035  01C3  30FF               	movlw	255
+  1036  01C4  1683               	bsf	3,5	;RP0=1, select bank1
+  1037  01C5  0092               	movwf	18	;volatile
+  1038  01C6  0008               	return
+  1039  01C7                     __end_of_handle_counter3:	
+  1040                           
+  1041                           	psect	text3
+  1042  01C7                     __ptext3:	
+  1043 ;; *************** function _handle_counter2 *****************
+  1044 ;; Defined at:
+  1045 ;;		line 194 in file "main.c"
+  1046 ;; Parameters:    Size  Location     Type
+  1047 ;;		None
+  1048 ;; Auto vars:     Size  Location     Type
+  1049 ;;  temp            1    1[BANK0 ] unsigned char 
+  1050 ;; Return value:  Size  Location     Type
+  1051 ;;		None               void
+  1052 ;; Registers used:
+  1053 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath
+  1054 ;; Tracked objects:
+  1055 ;;		On entry : 60/0
+  1056 ;;		On exit  : 60/0
+  1057 ;;		Unchanged: 0/0
+  1058 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1059 ;;      Params:         0       0       0       0
+  1060 ;;      Locals:         0       1       0       0
+  1061 ;;      Temps:          0       1       0       0
+  1062 ;;      Totals:         0       2       0       0
+  1063 ;;Total ram usage:        2 bytes
+  1064 ;; Hardware stack levels used:    1
+  1065 ;; Hardware stack levels required when called:    2
+  1066 ;; This function calls:
+  1067 ;;		Nothing
+  1068 ;; This function is called by:
+  1069 ;;		_main
+  1070 ;; This function uses a non-reentrant model
+  1071 ;;
   1072                           
-  1073                           ;psect for function _handle_counter2
-  1074  01E5                     _handle_counter2:	
-  1075                           
-  1076                           ;main.c: 249: char temp;
-  1077                           ;main.c: 250: counter2 += direction2;
-  1078                           
-  1079                           ;incstack = 0
-  1080                           ; Regs used in _handle_counter2: [wreg-fsr0h+status,2+status,0+pclath]
-  1081  01E5  0822               	movf	_direction2,w
-  1082  01E6  07F0               	addwf	_counter2,f
-  1083                           
-  1084                           ;main.c: 251: counter2 &= 0x07;
-  1085  01E7  3007               	movlw	7
-  1086  01E8  05F0               	andwf	_counter2,f
-  1087                           
-  1088                           ;main.c: 252: TMR1H = motor2_1Array[motor2];
-  1089  01E9  0873               	movf	_motor2,w
-  1090  01EA  3E10               	addlw	low (_motor2_1Array-__stringbase)
-  1091  01EB  0084               	movwf	4
-  1092  01EC  118A  2095  118A   	fcall	stringdir
-  1093  01EF  008F               	movwf	15	;volatile
-  1094                           
-  1095                           ;main.c: 253: TMR1L = motor2_2Array[motor2];
-  1096  01F0  0873               	movf	_motor2,w
-  1097  01F1  3E1F               	addlw	low (_motor2_2Array-__stringbase)
-  1098  01F2  0084               	movwf	4
-  1099  01F3  118A  2095  118A   	fcall	stringdir
-  1100  01F6  008E               	movwf	14	;volatile
-  1101                           
-  1102                           ;main.c: 254: temp = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3ru
+  1073                           
+  1074                           ;psect for function _handle_counter2
+  1075  01C7                     _handle_counter2:	
+  1076                           
+  1077                           ;main.c: 195: char temp;
+  1078                           ;main.c: 196: counter2 += direction2;
+  1079                           
+  1080                           ;incstack = 0
+  1081                           ; Regs used in _handle_counter2: [wreg-fsr0h+status,2+status,0+pclath]
+  1082  01C7  0822               	movf	_direction2,w
+  1083  01C8  07F0               	addwf	_counter2,f
+  1084                           
+  1085                           ;main.c: 197: counter2 &= 0x07;
+  1086  01C9  3007               	movlw	7
+  1087  01CA  05F0               	andwf	_counter2,f
+  1088                           
+  1089                           ;main.c: 198: TMR1H = motor2_1Array[motor2];
+  1090  01CB  0872               	movf	_motor2,w
+  1091  01CC  3E10               	addlw	low (_motor2_1Array-__stringbase)
+  1092  01CD  0084               	movwf	4
+  1093  01CE  118A  2100  118A   	fcall	stringdir
+  1094  01D1  008F               	movwf	15	;volatile
+  1095                           
+  1096                           ;main.c: 199: TMR1L = motor2_2Array[motor2];
+  1097  01D2  0872               	movf	_motor2,w
+  1098  01D3  3E1F               	addlw	low (_motor2_2Array-__stringbase)
+  1099  01D4  0084               	movwf	4
+  1100  01D5  118A  2100  118A   	fcall	stringdir
+  1101  01D8  008E               	movwf	14	;volatile
+  1102                           
+  1103                           ;main.c: 200: temp = (posArray2[counter2] & motor2run) | (posArray3[counter3] & motor3ru
       +                          n);
-  1103  01F7  0871               	movf	_counter3,w
-  1104  01F8  3E4D               	addlw	low (_posArray3-__stringbase)
-  1105  01F9  0084               	movwf	4
-  1106  01FA  118A  2095  118A   	fcall	stringdir
-  1107  01FD  0575               	andwf	_motor3run,w
-  1108  01FE  00C4               	movwf	??_handle_counter2
-  1109  01FF  0870               	movf	_counter2,w
-  1110  0200  3E45               	addlw	low (_posArray2-__stringbase)
-  1111  0201  0084               	movwf	4
-  1112  0202  118A  2095         	fcall	stringdir
-  1113  0204  0574               	andwf	_motor2run,w
-  1114  0205  0444               	iorwf	??_handle_counter2,w
-  1115  0206  00C5               	movwf	handle_counter2@temp
-  1116                           
-  1117                           ;main.c: 255: PORTC = temp;
-  1118  0207  0087               	movwf	7	;volatile
-  1119  0208  0008               	return
-  1120  0209                     __end_of_handle_counter2:	
-  1121                           
-  1122                           	psect	text4
-  1123  01B7                     __ptext4:	
-  1124 ;; *************** function _handle_counter1 *****************
-  1125 ;; Defined at:
-  1126 ;;		line 259 in file "main.c"
-  1127 ;; Parameters:    Size  Location     Type
-  1128 ;;		None
-  1129 ;; Auto vars:     Size  Location     Type
-  1130 ;;  temp            1    0[BANK0 ] unsigned char 
-  1131 ;; Return value:  Size  Location     Type
-  1132 ;;		None               void
-  1133 ;; Registers used:
-  1134 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath
-  1135 ;; Tracked objects:
-  1136 ;;		On entry : 60/0
-  1137 ;;		On exit  : 60/0
-  1138 ;;		Unchanged: 0/0
-  1139 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-  1140 ;;      Params:         0       0       0       0
-  1141 ;;      Locals:         0       1       0       0
-  1142 ;;      Temps:          0       0       0       0
-  1143 ;;      Totals:         0       1       0       0
-  1144 ;;Total ram usage:        1 bytes
-  1145 ;; Hardware stack levels used:    2
-  1146 ;; Hardware stack levels required when called:    1
-  1147 ;; This function calls:
-  1148 ;;		Nothing
-  1149 ;; This function is called by:
-  1150 ;;		_main
-  1151 ;; This function uses a non-reentrant model
-  1152 ;;
-  1153                           
+  1104  01D9  0871               	movf	_counter3,w
+  1105  01DA  3E4D               	addlw	low (_posArray3-__stringbase)
+  1106  01DB  0084               	movwf	4
+  1107  01DC  118A  2100  118A   	fcall	stringdir
+  1108  01DF  0574               	andwf	_motor3run,w
+  1109  01E0  00C5               	movwf	??_handle_counter2
+  1110  01E1  0870               	movf	_counter2,w
+  1111  01E2  3E45               	addlw	low (_posArray2-__stringbase)
+  1112  01E3  0084               	movwf	4
+  1113  01E4  118A  2100         	fcall	stringdir
+  1114  01E6  0573               	andwf	_motor2run,w
+  1115  01E7  0445               	iorwf	??_handle_counter2,w
+  1116  01E8  00C6               	movwf	handle_counter2@temp
+  1117                           
+  1118                           ;main.c: 201: PORTC = temp;
+  1119  01E9  0087               	movwf	7	;volatile
+  1120  01EA  0008               	return
+  1121  01EB                     __end_of_handle_counter2:	
+  1122                           
+  1123                           	psect	text4
+  1124  01EB                     __ptext4:	
+  1125 ;; *************** function _handle_counter1 *****************
+  1126 ;; Defined at:
+  1127 ;;		line 204 in file "main.c"
+  1128 ;; Parameters:    Size  Location     Type
+  1129 ;;		None
+  1130 ;; Auto vars:     Size  Location     Type
+  1131 ;;  temp            1    0[BANK0 ] unsigned char 
+  1132 ;; Return value:  Size  Location     Type
+  1133 ;;		None               void
+  1134 ;; Registers used:
+  1135 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath
+  1136 ;; Tracked objects:
+  1137 ;;		On entry : 60/0
+  1138 ;;		On exit  : 60/0
+  1139 ;;		Unchanged: 0/0
+  1140 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1141 ;;      Params:         0       0       0       0
+  1142 ;;      Locals:         0       1       0       0
+  1143 ;;      Temps:          0       0       0       0
+  1144 ;;      Totals:         0       1       0       0
+  1145 ;;Total ram usage:        1 bytes
+  1146 ;; Hardware stack levels used:    1
+  1147 ;; Hardware stack levels required when called:    2
+  1148 ;; This function calls:
+  1149 ;;		Nothing
+  1150 ;; This function is called by:
+  1151 ;;		_main
+  1152 ;; This function uses a non-reentrant model
+  1153 ;;
   1154                           
-  1155                           ;psect for function _handle_counter1
-  1156  01B7                     _handle_counter1:	
-  1157                           
-  1158                           ;main.c: 260: char temp;
-  1159                           ;main.c: 261: loop1 -= 1;
-  1160                           
-  1161                           ;incstack = 0
-  1162                           ; Regs used in _handle_counter1: [wreg-fsr0h+status,2+status,0+btemp+1+pclath]
-  1163  01B7  30FF               	movlw	-1
-  1164  01B8  07A6               	addwf	_loop1,f
-  1165  01B9  1C03               	skipc
-  1166  01BA  03A7               	decf	_loop1+1,f
-  1167                           
-  1168                           ;main.c: 262: if(loop1 <= 0){
-  1169  01BB  0827               	movf	_loop1+1,w
-  1170  01BC  3A80               	xorlw	128
-  1171  01BD  00FF               	movwf	127
-  1172  01BE  3080               	movlw	128
-  1173  01BF  027F               	subwf	127,w
-  1174  01C0  1D03               	skipz
-  1175  01C1  29C4               	goto	u555
-  1176  01C2  3001               	movlw	1
-  1177  01C3  0226               	subwf	_loop1,w
-  1178  01C4                     u555:	
-  1179  01C4  1803               	skipnc
-  1180  01C5  29E1               	goto	l1254
-  1181                           
-  1182                           ;main.c: 263: TMR0 = motor1Array[motor1];
-  1183  01C6  1283               	bcf	3,5	;RP0=0, select bank0
-  1184  01C7  1303               	bcf	3,6	;RP1=0, select bank0
-  1185  01C8  0831               	movf	_motor1,w
-  1186  01C9  3E01               	addlw	low (_motor1Array-__stringbase)
-  1187  01CA  0084               	movwf	4
-  1188  01CB  118A  2095  118A   	fcall	stringdir
-  1189  01CE  0081               	movwf	1	;volatile
-  1190                           
-  1191                           ;main.c: 264: loop1 = incremental1;
-  1192  01CF  082F               	movf	_incremental1,w
-  1193  01D0  00A6               	movwf	_loop1
-  1194  01D1  01A7               	clrf	_loop1+1
-  1195                           
-  1196                           ;main.c: 265: counter1 += direction1;
-  1197  01D2  0820               	movf	_direction1,w
-  1198  01D3  07AA               	addwf	_counter1,f
-  1199                           
-  1200                           ;main.c: 266: counter1 &= 0x07;
-  1201  01D4  3007               	movlw	7
-  1202  01D5  05AA               	andwf	_counter1,f
-  1203                           
-  1204                           ;main.c: 267: temp = posArray1[counter1] & motor1run;
-  1205  01D6  082A               	movf	_counter1,w
-  1206  01D7  3E3D               	addlw	low (_posArray1-__stringbase)
-  1207  01D8  0084               	movwf	4
-  1208  01D9  118A  2095         	fcall	stringdir
-  1209  01DB  00C4               	movwf	handle_counter1@temp
-  1210  01DC  0832               	movf	_motor1run,w
-  1211  01DD  05C4               	andwf	handle_counter1@temp,f
-  1212                           
-  1213                           ;main.c: 268: PORTA = temp;
-  1214  01DE  0844               	movf	handle_counter1@temp,w
-  1215  01DF  0085               	movwf	5	;volatile
-  1216                           
-  1217                           ;main.c: 269: }
-  1218  01E0  0008               	return
-  1219  01E1                     l1254:	
-  1220                           
-  1221                           ;main.c: 270: else{
-  1222                           ;main.c: 271: TMR0 = 0;
-  1223  01E1  1283               	bcf	3,5	;RP0=0, select bank0
-  1224  01E2  1303               	bcf	3,6	;RP1=0, select bank0
-  1225  01E3  0181               	clrf	1	;volatile
-  1226  01E4  0008               	return
-  1227  01E5                     __end_of_handle_counter1:	
-  1228                           
-  1229                           	psect	text5
-  1230  0181                     __ptext5:	
-  1231 ;; *************** function _global_interrupt *****************
-  1232 ;; Defined at:
-  1233 ;;		line 64 in file "main.c"
-  1234 ;; Parameters:    Size  Location     Type
-  1235 ;;		None
-  1236 ;; Auto vars:     Size  Location     Type
-  1237 ;;		None
-  1238 ;; Return value:  Size  Location     Type
-  1239 ;;		None               void
-  1240 ;; Registers used:
-  1241 ;;		wreg, fsr0l, fsr0h, status,2, status,0
-  1242 ;; Tracked objects:
-  1243 ;;		On entry : 0/0
-  1244 ;;		On exit  : 60/0
-  1245 ;;		Unchanged: 0/0
-  1246 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
-  1247 ;;      Params:         0       0       0       0
-  1248 ;;      Locals:         0       0       0       0
-  1249 ;;      Temps:          3       0       0       0
-  1250 ;;      Totals:         3       0       0       0
-  1251 ;;Total ram usage:        3 bytes
-  1252 ;; Hardware stack levels used:    1
-  1253 ;; This function calls:
-  1254 ;;		Nothing
-  1255 ;; This function is called by:
-  1256 ;;		Interrupt level 1
-  1257 ;; This function uses a non-reentrant model
-  1258 ;;
-  1259                           
+  1155                           
+  1156                           ;psect for function _handle_counter1
+  1157  01EB                     _handle_counter1:	
+  1158                           
+  1159                           ;main.c: 205: char temp;
+  1160                           ;main.c: 206: loop1 -= 1;
+  1161                           
+  1162                           ;incstack = 0
+  1163                           ; Regs used in _handle_counter1: [wreg-fsr0h+status,2+status,0+pclath]
+  1164  01EB  30FF               	movlw	-1
+  1165  01EC  07A6               	addwf	_loop1,f
+  1166  01ED  1C03               	skipc
+  1167  01EE  03A7               	decf	_loop1+1,f
+  1168                           
+  1169                           ;main.c: 207: if(loop1 < 0){
+  1170  01EF  1FA7               	btfss	_loop1+1,7
+  1171  01F0  2A0A               	goto	l1281
+  1172                           
+  1173                           ;main.c: 208: TMR0 = motor1Array[motor1];
+  1174  01F1  0832               	movf	_motor1,w
+  1175  01F2  3E01               	addlw	low (_motor1Array-__stringbase)
+  1176  01F3  0084               	movwf	4
+  1177  01F4  118A  2100  118A   	fcall	stringdir
+  1178  01F7  0081               	movwf	1	;volatile
+  1179                           
+  1180                           ;main.c: 209: loop1 = incremental1;
+  1181  01F8  0830               	movf	_incremental1,w
+  1182  01F9  00A6               	movwf	_loop1
+  1183  01FA  01A7               	clrf	_loop1+1
+  1184                           
+  1185                           ;main.c: 210: counter1 += direction1;
+  1186  01FB  0820               	movf	_direction1,w
+  1187  01FC  07AA               	addwf	_counter1,f
+  1188                           
+  1189                           ;main.c: 211: counter1 &= 0x07;
+  1190  01FD  3007               	movlw	7
+  1191  01FE  05AA               	andwf	_counter1,f
+  1192                           
+  1193                           ;main.c: 212: temp = posArray1[counter1] & motor1run;
+  1194  01FF  082A               	movf	_counter1,w
+  1195  0200  3E3D               	addlw	low (_posArray1-__stringbase)
+  1196  0201  0084               	movwf	4
+  1197  0202  118A  2100         	fcall	stringdir
+  1198  0204  00C5               	movwf	handle_counter1@temp
+  1199  0205  0833               	movf	_motor1run,w
+  1200  0206  05C5               	andwf	handle_counter1@temp,f
+  1201                           
+  1202                           ;main.c: 213: PORTA = temp;
+  1203  0207  0845               	movf	handle_counter1@temp,w
+  1204  0208  0085               	movwf	5	;volatile
+  1205                           
+  1206                           ;main.c: 214: }
+  1207  0209  0008               	return
+  1208  020A                     l1281:	
+  1209                           
+  1210                           ;main.c: 215: else{
+  1211                           ;main.c: 216: TMR0 = 0;
+  1212  020A  0181               	clrf	1	;volatile
+  1213  020B  0008               	return
+  1214  020C                     __end_of_handle_counter1:	
+  1215                           
+  1216                           	psect	text5
+  1217  015A                     __ptext5:	
+  1218 ;; *************** function _global_interrupt *****************
+  1219 ;; Defined at:
+  1220 ;;		line 62 in file "main.c"
+  1221 ;; Parameters:    Size  Location     Type
+  1222 ;;		None
+  1223 ;; Auto vars:     Size  Location     Type
+  1224 ;;		None
+  1225 ;; Return value:  Size  Location     Type
+  1226 ;;		None               void
+  1227 ;; Registers used:
+  1228 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+  1229 ;; Tracked objects:
+  1230 ;;		On entry : 0/0
+  1231 ;;		On exit  : 60/0
+  1232 ;;		Unchanged: 0/0
+  1233 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1234 ;;      Params:         0       0       0       0
+  1235 ;;      Locals:         0       0       0       0
+  1236 ;;      Temps:          3       0       0       0
+  1237 ;;      Totals:         3       0       0       0
+  1238 ;;Total ram usage:        3 bytes
+  1239 ;; Hardware stack levels used:    1
+  1240 ;; Hardware stack levels required when called:    1
+  1241 ;; This function calls:
+  1242 ;;		_handle_uart_buffer
+  1243 ;; This function is called by:
+  1244 ;;		Interrupt level 1
+  1245 ;; This function uses a non-reentrant model
+  1246 ;;
+  1247                           
+  1248                           
+  1249                           ;psect for function _global_interrupt
+  1250  015A                     _global_interrupt:	
+  1251                           
+  1252                           ;main.c: 65: CREN = 1;
+  1253  015A  1283               	bcf	3,5	;RP0=0, select bank0
+  1254  015B  1303               	bcf	3,6	;RP1=0, select bank0
+  1255  015C  1618               	bsf	24,4	;volatile
+  1256                           
+  1257                           ;main.c: 66: if(RCIF){
+  1258  015D  1E8C               	btfss	12,5	;volatile
+  1259  015E  296C               	goto	i1l163
   1260                           
-  1261                           ;psect for function _global_interrupt
-  1262  0181                     _global_interrupt:	
-  1263                           
-  1264                           ;main.c: 66: GIE = 0 ;
-  1265  0181  138B               	bcf	11,7	;volatile
-  1266                           
-  1267                           ;main.c: 69: if(RCIF){
-  1268  0182  1283               	bcf	3,5	;RP0=0, select bank0
-  1269  0183  1303               	bcf	3,6	;RP1=0, select bank0
-  1270  0184  1E8C               	btfss	12,5	;volatile
-  1271  0185  299C               	goto	i1l161
+  1261                           ;main.c: 67: if(FERR == 0 && OERR == 0){
+  1262  015F  1D18               	btfss	24,2	;volatile
+  1263  0160  1898               	btfsc	24,1	;volatile
+  1264  0161  2967               	goto	i1l164
+  1265                           
+  1266                           ;main.c: 68: tmp_data = RCREG;
+  1267  0162  081A               	movf	26,w	;volatile
+  1268  0163  00B5               	movwf	_tmp_data
+  1269                           
+  1270                           ;main.c: 69: handle_uart_buffer(tmp_data);
+  1271  0164  2186  118A         	fcall	_handle_uart_buffer
   1272                           
-  1273                           ;main.c: 73: tmp_data = RCREG;
-  1274  0186  081A               	movf	26,w	;volatile
-  1275  0187  00B4               	movwf	_tmp_data
+  1273                           ;main.c: 70: }
+  1274  0166  297D               	goto	i1l166
+  1275  0167                     i1l164:	
   1276                           
-  1277                           ;main.c: 75: if(tmp_data == 0x55){
-  1278  0188  3A55               	xorlw	85
-  1279  0189  1D03               	skipz
-  1280  018A  298D               	goto	i1l1042
-  1281                           
-  1282                           ;main.c: 76: counter_uart = 0;
-  1283  018B  01F2               	clrf	_counter_uart
-  1284  018C  29AD               	goto	L1
-  1285  018D                     i1l1042:	
-  1286                           ;main.c: 77: GIE = 1;
-  1287                           
-  1288                           
-  1289                           ;main.c: 80: }
-  1290                           ;main.c: 82: uart_data[counter_uart] = tmp_data;
-  1291  018D  0872               	movf	_counter_uart,w
-  1292  018E  3E35               	addlw	_uart_data& (0+255)
-  1293  018F  0084               	movwf	4
-  1294  0190  0834               	movf	_tmp_data,w
-  1295  0191  1383               	bcf	3,7	;select IRP bank0
-  1296  0192  0080               	movwf	0
+  1277                           ;main.c: 71: else{
+  1278                           ;main.c: 72: CREN = 0;
+  1279  0167  1218               	bcf	24,4	;volatile
+  1280                           
+  1281                           ;main.c: 73: tmp_data = RCREG;
+  1282  0168  081A               	movf	26,w	;volatile
+  1283  0169  00B5               	movwf	_tmp_data
+  1284                           
+  1285                           ;main.c: 74: counter_uart = 0;
+  1286  016A  01AB               	clrf	_counter_uart
+  1287  016B  297D               	goto	i1l166
+  1288  016C                     i1l163:	
+  1289                           
+  1290                           ;main.c: 78: }
+  1291                           ;main.c: 81: if(T0IF){
+  1292  016C  1D0B               	btfss	11,2	;volatile
+  1293  016D  2972               	goto	i1l167
+  1294                           
+  1295                           ;main.c: 82: T0IF = 0;
+  1296  016E  110B               	bcf	11,2	;volatile
   1297                           
-  1298                           ;main.c: 83: counter_uart += 1;
-  1299  0193  0AF2               	incf	_counter_uart,f
-  1300                           
-  1301                           ;main.c: 84: if(counter_uart == 15){
-  1302  0194  0872               	movf	_counter_uart,w
-  1303  0195  3A0F               	xorlw	15
-  1304  0196  1D03               	skipz
-  1305  0197  29AD               	goto	L1
-  1306                           
-  1307                           ;main.c: 85: counter_uart = 0;
-  1308  0198  01F2               	clrf	_counter_uart
-  1309                           
-  1310                           ;main.c: 86: flag4 = 1;
-  1311  0199  01AE               	clrf	_flag4
-  1312  019A  0AAE               	incf	_flag4,f
-  1313  019B  29AD               	goto	L1
-  1314  019C                     i1l161:	
-  1315                           
-  1316                           ;main.c: 101: }
-  1317                           ;main.c: 104: if(T0IF){
-  1318  019C  1D0B               	btfss	11,2	;volatile
-  1319  019D  29A2               	goto	i1l165
-  1320                           
-  1321                           ;main.c: 105: T0IF = 0;
-  1322  019E  110B               	bcf	11,2	;volatile
-  1323                           
-  1324                           ;main.c: 107: flag1 = 1;
-  1325  019F  01AB               	clrf	_flag1
-  1326  01A0  0AAB               	incf	_flag1,f
-  1327  01A1  29AD               	goto	L1
-  1328  01A2                     i1l165:	
-  1329                           ;main.c: 109: return;
-  1330                           
-  1331                           ;main.c: 108: GIE = 1 ;
-  1332                           
-  1333                           
-  1334                           ;main.c: 112: }
-  1335                           ;main.c: 117: if(TMR1IF){
-  1336  01A2  1C0C               	btfss	12,0	;volatile
-  1337  01A3  29A8               	goto	i1l166
-  1338                           
-  1339                           ;main.c: 118: TMR1IF = 0;
-  1340  01A4  100C               	bcf	12,0	;volatile
-  1341                           
-  1342                           ;main.c: 120: flag2 = 1;
-  1343  01A5  01AC               	clrf	_flag2
-  1344  01A6  0AAC               	incf	_flag2,f
-  1345  01A7  29AD               	goto	L1
-  1346  01A8                     i1l166:	
-  1347                           ;main.c: 123: return;
-  1348                           
-  1349                           ;main.c: 121: GIE = 1 ;
-  1350                           
-  1351                           
-  1352                           ;main.c: 124: }
-  1353                           ;main.c: 127: if(TMR2IF){
-  1354  01A8  1C8C               	btfss	12,1	;volatile
-  1355  01A9  29AE               	goto	i1l163
-  1356                           
-  1357                           ;main.c: 128: TMR2IF = 0;
-  1358  01AA  108C               	bcf	12,1	;volatile
-  1359                           
-  1360                           ;main.c: 129: flag3 = 1;
-  1361  01AB  01AD               	clrf	_flag3
-  1362  01AC  0AAD               	incf	_flag3,f
-  1363  01AD                     L1:	
-  1364                           
-  1365                           ;main.c: 130: GIE = 1 ;
-  1366  01AD  178B               	bsf	11,7	;volatile
-  1367  01AE                     i1l163:	
-  1368                           ;main.c: 132: return;
-  1369                           
-  1370  01AE  087B               	movf	??_global_interrupt+2,w
-  1371  01AF  008A               	movwf	10
-  1372  01B0  087A               	movf	??_global_interrupt+1,w
-  1373  01B1  0084               	movwf	4
-  1374  01B2  0E79               	swapf	??_global_interrupt^(0+-128),w
-  1375  01B3  0083               	movwf	3
-  1376  01B4  0EFE               	swapf	126,f
-  1377  01B5  0E7E               	swapf	126,w
-  1378  01B6  0009               	retfie
-  1379  01B7                     __end_of_global_interrupt:	
-  1380  007E                     btemp	set	126	;btemp
-  1381  007E                     wtemp	set	126
-  1382  007E                     wtemp0	set	126
-  1383  0080                     wtemp1	set	128
-  1384  0082                     wtemp2	set	130
-  1385  0084                     wtemp3	set	132
-  1386  0086                     wtemp4	set	134
-  1387  0088                     wtemp5	set	136
-  1388  007F                     wtemp6	set	127
-  1389  007E                     ttemp	set	126
-  1390  007E                     ttemp0	set	126
-  1391  0081                     ttemp1	set	129
-  1392  0084                     ttemp2	set	132
-  1393  0087                     ttemp3	set	135
-  1394  007F                     ttemp4	set	127
-  1395  007E                     ltemp	set	126
-  1396  007E                     ltemp0	set	126
-  1397  0082                     ltemp1	set	130
-  1398  0086                     ltemp2	set	134
-  1399  0080                     ltemp3	set	128
-  1400                           
-  1401                           	psect	intentry
-  1402  0004                     __pintentry:	
-  1403                           ;incstack = 0
-  1404                           ; Regs used in _global_interrupt: [wreg-fsr0h+status,2+status,0]
-  1405                           
-  1406  0004                     interrupt_function:	
-  1407  007E                     saved_w	set	btemp
-  1408  0004  00FE               	movwf	btemp
-  1409  0005  0E03               	swapf	3,w
-  1410  0006  00F9               	movwf	??_global_interrupt
-  1411  0007  0804               	movf	4,w
-  1412  0008  00FA               	movwf	??_global_interrupt+1
-  1413  0009  080A               	movf	10,w
-  1414  000A  00FB               	movwf	??_global_interrupt+2
-  1415  000B  118A  2981         	ljmp	_global_interrupt
+  1298                           ;main.c: 83: flag1 = 1;
+  1299  016F  01AC               	clrf	_flag1
+  1300  0170  0AAC               	incf	_flag1,f
+  1301                           
+  1302                           ;main.c: 85: return;
+  1303  0171  297D               	goto	i1l166
+  1304  0172                     i1l167:	
+  1305                           
+  1306                           ;main.c: 86: }
+  1307                           ;main.c: 91: if(TMR1IF){
+  1308  0172  1C0C               	btfss	12,0	;volatile
+  1309  0173  2978               	goto	i1l168
+  1310                           
+  1311                           ;main.c: 92: TMR1IF = 0;
+  1312  0174  100C               	bcf	12,0	;volatile
+  1313                           
+  1314                           ;main.c: 93: flag2 = 1;
+  1315  0175  01AD               	clrf	_flag2
+  1316  0176  0AAD               	incf	_flag2,f
+  1317                           
+  1318                           ;main.c: 95: return;
+  1319  0177  297D               	goto	i1l166
+  1320  0178                     i1l168:	
+  1321                           
+  1322                           ;main.c: 96: }
+  1323                           ;main.c: 99: if(TMR2IF){
+  1324  0178  1C8C               	btfss	12,1	;volatile
+  1325  0179  297D               	goto	i1l166
+  1326                           
+  1327                           ;main.c: 100: TMR2IF = 0;
+  1328  017A  108C               	bcf	12,1	;volatile
+  1329                           
+  1330                           ;main.c: 101: flag3 = 1;
+  1331  017B  01AE               	clrf	_flag3
+  1332  017C  0AAE               	incf	_flag3,f
+  1333  017D                     i1l166:	
+  1334                           ;main.c: 103: return;
+  1335                           
+  1336  017D  087B               	movf	??_global_interrupt+2,w
+  1337  017E  008A               	movwf	10
+  1338  017F  087A               	movf	??_global_interrupt+1,w
+  1339  0180  0084               	movwf	4
+  1340  0181  0E79               	swapf	??_global_interrupt^(0+-128),w
+  1341  0182  0083               	movwf	3
+  1342  0183  0EFE               	swapf	126,f
+  1343  0184  0E7E               	swapf	126,w
+  1344  0185  0009               	retfie
+  1345  0186                     __end_of_global_interrupt:	
+  1346  0186                     __ptext6:	
+  1347 ;; *************** function _handle_uart_buffer *****************
+  1348 ;; Defined at:
+  1349 ;;		line 304 in file "main.c"
+  1350 ;; Parameters:    Size  Location     Type
+  1351 ;;  data            1    wreg     unsigned char 
+  1352 ;; Auto vars:     Size  Location     Type
+  1353 ;;  data            1    0[COMMON] unsigned char 
+  1354 ;; Return value:  Size  Location     Type
+  1355 ;;		None               void
+  1356 ;; Registers used:
+  1357 ;;		wreg, fsr0l, fsr0h, status,2, status,0
+  1358 ;; Tracked objects:
+  1359 ;;		On entry : 60/0
+  1360 ;;		On exit  : 60/0
+  1361 ;;		Unchanged: 0/0
+  1362 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1363 ;;      Params:         0       0       0       0
+  1364 ;;      Locals:         1       0       0       0
+  1365 ;;      Temps:          0       0       0       0
+  1366 ;;      Totals:         1       0       0       0
+  1367 ;;Total ram usage:        1 bytes
+  1368 ;; Hardware stack levels used:    1
+  1369 ;; This function calls:
+  1370 ;;		Nothing
+  1371 ;; This function is called by:
+  1372 ;;		_global_interrupt
+  1373 ;; This function uses a non-reentrant model
+  1374 ;;
+  1375                           
+  1376                           
+  1377                           ;psect for function _handle_uart_buffer
+  1378  0186                     _handle_uart_buffer:	
+  1379                           
+  1380                           ;incstack = 0
+  1381                           ; Regs used in _handle_uart_buffer: [wreg-fsr0h+status,2+status,0]
+  1382                           ;handle_uart_buffer@data stored from wreg
+  1383  0186  00F8               	movwf	handle_uart_buffer@data
+  1384                           
+  1385                           ;main.c: 305: if(data == 0x55){
+  1386  0187  3A55               	xorlw	85
+  1387  0188  1D03               	skipz
+  1388  0189  298C               	goto	i1l943
+  1389                           
+  1390                           ;main.c: 306: counter_uart = 0;
+  1391  018A  01AB               	clrf	_counter_uart
+  1392  018B  0008               	return
+  1393  018C                     i1l943:	
+  1394                           
+  1395                           ;main.c: 308: }
+  1396                           ;main.c: 310: uart_data[counter_uart] = data;
+  1397  018C  082B               	movf	_counter_uart,w
+  1398  018D  3E36               	addlw	_uart_data& (0+255)
+  1399  018E  0084               	movwf	4
+  1400  018F  0878               	movf	handle_uart_buffer@data,w
+  1401  0190  1383               	bcf	3,7	;select IRP bank0
+  1402  0191  0080               	movwf	0
+  1403                           
+  1404                           ;main.c: 311: counter_uart += 1;
+  1405  0192  0AAB               	incf	_counter_uart,f
+  1406                           
+  1407                           ;main.c: 312: if(counter_uart == 15){
+  1408  0193  082B               	movf	_counter_uart,w
+  1409  0194  3A0F               	xorlw	15
+  1410  0195  1D03               	skipz
+  1411  0196  0008               	return
+  1412                           
+  1413                           ;main.c: 313: counter_uart = 0;
+  1414  0197  01AB               	clrf	_counter_uart
+  1415                           
+  1416                           ;main.c: 314: flag4 = 1;
+  1417  0198  01AF               	clrf	_flag4
+  1418  0199  0AAF               	incf	_flag4,f
+  1419  019A  0008               	return
+  1420  019B                     __end_of_handle_uart_buffer:	
+  1421  007E                     btemp	set	126	;btemp
+  1422  007E                     wtemp	set	126
+  1423  007E                     wtemp0	set	126
+  1424  0080                     wtemp1	set	128
+  1425  0082                     wtemp2	set	130
+  1426  0084                     wtemp3	set	132
+  1427  0086                     wtemp4	set	134
+  1428  0088                     wtemp5	set	136
+  1429  007F                     wtemp6	set	127
+  1430  007E                     ttemp	set	126
+  1431  007E                     ttemp0	set	126
+  1432  0081                     ttemp1	set	129
+  1433  0084                     ttemp2	set	132
+  1434  0087                     ttemp3	set	135
+  1435  007F                     ttemp4	set	127
+  1436  007E                     ltemp	set	126
+  1437  007E                     ltemp0	set	126
+  1438  0082                     ltemp1	set	130
+  1439  0086                     ltemp2	set	134
+  1440  0080                     ltemp3	set	128
+  1441                           
+  1442                           	psect	intentry
+  1443  0004                     __pintentry:	
+  1444                           ;incstack = 0
+  1445                           ; Regs used in _global_interrupt: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+  1446                           
+  1447  0004                     interrupt_function:	
+  1448  007E                     saved_w	set	btemp
+  1449  0004  00FE               	movwf	btemp
+  1450  0005  0E03               	swapf	3,w
+  1451  0006  00F9               	movwf	??_global_interrupt
+  1452  0007  0804               	movf	4,w
+  1453  0008  00FA               	movwf	??_global_interrupt+1
+  1454  0009  080A               	movf	10,w
+  1455  000A  00FB               	movwf	??_global_interrupt+2
+  1456  000B  118A  295A         	ljmp	_global_interrupt
 
 
 Data Sizes:
@@ -1433,8 +1474,8 @@ Data Sizes:
 
 Auto Spaces:
     Space          Size  Autos    Used
-    COMMON           14      3      12
-    BANK0            80      2      38
+    COMMON           14      4      12
+    BANK0            80      2      39
     BANK1            80      0       0
     BANK2            80      0       0
 
@@ -1448,7 +1489,7 @@ Critical Paths under _main in COMMON
 
 Critical Paths under _global_interrupt in COMMON
 
-    None.
+    _global_interrupt->_handle_uart_buffer
 
 Critical Paths under _main in BANK0
 
@@ -1488,21 +1529,25 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (1) _handle_uart_data                                     0     0      0       0
  ---------------------------------------------------------------------------------
- (2) _handle_counter3                                      2     2      0      34
+ (1) _handle_counter3                                      2     2      0      34
                                               0 BANK0      2     2      0
  ---------------------------------------------------------------------------------
- (2) _handle_counter2                                      2     2      0      34
+ (1) _handle_counter2                                      2     2      0      34
                                               0 BANK0      2     2      0
  ---------------------------------------------------------------------------------
- (2) _handle_counter1                                      1     1      0      37
+ (1) _handle_counter1                                      1     1      0      37
                                               0 BANK0      1     1      0
  ---------------------------------------------------------------------------------
- Estimated maximum stack depth 2
+ Estimated maximum stack depth 1
  ---------------------------------------------------------------------------------
  (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
  ---------------------------------------------------------------------------------
- (3) _global_interrupt                                     3     3      0       0
-                                              0 COMMON     3     3      0
+ (2) _global_interrupt                                     3     3      0      44
+                                              1 COMMON     3     3      0
+                 _handle_uart_buffer
+ ---------------------------------------------------------------------------------
+ (3) _handle_uart_buffer                                   1     1      0      44
+                                              0 COMMON     1     1      0
  ---------------------------------------------------------------------------------
  Estimated maximum stack depth 3
  ---------------------------------------------------------------------------------
@@ -1516,6 +1561,7 @@ Call Graph Tables:
    _handle_uart_data
 
  _global_interrupt (ROOT)
+   _handle_uart_buffer
 
  Address spaces:
 Name               Size   Autos  Total    Cost      Usage
@@ -1529,90 +1575,93 @@ BANK1               50      0       0       5        0.0%
 BITBANK1            50      0       0       4        0.0%
 SFR1                 0      0       0       2        0.0%
 BITSFR1              0      0       0       2        0.0%
-BANK0               50      2      26       3       47.5%
+BANK0               50      2      27       3       48.8%
 BITBANK0            50      0       0       9        0.0%
 SFR0                 0      0       0       1        0.0%
 BITSFR0              0      0       0       1        0.0%
-COMMON               E      3       C       1       85.7%
+COMMON               E      4       C       1       85.7%
 BITCOMMON            E      0       0       0        0.0%
 CODE                 0      0       0       0        0.0%
-DATA                 0      0      32      10        0.0%
-ABS                  0      0      32       8        0.0%
+DATA                 0      0      33      10        0.0%
+ABS                  0      0      33       8        0.0%
 NULL                 0      0       0       0        0.0%
 STACK                0      0       0       2        0.0%
 EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.33 build 59893 
-Symbol Table                                                                                   Wed Jun 10 20:51:01 2015
+Symbol Table                                                                                   Wed Jun 10 23:01:00 2015
 
-                        pc 0002                __CFG_CP$OFF 0000                         fsr 0004  
-                      l202 005D                        l206 0077                        l194 0037  
-                      _GIE 005F                        _PR2 0092               __CFG_CPD$OFF 0000  
-                      u555 01C4                        u565 0156                        fsr0 0004  
-                      indf 0000               __CFG_IESO$ON 0000                       l1210 006A  
-                     l1202 005B                       l1220 0081                       l1222 0084  
-                     l1214 0075                       l1232 0091                       l1208 0067  
-                     l1234 0092                       l1228 008C                       l1180 0041  
-                     l1254 01E1                       l1182 0044                       l1174 0035  
-                     l1280 017C                       l1192 0051                       l1194 0052  
-                     l1188 004C                       l1372 0132                       l1366 012B  
-                     l1384 0140                       l1378 0139                       _BRGH 04C2  
-                     _T0IE 005D                       _T0IF 005A                       _CREN 00C4  
-                     _PEIE 005E                       _RCIE 0465                       _RCIF 0065  
-                     _TMR0 0001                       _SPEN 00C7                       _SYNC 04C4  
-            __CFG_FCMEN$ON 0000                       _main 00EF                       _tmp1 0076  
-                     _tmp2 0077                       _tmp3 0078                       btemp 007E  
-            __CFG_BOREN$ON 0000                       ltemp 007E                       start 000D  
-                     ttemp 007E                       wtemp 007E                      ?_main 0079  
-                    _BRG16 04DB              __CFG_WDTE$OFF 0000                      _ANSEL 011E  
-                    i1l161 019C                      i1l163 01AE                      i1l165 01A2  
-                    i1l166 01A8                      _RCREG 001A                      _TMR1H 000F  
-                    _TMR1L 000E                      _SPBRG 0099                      _PORTA 0005  
-                    _PORTB 0006                      _PORTC 0007                      _TRISA 0085  
-                    _TRISB 0086                      _TRISC 0087              __CFG_PWRTE$ON 0000  
-__size_of_handle_uart_data 0067                      _flag1 002B                      _flag2 002C  
-                    _flag3 002D                      _flag4 002E                      _loop1 0026  
-                    _loop3 0028                      pclath 000A                      ltemp0 007E  
-                    ltemp1 0082                      ltemp2 0086                      ltemp3 0080  
-                    ttemp0 007E                      ttemp1 0081                      ttemp2 0084  
-                    ttemp3 0087                      ttemp4 007F                      status 0003  
-                    wtemp0 007E                      wtemp1 0080                      wtemp2 0082  
-                    wtemp3 0084                      wtemp4 0086                      wtemp5 0088  
-                    wtemp6 007F            _handle_counter1 01B7            _handle_counter2 01E5  
-          _handle_counter3 0149             __CFG_MCLRE$OFF 0000            __initialization 000F  
-             __end_of_main 0149                     ??_main 0046                     _ANSELH 011F  
-                   i1l1042 018D                     _OSCCON 008F                     _TMR1GE 0086  
-                   _TMR1IE 0460                     _TMR1IF 0060                     _TMR1CS 0081  
-                   _TMR2IE 0461                     _TMR2IF 0061                     _SPBRGH 009A  
-                   _TMR1ON 0080                     _TMR2ON 0092      __end_of_motor2_1Array 00B9  
-    __end_of_motor2_2Array 00C8                     _motor1 0031                     _motor2 0073  
-                   _motor3 0033                     saved_w 007E    __end_of_handle_counter1 01E5  
-  __end_of_handle_counter2 0209    __end_of_handle_counter3 0181    __end_of__initialization 002B  
-__size_of_global_interrupt 0036             __pcstackCOMMON 0079               __pidataBANK0 0000  
-         _handle_uart_data 002E                 __pbssBANK0 0020                 __pmaintext 00EF  
-               __pintentry 0004                 _direction1 0020                 _direction2 0022  
-                  _T1OSCEN 0083                 _direction3 0024                    _OSCTUNE 0090  
-      handle_counter1@temp 0044        handle_counter2@temp 0045        handle_counter3@temp 0045  
-               __stringtab 0095           ?_handle_counter1 0079           ?_handle_counter2 0079  
-         ?_handle_counter3 0079                    __ptext1 002E                    __ptext2 0149  
-                  __ptext3 01E5                    __ptext4 01B7                    __ptext5 0181  
-                _T1CONbits 0010                  _T2CONbits 0012                    clrloop0 020A  
-     end_of_initialization 002B          __end_of_posArray1 00DF          __end_of_posArray2 00E7  
-        __end_of_posArray3 00EF           _global_interrupt 0181   __end_of_handle_uart_data 0095  
-      start_initialization 000F               _counter_uart 0072               _incremental1 002F  
-             _incremental3 0030                __pdataBANK0 0035                __pbssCOMMON 0070  
-                ___latbits 0001              __pcstackBANK0 0044              _motor2_1Array 00AA  
-            _motor2_2Array 00B9                  __pstrings 0095   __end_of_global_interrupt 01B7  
-        interrupt_function 0004                  clear_ram0 0209                  _posArray1 00D7  
-                _posArray2 00DF                  _posArray3 00E7                  _motor1run 0032  
- __size_of_handle_counter1 002E   __size_of_handle_counter2 0024   __size_of_handle_counter3 0038  
-                _motor2run 0074                  _motor3run 0075                  _uart_data 0035  
-              __stringbase 009A          ?_handle_uart_data 0079        __end_of_motor1Array 00AA  
-      __end_of_motor3Array 00D7         ??_handle_uart_data 0044         __end_of__stringtab 009B  
-                 _counter1 002A                   _counter2 0070                   _counter3 0071  
-            __size_of_main 005A                   _tmp_data 0034          ??_handle_counter1 0044  
-        ??_handle_counter2 0044          ??_handle_counter3 0044                   intlevel1 0000  
-              _motor1Array 009B                _motor3Array 00C8                  stringcode 0095  
-               _OPTION_REG 0081                   stringdir 0095          ?_global_interrupt 0079  
-                 stringtab 0095         ??_global_interrupt 0079          __CFG_FOSC$INTRCIO 0000  
+                          pc 0002                  __CFG_CP$OFF 0000                           fsr 0004  
+                        l204 005D                          l208 0077                          l196 0037  
+                        _GIE 005F                          _PR2 0092                 __CFG_CPD$OFF 0000  
+                        fsr0 0004                          indf 0000                 __CFG_IESO$ON 0000  
+                       l1201 0035                         l1221 0052                         l1215 004C  
+                       l1207 0041                         l1241 0075                         l1209 0044  
+                       l1307 01C3                         l1235 0067                         l1219 0051  
+                       l1411 00E8                         l1261 0092                         l1237 006A  
+                       l1229 005B                         l1405 00E1                         l1255 008C  
+                       l1247 0081                         l1281 020A                         l1249 0084  
+                       l1259 0091                         l1393 00D3                         l1399 00DA  
+                       _BRGH 04C2                         _T0IE 005D                         _T0IF 005A  
+                       _CREN 00C4                         _FERR 00C2                         _PEIE 005E  
+                       _RCIE 0465                         _RCIF 0065                         _OERR 00C1  
+                       _TMR0 0001                         _SPEN 00C7                         _SYNC 04C4  
+              __CFG_FCMEN$ON 0000                         _main 0095                         _tmp1 0075  
+                       _tmp2 0076                         _tmp3 0077                         btemp 007E  
+              __CFG_BOREN$ON 0000                         ltemp 007E                         start 000D  
+                       ttemp 007E                         wtemp 007E                        ?_main 0078  
+                      _BRG16 04DB                __CFG_WDTE$OFF 0000                        _ANSEL 011E  
+                      i1l163 016C                        i1l164 0167                        i1l166 017D  
+                      i1l167 0172                        i1l168 0178                        i1l943 018C  
+                      _RCREG 001A                        _TMR1H 000F                        _TMR1L 000E  
+                      _SPBRG 0099                        _PORTA 0005                        _PORTB 0006  
+                      _PORTC 0007                        _TRISA 0085                        _TRISB 0086  
+                      _TRISC 0087                __CFG_PWRTE$ON 0000    __size_of_handle_uart_data 0067  
+                      _flag1 002C                        _flag2 002D                        _flag3 002E  
+                      _flag4 002F                        _loop1 0026                        _loop3 0028  
+                      pclath 000A                        ltemp0 007E                        ltemp1 0082  
+                      ltemp2 0086                        ltemp3 0080                        ttemp0 007E  
+                      ttemp1 0081                        ttemp2 0084                        ttemp3 0087  
+                      ttemp4 007F                        status 0003                        wtemp0 007E  
+                      wtemp1 0080                        wtemp2 0082                        wtemp3 0084  
+                      wtemp4 0086                        wtemp5 0088                        wtemp6 007F  
+            _handle_counter1 01EB              _handle_counter2 01C7              _handle_counter3 019B  
+             __CFG_MCLRE$OFF 0000              __initialization 000F                 __end_of_main 00F1  
+                     ??_main 0047                       _ANSELH 011F                       _OSCCON 008F  
+                     _TMR1GE 0086                       _TMR1IE 0460                       _TMR1IF 0060  
+                     _TMR1CS 0081                       _TMR2IE 0461                       _TMR2IF 0061  
+                     _SPBRGH 009A                       _TMR1ON 0080                       _TMR2ON 0092  
+         _handle_uart_buffer 0186        __end_of_motor2_1Array 0124        __end_of_motor2_2Array 0133  
+        ?_handle_uart_buffer 0078                       _motor1 0032                       _motor2 0072  
+                     _motor3 0034                       saved_w 007E         ??_handle_uart_buffer 0078  
+    __end_of_handle_counter1 020C      __end_of_handle_counter2 01EB      __end_of_handle_counter3 01C7  
+    __end_of__initialization 002B    __size_of_global_interrupt 002C               __pcstackCOMMON 0078  
+               __pidataBANK0 0000             _handle_uart_data 002E                   __pbssBANK0 0020  
+                 __pmaintext 0095                   __pintentry 0004                   _direction1 0020  
+                 _direction2 0022                      _T1OSCEN 0083                   _direction3 0024  
+                    _OSCTUNE 0090          handle_counter1@temp 0045          handle_counter2@temp 0046  
+        handle_counter3@temp 0046                   __stringtab 0100             ?_handle_counter1 0078  
+           ?_handle_counter2 0078             ?_handle_counter3 0078                      __ptext1 002E  
+                    __ptext2 019B                      __ptext3 01C7                      __ptext4 01EB  
+                    __ptext5 015A                      __ptext6 0186                    _T1CONbits 0010  
+                  _T2CONbits 0012                      clrloop0 020D         end_of_initialization 002B  
+          __end_of_posArray1 014A            __end_of_posArray2 0152            __end_of_posArray3 015A  
+           _global_interrupt 015A       handle_uart_buffer@data 0078     __end_of_handle_uart_data 0095  
+        start_initialization 000F  __size_of_handle_uart_buffer 0015                 _counter_uart 002B  
+               _incremental1 0030                 _incremental3 0031                  __pdataBANK0 0036  
+                __pbssCOMMON 0070                    ___latbits 0001                __pcstackBANK0 0045  
+              _motor2_1Array 0115                _motor2_2Array 0124                    __pstrings 0100  
+   __end_of_global_interrupt 0186            interrupt_function 0004                    clear_ram0 020C  
+                  _posArray1 0142                    _posArray2 014A                    _posArray3 0152  
+                  _motor1run 0033     __size_of_handle_counter1 0021     __size_of_handle_counter2 0024  
+   __size_of_handle_counter3 002C                    _motor2run 0073                    _motor3run 0074  
+                  _uart_data 0036                  __stringbase 0105            ?_handle_uart_data 0078  
+        __end_of_motor1Array 0115          __end_of_motor3Array 0142           ??_handle_uart_data 0045  
+         __end_of__stringtab 0106                     _counter1 002A                     _counter2 0070  
+                   _counter3 0071                __size_of_main 005C                     _tmp_data 0035  
+          ??_handle_counter1 0045            ??_handle_counter2 0045            ??_handle_counter3 0045  
+ __end_of_handle_uart_buffer 019B                     intlevel1 0000                  _motor1Array 0106  
+                _motor3Array 0133                    stringcode 0100                   _OPTION_REG 0081  
+                   stringdir 0100            ?_global_interrupt 0078                     stringtab 0100  
+         ??_global_interrupt 0079            __CFG_FOSC$INTRCIO 0000  

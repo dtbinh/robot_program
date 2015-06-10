@@ -103,18 +103,20 @@
 [v ___fltoee __fltoee `(d  1 e 3 0 ]
 "49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"64 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
+"62 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
-"159
+"107
 [v _main main `(i  1 e 2 0 ]
-"248
+"194
 [v _handle_counter2 handle_counter2 `(v  1 e 0 0 ]
-"259
+"204
 [v _handle_counter1 handle_counter1 `(v  1 e 0 0 ]
-"275
+"220
 [v _handle_counter3 handle_counter3 `(v  1 e 0 0 ]
-"291
+"238
 [v _handle_uart_data handle_uart_data `(v  1 e 0 0 ]
+"304
+[v _handle_uart_buffer handle_uart_buffer `(v  1 e 0 0 ]
 "53 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f690.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "158
@@ -127,7 +129,7 @@
 [v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
 "492
 [v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
-[s S31 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S38 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 TMR1CS 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
@@ -136,18 +138,18 @@
 `uc 1 T1GINV 1 0 :1:7 
 ]
 "519
-[s S39 . 1 `uc 1 . 1 0 :4:0 
+[s S46 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
-[u S43 . 1 `S31 1 . 1 0 `S39 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES43  1 e 1 @16 ]
-[s S72 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[u S50 . 1 `S38 1 . 1 0 `S46 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES50  1 e 1 @16 ]
+[s S71 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 TOUTPS 1 0 :4:3 
 ]
 "595
-[s S76 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S75 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 TOUTPS0 1 0 :1:3 
@@ -155,8 +157,8 @@
 `uc 1 TOUTPS2 1 0 :1:5 
 `uc 1 TOUTPS3 1 0 :1:6 
 ]
-[u S84 . 1 `S72 1 . 1 0 `S76 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES84  1 e 1 @18 ]
+[u S83 . 1 `S71 1 . 1 0 `S75 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES83  1 e 1 @18 ]
 "885
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
 "1141
@@ -197,8 +199,12 @@
 [v _CARRY CARRY `VEb  1 e 0 @24 ]
 "3346
 [v _CREN CREN `VEb  1 e 0 @196 ]
+"3376
+[v _FERR FERR `VEb  1 e 0 @194 ]
 "3378
 [v _GIE GIE `VEb  1 e 0 @95 ]
+"3464
+[v _OERR OERR `VEb  1 e 0 @193 ]
 "3490
 [v _PEIE PEIE `VEb  1 e 0 @94 ]
 "3556
@@ -237,105 +243,113 @@
 [v _WR WR `VEb  1 e 0 @3169 ]
 "3796
 [v _WREN WREN `VEb  1 e 0 @3170 ]
-"4 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
+"8 C:\Users\Kadir\Documents\GitHub\robot_program\main.c
 [v _posArray1 posArray1 `DCC[8]uc  1 e 8 0 ]
-"5
+"9
 [v _posArray2 posArray2 `DCC[8]uc  1 e 8 0 ]
-"6
+"10
 [v _posArray3 posArray3 `DCC[8]uc  1 e 8 0 ]
-"8
-[v _motor1Array motor1Array `DCC[15]uc  1 e 15 0 ]
-"11
-[v _motor2_1Array motor2_1Array `DCC[15]uc  1 e 15 0 ]
 "12
+[v _motor1Array motor1Array `DCC[15]uc  1 e 15 0 ]
+"15
+[v _motor2_1Array motor2_1Array `DCC[15]uc  1 e 15 0 ]
+"16
 [v _motor2_2Array motor2_2Array `DCC[15]uc  1 e 15 0 ]
-"14
-[v _motor3Array motor3Array `DCC[15]uc  1 e 15 0 ]
 "18
-[v _counter1 counter1 `uc  1 e 1 0 ]
-"19
-[v _counter2 counter2 `uc  1 e 1 0 ]
-"20
-[v _counter3 counter3 `uc  1 e 1 0 ]
+[v _motor3Array motor3Array `DCC[15]uc  1 e 15 0 ]
 "22
-[v _motor1 motor1 `uc  1 e 1 0 ]
+[v _counter1 counter1 `uc  1 e 1 0 ]
 "23
-[v _motor2 motor2 `uc  1 e 1 0 ]
+[v _counter2 counter2 `uc  1 e 1 0 ]
 "24
-[v _motor3 motor3 `uc  1 e 1 0 ]
-"25
-[v _tmp1 tmp1 `uc  1 e 1 0 ]
+[v _counter3 counter3 `uc  1 e 1 0 ]
 "26
-[v _tmp2 tmp2 `uc  1 e 1 0 ]
+[v _motor1 motor1 `uc  1 e 1 0 ]
 "27
-[v _tmp3 tmp3 `uc  1 e 1 0 ]
+[v _motor2 motor2 `uc  1 e 1 0 ]
+"28
+[v _motor3 motor3 `uc  1 e 1 0 ]
 "29
-[v _flag1 flag1 `uc  1 e 1 0 ]
+[v _tmp1 tmp1 `uc  1 e 1 0 ]
 "30
-[v _flag2 flag2 `uc  1 e 1 0 ]
+[v _tmp2 tmp2 `uc  1 e 1 0 ]
 "31
-[v _flag3 flag3 `uc  1 e 1 0 ]
-"32
-[v _flag4 flag4 `uc  1 e 1 0 ]
+[v _tmp3 tmp3 `uc  1 e 1 0 ]
 "33
-[v _motor1run motor1run `uc  1 e 1 0 ]
+[v _flag1 flag1 `uc  1 e 1 0 ]
 "34
-[v _motor2run motor2run `uc  1 e 1 0 ]
+[v _flag2 flag2 `uc  1 e 1 0 ]
 "35
-[v _motor3run motor3run `uc  1 e 1 0 ]
+[v _flag3 flag3 `uc  1 e 1 0 ]
+"36
+[v _flag4 flag4 `uc  1 e 1 0 ]
 "37
-[v _incremental1 incremental1 `uc  1 e 1 0 ]
+[v _motor1run motor1run `uc  1 e 1 0 ]
 "38
-[v _incremental3 incremental3 `uc  1 e 1 0 ]
+[v _motor2run motor2run `uc  1 e 1 0 ]
 "39
-[v _direction1 direction1 `i  1 e 2 0 ]
-"40
-[v _direction2 direction2 `i  1 e 2 0 ]
+[v _motor3run motor3run `uc  1 e 1 0 ]
 "41
-[v _direction3 direction3 `i  1 e 2 0 ]
+[v _incremental1 incremental1 `uc  1 e 1 0 ]
 "42
-[v _loop1 loop1 `i  1 e 2 0 ]
+[v _incremental3 incremental3 `uc  1 e 1 0 ]
 "43
-[v _loop3 loop3 `i  1 e 2 0 ]
+[v _direction1 direction1 `i  1 e 2 0 ]
+"44
+[v _direction2 direction2 `i  1 e 2 0 ]
+"45
+[v _direction3 direction3 `i  1 e 2 0 ]
 "46
+[v _loop1 loop1 `i  1 e 2 0 ]
+"47
+[v _loop3 loop3 `i  1 e 2 0 ]
+"50
 [v _counter_uart counter_uart `uc  1 e 1 0 ]
-"48
+"52
 [v _uart_data uart_data `[15]uc  1 e 15 0 ]
 "53
 [v _tmp_data tmp_data `uc  1 e 1 0 ]
-"159
+"107
 [v _main main `(i  1 e 2 0 ]
 {
-"246
+"192
 } 0
-"291
+"238
 [v _handle_uart_data handle_uart_data `(v  1 e 0 0 ]
 {
-"368
+"302
 } 0
-"275
+"220
 [v _handle_counter3 handle_counter3 `(v  1 e 0 0 ]
 {
-"276
+"221
 [v handle_counter3@temp temp `uc  1 a 1 1 ]
-"289
+"236
 } 0
-"248
+"194
 [v _handle_counter2 handle_counter2 `(v  1 e 0 0 ]
 {
-"249
+"195
 [v handle_counter2@temp temp `uc  1 a 1 1 ]
-"257
+"202
 } 0
-"259
+"204
 [v _handle_counter1 handle_counter1 `(v  1 e 0 0 ]
 {
-"260
+"205
 [v handle_counter1@temp temp `uc  1 a 1 0 ]
-"273
+"218
 } 0
-"64
+"62
 [v _global_interrupt global_interrupt `II(v  1 e 0 0 ]
 {
-"157
+"105
+} 0
+"304
+[v _handle_uart_buffer handle_uart_buffer `(v  1 e 0 0 ]
+{
+[v handle_uart_buffer@data data `uc  1 a 1 wreg ]
+[v handle_uart_buffer@data data `uc  1 a 1 wreg ]
+[v handle_uart_buffer@data data `uc  1 a 1 0 ]
+"317
 } 0
